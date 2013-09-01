@@ -1,0 +1,419 @@
+﻿html,body,h1,h2,h3,h4,h5,ul,ul li,div,form,dl,dd,dt,blockquote,p,fieldset,span,legend,label,img,q {margin:0;padding:0;border:0;}
+ul,ul li {list-style:none;}
+input,select{font-size:12px}
+table{border-collapse:collapse;border:0}
+body{background:#3f4040;color:#d0d0d0;font:12px/160% Arial,Verdana,Tahoma,"宋体";}
+em,i{font-size:12px;font-style:normal;}
+.clear{clear:both;float:none;}
+.clearfix:after{content:" ";display:block;clear:both;visibility:hidden;}
+html .clearfix{*zoom:1}
+
+a.btn {display:inline-block;height:29px;margin-left:20px;line-height:27px;background:url("../img/games2010_sprt.png") no-repeat right -856px;font-size:14px;font-weight:bold;text-decoration:none}
+.btn span{position:relative;float:left;height:29px;left:-20px;padding-left:20px;background:url("../img/games2010_sprt.png") no-repeat left -856px;cursor:pointer;white-space:nowrap;color:#000;font-family:"微软雅黑",Arial,Verdana,Tahoma,"宋体";}
+a.btn_green {background-position:right -887px;}
+.btn_green span{background-position:left -887px;color:#fff;}
+a.btn:hover {text-decoration:none;color:#000}
+a.btn2 {margin-left:25px;margin-top:4px}
+
+
+.wrapper{
+	width:700px;
+	margin:0 auto;
+}
+.wrapper a{color:#d0d0d0;text-decoration:none;outline:0} 
+.wrapper a:hover{color:#f90;text-decoration:underline;}
+.head{float:left;position:relative;z-index:9999;width:100%;height:71px;margin:0 auto;background:url("../images/games2010/games2010_sprt.png") repeat-x 0 -46px;}
+.logo{display:inline;float:left;width:121px;height:45px;margin:15px 0 0 12px}
+.logo a{float:left;width:100%;height:45px;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 0;overflow:hidden;line-height:300px}
+.menu{display:inline;float:left;margin:39px 0 0 15px;}
+.menu li{float:left;}
+.menu a{float:left;height:32px;line-height:32px;padding-right:23px;background:url("../images/games2010/games2010_sprt.png") no-repeat right -118px;color:#fff;}
+.menu a span{float:left;height:32px;padding-left:23px;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -118px;font-size:14px;font-weight:bold;overflow:hidden;cursor:pointer}
+.menu a:hover{color:#f90;text-decoration:none;}
+.menu a.active{position:relative;/*left:-5px;margin-right:-10px;*/height:35px;margin-top:-3px;background-position:right -153px;color:#000;line-height:34px}
+.menu a.active span{height:35px;background-position:0 -153px;}
+.menu a.active:hover{color:#000;}
+.menu .first a.active span{background-position:0 -188px;}
+.menu .last a.active{background-position:right -188px;}
+.menu .expert_recomend a{background-position:right -223px;}
+.menu .expert_recomend a span{background-position:0 -223px;}
+.member{float:right;position:absolute;z-index:9999;top:6px;right:10px;}
+.member li{float:left;margin:0 3px;height:14px;line-height:14px}
+.member li.qqonline {margin-right:0}
+.member li.qqonline a{float:left;width:63px;height:14px;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -313px;overflow:hidden;line-height:300px}
+.member a{color:#d0d0d0}
+.member .user{font-family:"Segoe UI",Arial,Verdana,Tahoma,"宋体";}
+.member .user_bind{padding-left:13px;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -993px;}
+.member .uvip{position:relative;bottom:-2px;display:inline-block;width:19px;height:12px;margin:0 5px 0 0;background:url("../images/games2010/games2010_sprt.png") no-repeat -13px -994px;}
+.member .uphone{position:relative;bottom:-2px;display:inline-block;width:9px;height:14px;margin:0 5px 0 0;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -993px;}
+.member .money{position:relative;z-index:20;margin: 0 5px;color:#eeb10e;}
+.member .money ul{position:absolute;width:170px;top:14px;left:-5px;float:left;margin-left:5px;padding:8px;border:4px solid #FDBD0F;background:#fff;color:#000;font-size:12px;}
+.member .money li{margin-bottom:2px;white-space:nowrap;text-align:left}
+.submenu{float:left;width:100%;padding:2px 0 10px;border-top:3px solid #ffd100;background:#2c2c2c;font-size:0}
+.submenu ul{float:left;width:100%;font-size:12px}
+.submenu li{display:inline;float:left;}
+.submenu a{float:left;margin:6px 12px 0;color:#d0d0d0}
+.submenu .active{color:#ffd100;}
+.head .ann{float:right;position:absolute;z-index:99;top:46px;right:10px;padding-left:13px;background:url("../images/games2010/ico_ann_y.gif") no-repeat 0 center;}
+.head .ann a{padding:0;margin:0;color:#ffd100;}
+.head .ann a:hover{text-decoration:none;color:#f70}
+.head .annt{font-weight:bold}
+
+.cols{clear:both;float:left;width:100%;margin:0;background:#2c2c2c;}
+.blk h2,.blk h2 a{height:26px;line-height:20px;font-size:14px;color:#f9b300}
+.blk .b{display:block;background:url("../images/games2010/blkbg.png") no-repeat 0 0;}
+.blk .b1{padding-left:12px;background-position:0 0;}
+.blk .b2{padding-top:10px;background-position:100% 0;}
+.blk .b3{margin-left:-12px;padding-left:12px;background-position:0 bottom;}
+.blk .b4{padding:0 12px 15px 0;background-position:100% bottom;}
+
+.gallery{display:inline;float:left;width:958px;margin:3px 0 8px 13px;}
+.gallery .c1{position:relative;float:left;width:570px;height:220px;background:url("../images/games2010/brand_c1.jpg") no-repeat 0 0;}
+.gallery .c2{float:right;width:375px;background-image:url("../images/games2010/brand_c2.jpg")}
+.gallery h2{position:absolute;left:10px;top:7px;background:url("../images/games2010/games2010_sprt.png") no-repeat -134px 7px;padding-left:10px;font-size:16px;}
+.gallery h2 a{color:#ffd100;}
+.gallery .g_award{position:absolute;left:49px;top:10px;display:block;width:212px;height:186px;background:url("../images/games2010/new_award.png");overflow:hidden;color:#000;}
+	.gallery .ga1{background-position:0 0;}
+	.gallery .ga2{background-position:0 -195px;}
+	.gallery .ga3{background-position:0 -401px;}
+	.gallery .ga4{background-position:0 -600px;}
+	.wrapper .g_award:hover{text-decoration:none;color:#000}
+	.g_award span{display:block;margin-left:30px}
+	.g_award .a1{margin-top:36px;font-size:12px;}
+		.g_award .a1 i{font-size:10px}
+		.g_award .a2{margin-top:0;font-size:16px;font-weight:bold;font-family:"微软雅黑",Arial,Verdana,Tahoma,"宋体";}
+		.g_award .a2 i{font-size:20px;color:#ff8a00}
+		.g_award .a2 .win{display:inline-block;position:relative;bottom:-3px;width:45px;height:21px;margin-left:3px;background:url("../images/games2010/awardnums.png") no-repeat 0 -41px;overflow:hidden;text-indent:-555px}
+		.g_award .a3{margin-top:6px;height:24px;}
+		.a3 i{display:inline-block;width:17px;height:26px;background:url("../images/games2010/awardnums.png") no-repeat;line-height:150px;overflow:hidden;}
+			.a3 .n0{background-position:0 0}
+			.a3 .n1{background-position:-17px 0}
+			.a3 .n2{background-position:-34px 0}
+			.a3 .n3{background-position:-51px 0}
+			.a3 .n4{background-position:-68px 0}
+			.a3 .n5{background-position:-85px 0}
+			.a3 .n6{background-position:-102px 0}
+			.a3 .n7{background-position:-119px 0}
+			.a3 .n8{background-position:-136px 0}
+			.a3 .n9{background-position:-153px 0}
+			.a3 .ny{width:17px;background-position:-171px 0;position:relative;top:-2px;left:2px}
+.gallery .g{position:absolute;left:0;bottom:41px;display:block;width:100%;height:155px;line-height:400px;overflow:hidden}
+.gallery .text{position:absolute;left:0;bottom:3px;display:block;width:100%;height:38px;}
+.gallery .opc{position:absolute;left:0;bottom:0;display:block;width:100%;height:38px;background:#000;opacity:0.5;filter:alpha(opacity=50)}
+.gallery em{position:absolute;left:0;bottom:0;line-height:42px;color:#ccc;text-indent:1em;font-weight:bold}
+.navgation{display:inline;float:left;width:185px;margin:2px 0 0 12px;}
+.shortcut{display:inline;float:left;width:100%;height:127px;margin-top:-2px;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -436px;overflow:hidden;}
+.shortcut h2{margin:10px 0 8px 12px;font-size:14px;color:#ffd100}
+.shortcut select{width:155px;margin:0 0 0 12px;font-size:12px;color:#444}
+.shortcut p{margin:10px 0 0 12px}
+.shortcut .btn_shortcut{display:inline-block;width:78px;height:28px;margin-top:5px;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -284px;overflow:hidden;line-height:300px}
+.shortcut .btn_shortcut:hover{background-position:-85px -284px}
+.shortcut2{background-position:0 -728px;}
+.shortcut2 h2{color:#ca0000}
+.shortcut2 .btn_shortcut{background-position:0 -700px;}
+.shortcut2 .btn_shortcut:hover{background-position:-85px -700px}
+.nav{display:inline;float:left;margin-top:5px;width:100%;}
+.nav .wtd{background:#0a0a0a;border:1px solid #181818;width:100%}
+.nav li.sub{width:100%;float:left}
+.nav li.sub ul{padding:5px 0}
+.nav .exp{display:block;margin:0 1px 1px;border:1px solid #2d2d2d;background:#262626;cursor:pointer;font-weight:bold}
+.nav .exp i{font-weight:normal;font-size:13px;font-family:"宋体";margin:0 6px 0 10px;color:#848484}
+.nav li li{margin:3px 0 3px 15px}
+.nav li li a{padding-left:10px}
+.nav li li a:hover,.nav li li a.active{background:url("../images/games2010/games2010_sprt.png") no-repeat -134px 5px;color:#ffd100;text-decoration:none}
+.tools{display:inline;float:left;width:100%;margin-top:8px;}
+.tools ul{margin:0 16px;line-height:24px}
+.btn_advice{float:left;width:184px;height:38px;margin:10px auto 0;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -1293px;overflow:hidden;line-height:300px}
+
+.nav2 .wtd{float:left;width:160px;background:#0a0a0a;border:1px solid #181818;}
+.nav2 .cate{float:left;width:100%;margin:0;padding-top:1px}
+.nav2 li.sub{position:relative;z-index:1;margin-bottom:1px}
+.nav2 li.active{z-index:9999;}
+.nav2 .exp{padding:2px 12px;margin:0 1px 0;border:1px solid #262626;background:#262626 url("../images/games2010/games2010_sprt.png") no-repeat 130% -1386px;cursor:default}
+.nav2 .exp a{display:block;width:100%}
+.nav2 .exp a:hover{color:#000;text-decoration:none}
+.nav2 .active .exp{border:1px solid #2d2d2d;border-bottom:1px solid #262626;background:#ffd100 url("../images/games2010/games2010_sprt.png") no-repeat 130% -1363px;color:#000}
+.nav2 .active .exp a{color:#000}
+.nav2 li.sub .pop{position:absolute;top:1px;left:120px;float:left;width:160px;padding-bottom:15px;border:1px solid #262626;border-width:0 2px 2px 0;background:#ffd100;z-index:99999}
+.nav2 .pop li{display:inline;float:left;width:100%;margin:2px 0}
+.nav2 .pop li a{margin-left:20px;white-space:nowrap;background:url("../images/games2010/games2010_sprt.png") no-repeat -182px -1366px;color:#000;}
+.nav2 .pop li a:hover{background:url("../images/games2010/games2010_sprt.png") no-repeat -182px -1366px;color:#b40000;font-weight:bold;text-decoration:underline}
+.navgation .tool{margin-top:9px}
+
+.main{display:inline;float:right;width:766px;margin:0px 12px 0 0;}
+.col_a{display:inline;float:left;width:570px;color:#a2a2a2}
+.blk .intro{margin:5px 3px 15px;padding:5px 10px 10px;background:#1e1e1e}
+.intro h2{position:relative;border-bottom:1px solid #2b2b2b;margin-bottom:15px;padding-bottom:3px;font-size:12px;}
+.intro h2 .extra{position:absolute;top:-2px;right:0;float:right;margin:5px 0 0;font-size:12px;font-weight:normal}
+.intro h2 .extra select{font-size:12px;font-family:Arial}
+.intro .btn_chip{float:left;display:inline-block;width:138px;height:48px;background:url("../images/games2010/games2010_sprt.png") repeat-x 0 -1510px;overflow:hidden;line-height:300px}
+.intro .btn_chip_close{float:left;display:inline-block;width:138px;height:48px;background:url("../images/games2010/games2010_sprt.png") repeat-x 0 -1567px;overflow:hidden;line-height:300px}
+.intro .btn_sdown{float:left;display:inline-block;width:120px;height:48px;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -338px;overflow:hidden;line-height:300px}
+.intro .ins{display:inline-block;width:378px;margin:0 0 10px 0;}
+.intro p{margin-bottom:10px;text-indent:2em;}
+.intro .clrs h2{margin-bottom:0;border:0}
+.intro .clrs .brand{display:inline-block;width:15%;*float:left}
+.intro .clrs .ins{width:84%;margin:0;}
+.intro .clrs .ins p{text-indent:0;margin:0}
+.blk .detail{margin:0 3px 3px;padding:5px 10px 10px;background:#1e1e1e}
+.blk .detail h2{border-bottom:1px solid #2b2b2b;margin-bottom:10px;padding-bottom:3px;font-size:12px;}
+.detail .wtd{width:100%;}
+.detail .gel{width:100%;margin-bottom:10px}
+.detail .gel em{color:#ff7200}
+.gelptn{margin:0 0 0}
+
+.col_b{display:inline;float:right;width:185px;}
+.col_b img{margin-bottom:12px}
+
+.blk .intro .elementIn{display:inline;float:left;width:100%;padding:0 0 12px;}
+.blk .intro .ll{display:inline;float:left;width:265px;}
+.blk .intro .lots li{display:inline;float:left;width:57px;height:61px;margin:10px 6px 0 0;padding-top:19px;background:url("../images/games2010/games2010_sprt.png") no-repeat -129px -338px;text-indent:2px;color:#000;font-size:16px;font-weight:bold;font-family:Arial,verdana,"宋体";text-align:center;}
+.blk .intro .more{float:left;padding:4px 5px 4px 0;}
+/*.blk .intro .more .f-red{font-weight:bold}*/
+.blk .intro .ll p{text-indent:0;margin-bottom:0}
+.blk .intro .lr{display:inline;float:right;width:255px;}
+.blk .intro .lr table{width:100%;border:1px solid #212121;background:#171717;color:#939393;text-align:center;}
+.blk .intro .lr td{padding:2px 2px;border:1px solid #212121;}
+
+.brands img{display:inline;float:left;}
+.brands .r1{display:inline;float:left;width:365px;margin-top:5px;margin-left:1px}
+.brands .r2{display:inline;float:right;margin-top:5px;}
+.brands .c1,.brands .c2,.brands .c3{float:left;margin-bottom:12px}
+.brands .c3{margin-bottom:0}
+.brands .g1{margin-right:12px}
+
+.step{display:inline;float:left;margin-top:8px;width:378px;}
+.step .wtd{background:#0a0a0a;border:1px solid #181818;width:100%}
+.step td{border:1px solid #181818;width:100%;padding:10px 0;_padding-bottom:5px;text-align:center}
+.bonus{display:inline;float:right;margin-top:8px;width:378px;}
+.bonus h2{position:relative;}
+.bonus .wall{padding-left:10px;background:url("../images/games2010/games2010_sprt.png") no-repeat -134px 7px;font-size:12px;font-weight:normal;position:absolute;right:0;top:0;color:#ffd100;}
+.bonus .wtd{background:#0a0a0a;border:1px solid #181818;width:100%}
+.bonus td{padding:11px;}
+.bonus .roll{position:relative;width:331px;height:115px;overflow:hidden;}
+.bonus li{position:relative;font-family:"Arial black","宋体";}
+.bonus li .rmb{position:absolute;top:0;right:0;color:#ffd100;}
+.bonus li a{color:#b2b2b2}
+
+.co{float:left;width:100%;padding:20px 0 0;color:#ccc;}
+.co .seg{margin:0 15px 20px;}
+.co h3{position:relative;padding:0 0 5px;margin-bottom:5px;border-bottom:1px solid #333;font-size:12px}
+.co h3 .ext{position:absolute;top:0;right:0;_right:15px}
+.co h3 .ext a{margin:0 0 0 15px;color:#fc0;font-weight:normal}
+.co p{margin-left:12px}
+.co p span{display:inline-block;width:8em;color:#ccc}
+
+.announce {font-family:Arial,"宋体";}
+.announce h2{font-size:12px;font-weight:normal;color:#A2A2A2}
+.announce h2 a{font-size:12px;}
+.announce h3{margin:25px 0 5px;text-align:center;font-size:14px;}
+.announce .vice{margin:0 0 25px;text-align:center;text-indent:0}
+.announce .ann{margin:0 10px 30px;}
+.announce .ann li{position:relative;padding-bottom:2px;border-bottom:1px dotted #2B2B2B}
+.announce .ann .ext{position:absolute;top:0;right:0;_right:35px}
+.announce .ann .blank{border-bottom:0;height:10px}
+.announce .ann a{color:#A2A2A2}
+.announce .ann a:hover{color:#f70;text-decoration:underline;}
+
+#copyright{float:left;width:100%;margin:30px 0 20px;color:#ccc;text-align:center;font-family:Arial,"宋体";}
+#copyright a{color:#ccc;}
+#copyright .abt {*padding-top:10px;}
+#copyright .abt a{margin:0 5px}
+#copyright .cpr{text-align:center;}
+#copyright .cpr p{margin:2px 0}
+#copyright .cpr p em{font-family:Arial}
+#copyright .glry a{display:inline-block;vertical-align:top}
+#copyright .glry img{margin:0 5px}
+#copyright .glry .g1{position:relative;float:left;width:43px;height:70px;margin-left:210px;margin-top:-55px;background:url("../images/games2010/wangjing.gif") no-repeat 0 0;}
+#copyright .glry .g2{position:relative;float:right;width:100px;height:70px;margin-right:160px;margin-top:-65px;background:url("../images/games2010/gangting.gif") no-repeat 0 0;}
+
+.myMain .rnd {float:left;width:100%;margin-top:10px;color:#444}
+.rnd .b{display:block;background:url("../images/help/wbg.png") no-repeat 0 0;}
+.rnd .b1{padding-left:15px;background-position:0 0;background-color:#fff}
+.rnd .b2{padding-top:15px;background-position:100% 0;}
+.rnd .b3{margin-left:-15px;padding-left:15px;background-position:0 bottom;}
+.rnd .b4{padding:0 15px 25px 0;background-position:100% bottom;background-color:#fff}
+.clear{clear:both}
+.suggestion {display:inline;float:right;width:770px;margin-right:10px;margin-top:2px}
+.suggest {float:left;width:100%;margin-bottom:130px;padding-top:140px;background:url("../images/games2010/advice_t.png") no-repeat 20px 0;}
+.suggest li{float:left;width:100%;margin:6px 0}
+.suggest label{float:left;width:7.2em;text-align:right;color:#000}
+.suggest .lr{float:left;width:580px;}
+.suggest .ipt{width:15em;}
+.suggest textarea.ipt{width:35em;height:10em;}
+.suggest p{color:#999;font-size:12px}
+.suggest p a{color:#2b549a;}
+.suggest .sbt{margin:20px 0;}
+.suggest .sbt input{margin:0 5px 0 85px;cursor:pointer;font-size:14px}
+
+/*plans updated 2010.8.18*/
+.detail .instruction{width:100%;margin-top:5px;border:1px solid #222;background:#0a0a0a;color:#939393}
+.detail .instruction td,.detail .instruction th{padding:2px 5px;border:1px solid #212121;}
+.detail .instruction th{color:#c2c2c2;font-weight:bold;background:#171717}
+.detail .instruction td{padding:4px 5px;border:1px solid #181818;}
+.detail .instruction .even td{background:#151515;}
+
+.newplans {width:100%;border:0;border-collapse:separate;margin-bottom:3px}
+.newplans th, .newplans td{border:1px solid;}
+.newplans th{padding:5px 8px;background:#121212;border:1px solid;border-color:#242424 #000 #000 #242424;}
+.newplans td{padding:2px 8px;background:#0d0d0d;border:1px solid;border-color:#1a1a1a #000 #000 #1a1a1a;color:#999}
+.newplans th.g1, .newplans th.g1 a{font-size:14px;color:#F9B300;}
+.newplans th.g3{font-size:12px;font-weight:normal;text-align:right;color:#858585}
+.newplans .g2, .newplans .g1{border-right:0;text-align:left}
+.newplans .g2, .newplans .g3{border-left:0}
+.newplans .g3{text-align:right}
+.newplans tr:hover td, .newplans tr.active td{border-color:#f3cb62 #775700 #775700 #f3cb62;background:#ebab00;color:#000}
+.newplans tr:hover td, .newplans tr:hover td a, .newplans tr.active td a{color:#000}
+.newplans .award, .newplans .award a{color:#FFD100;font-weight:bold;}
+.newplans tr:hover .award a,.newplans tr.active .award a,.newplans tr:hover .award a:hover,.newplans tr.active .award a:hover{color:#b40000;font-weight:bold;}
+
+.brands .r2{width:365px;}
+.brands .pla{display:inline;clear:left;float:left;width:360px;margin-left:1px;}
+.brands .newplans th, .brands .newplans td{padding:2px 8px}
+.brands .newplans th{padding:3px 8px;border-top-color:#323232;background:#121212 url("../images/games2010/plantbg.png") repeat-x 0 0;}
+.brands .g2 a{color:#ccc}
+.brands .newplans tr:hover td, .brands .newplans tr:hover td a, .brands .newplans tr.active td a{color:#000}
+.brands .newplans tr:hover .g3,.brands .newplans tr.active .g3{color:#eee}
+.brands .newplans tr:hover .award, .brands .newplans tr.active .award{color:#b40000}
+.brands .news{margin-bottom:15px}
+.brands .news dt {float:left;width:100%;}
+.brands .news dt h2{float:left;width:10em;margin-left:8px;}
+.brands .news dt h2 a{float:left;}
+.brands .news dt a{float:right;}
+.brands .news li{padding:3px 8px;background:#151515;border-bottom:1px solid #212121}
+.brands .news li a{color:#b2b2b2}
+.brands .news li a:hover{color:#f90}
+
+.detail .data{float:left;width:100%;}
+.detail .award_class{float:left;width:34%;margin-top:5px;border:1px solid #212121;background:#0a0a0a;color:#939393}
+.detail .award_class td,.detail .award_class th{padding:2px 5px;border:1px solid #212121;}
+.detail .award_class th{color:#c2c2c2;font-weight:bold;background:#171717}
+.detail .award_class td{padding:3px 5px;border:1px solid #181818;}
+.detail .award_class .even td{background:#111;}
+.detail .pla{display:inline;float:right;width:64%;margin-top:5px}
+
+.detail .newplans th, .detail .newplans td{padding:3px 5px;border:1px solid;border-color:#fff3d1 #f0e2b7 #f0e2b7 #fff3d1;background:#ffefbd;color:#000}
+.detail .newplans th{height:26px;padding:0 5px;border:0;border-right:1px solid #f1c600;background:#ebc100 url("../images/expert_recomend/plan_tbg.png") repeat-x 0 bottom;color:#000;font-weight:normal;}
+.detail .newplans tr:hover td, .detail .newplans tr.active td{border-color:#e72d2d #d91c1c #c81a1a #e72d2d;background:#e51e1e;color:#fff}
+.detail .newplans tr td.award, .detail .newplans tr td.award a{color:#f20;}
+.detail .newplans a{color:#000;}
+.detail .newplans tr:hover td, .detail .newplans tr:hover td a, .detail .newplans tr.active td a{color:#fff}
+
+.detail .newplans th.g1, .detail .newplans th.g1 a{color:#d40000;font-weight:bold;border-right:0}
+.detail .newplans th.g3{color:#000;border-left:0}
+
+.pla .bonus {width:100%}
+.pla .bonus h2{background:#121212;border:1px solid;border-color:#242424 #000 #000 #242424;line-height:25px;padding:2px 10px;margin-bottom:0;font-size:14px}
+.pla .bonus h2 .wall{top:3px;right:10px}
+.pla .bonus .roll{width:100%;height:152px}
+.pla .bonus .roll li{background:#0d0d0d;border:1px solid;border-color:#1a1a1a #000 #000 #1a1a1a;padding:2px 10px}
+.pla .bonus .roll .rmb{top:2px;right:10px}
+
+.subnav{float:left;width:100%;padding:2px 0 22px;border-top:3px solid #ffd100;background:#2C2C2C url("../images/games2010/subnavbg.png") no-repeat center 0;}
+.subnav .list{display:inline;float:left;height:42px;margin:8px 0 0 140px;line-height:180%}
+.subnav .list ul{float:left;padding:0 25px;background:url("../images/games2010/subnav_blank.png") no-repeat 100% center;}
+.subnav .active{color:#ffd100;font-weight:bold}
+.subnav .list a{display:inline-block;position:relative}
+.subnav .list a .new, .subnav  .list a .awards{display:block;width:16px;height:19px;position:absolute;top:-3px;right:-18px;background:url("../images/games2010/navl_new.gif") no-repeat 0 0;line-height:200px;overflow:hidden;}
+.subnav  .list a .awards{right:-26px;width:22px;background-image:url("../images/games2010/navl_award.gif");}
+.subnav .last{background:none}
+.subnav .bread{display:inline;clear:both;float:left;width:800px;height:auto;margin:25px 0 0 20px;line-height:180%}
+.breadPtn{width:955px;margin-bottom:-15px;padding:30px 0 0 15px;overflow:hidden}
+
+
+.cols .bread{display:inline;float:left;width:962px;margin:0 0 8px 14px;font-family:"宋体",Arial;}
+.news_main{display:inline;float:left;width:962px;margin:0 0 0 10px;}
+.news_main .rnd h2{height:26px;line-height:20px;font-size:14px;color:#f9b300}
+.news_main .rnd .b{display:block;background:url("../images/games2010/blkbg.png") no-repeat 0 0;}
+.news_main .rnd .b1{padding-left:12px;background-position:0 0;}
+.news_main .rnd .b2{padding-top:10px;background-position:100% 0;}
+.news_main .rnd .b3{margin-left:-12px;padding-left:12px;background-position:0 bottom;}
+.news_main .rnd .b4{padding:8px 12px 15px 0;background-position:100% bottom;}
+.news_main .info{display:inline;float:left;width:600px;margin:0 5px;padding:0 0 30px;background:#1E1E1E;}
+.news_main .info h2{font-size:14px;padding:5px 0 0 12px;border-bottom:1px solid #2b2b2b}
+.news_main .info .list{margin:12px 15px 20px;line-height:180%}
+.news_main .list li{position:relative;padding:2px 0;border-bottom:1px dotted #2B2B2B}
+.news_main .list .ext{position:absolute;top:0;right:10px;_right:25px;color:#757575}
+.news_main .list .blank{border-bottom:0;height:10px}
+.news_main .list a{margin-left:10px;color:#A2A2A2;font-size:14px}
+.news_main .list a:hover{color:#f70;text-decoration:underline;}
+.news_main .pages {margin:0 15px;text-align:right}
+.news_main .pages li{display:inline-block;*display:inline;*zoom:1;width:49.5%}
+.news_main .pages .at{text-align:left;color:#555}
+.news_main .pages .at em{font-weight:bold;color:#d0d0d0}
+.news_main .pages .fp a{position:relative;margin-left:5px;padding:2px 5px;border:1px solid #333;color:#d0d0d0}
+.news_main .pages .fp a:hover{text-decoration:none;background:#f9b300;color:#000}
+.news_main .article{margin:12px 18px 20px;line-height:180%;color:#A2A2A2;}
+.news_main .article h2{margin:25px 0 0;text-align:center;font-size:20px;border-bottom:0;color:#d0d0d0;font-family:"微软雅黑","宋体",Arial;font-weight:normal}
+.news_main .article .vice{margin:0 0 25px;text-indent:0;text-align:center;color:#555}
+.news_main .article .vice li{display:inline-block;*display:inline;*zoom:1;width:25%}
+.news_main .article p{margin-bottom:10px;text-indent:2em;}
+.news_main .article p a{color:#f90;}
+.news_main .all{margin:30px 35px 0;padding-top:15px;border-top:1px dotted #444;text-align:center;}
+.news_main .all table{width:100%;background:#343434;text-align:center;color:#a2a2a2;}
+.news_main .all th,.news_main .all td{border:1px solid #333;background:#2a2a2a;padding:3px 5px}
+.news_main .all th{border:1px solid #383838;background:#323232;font-weight:normal}
+.news_main .all a{color:#A2A2A2;}
+.news_main .all a:hover{color:#f60}
+.news_aside{display:inline;float:left;width:305px;margin:0 0 0 20px;}
+.news_aside ul{margin:0 0 20px 14px;line-height:180%}
+.news_aside ul a{color:#A2A2A2;}
+.news_aside .column li{display:inline-block;*display:inline;*zoom:1;width:49%}
+
+.introNews{margin-bottom:15px;background:none}
+.introNews dt {float:left;width:100%;}
+.detail .introNews h2{float:left;border:0;padding:0;margin-left:8px;}
+.introNews h2 a{float:left;}
+.introNews dt a{float:right;}
+.introNews li{padding:4px 8px;}
+.introNews li a{color:#b2b2b2}
+.introNews li a:hover{color:#f90}
+
+#copyright .cer{margin:25px 0 0;text-align:center}
+#copyright .cer a{margin:0 25px 0 10px}
+#copyright .cer a:hover{text-decoration:none;}
+#copyright .cer img{border:1px solid #dcd9cc}
+#copyright #cnnic_url img {height:44px;border:0;}
+
+
+.popout .btn {display:inline-block;float:left;height:29px;margin-left:28px;margin-top:0;line-height:27px;background:url("../images/games2010/btn_pop.gif") no-repeat right top;}
+.popout .btn span{position:relative;float:left;height:29px;left:-28px;padding-left:28px;background:url("../images/games2010/btn_pop.gif") no-repeat left top;cursor:pointer;white-space:nowrap;color:#fff;font-weight:bold}
+.popout .btn:hover {text-decoration:none;color:#000}
+a.btn_alipay {float:left;width:135px;height:26px;margin-top:5px;margin-right:5px;background:url("../images/games2010/games2010_sprt.png") no-repeat 0 -1474px;line-height:200px;overflow:hidden;}
+
+    .popout {position:absolute;z-index:9999;top:100px;left:50%;margin-left:-234px;display:inline;float:left;width:465px;background:#fff;border:12px solid #ffee31;color:#333}
+    .popin {display:inline;float:left;width:443px;padding:7px 10px 25px;border:1px solid #ff9393}
+    .popout .thead{display:inline;float:left;width:100%;margin-bottom:15px;padding-bottom:4px;border-bottom:1px solid #ffe3a6;font-size:14px;font-weight:bold;}
+    .popout .thead em{float:right;font-size:18px;color:#e20000;font-weight:bold;cursor:pointer}
+    .popout .pleft{display:inline;float:left;width:45%;margin-left:20px;margin-right:20px;border-right:1px solid #eee}
+    .popout .i{float:left;width:98%;;margin-bottom:5px;}
+    .popout .action{margin-top:10px;}
+    .popout .i label{float:left;width:100%}
+    .popout .ipt{width:160px;}
+    .popout .val .ipt{float:left;width:70px;margin-right:4px}
+    .popout .i span.r{float:left;}
+    .pright{display:inline;float:left;width:45%;}
+    .pright .treg{font-size:14px;margin-bottom:20px}
+    .pright .treg a{color:#e20000;text-decoration:underline}
+    .pleft .ins p em{color:#f00}
+    .pleft .treg{font-size:12px;margin-top:20px}
+    .pright .i{margin-bottom:10px;}
+    .pright .i label{float:left;width:auto;padding-right:4px}
+    .pright .ipt {width:120px;}
+    .pright select{width:126px;color:#666}
+    .pright .charge{color:#f00;font-family:"Arial black"}
+    .pright .action em{position:relative;top:-12px;margin-left:10px}
+    .pright .account {padding-left:20px;background:url("../images/plan/ico_account.gif") no-repeat 0 center;}
+    .pright .account em{color:#f00;}
+    .pright .now{color:#e20000;font-weight:bold;}
+    .pright .i label .l{float:left;margin-left:-5px}
+    .pright .i label .r{width:195px}
+    
+.p404{width:511px;height:349px;margin:80px auto;background:#ff0 url("../images/games2010/404.png") no-repeat 0 0;color:#000}
+.c404{margin:100px 0 0 44px;}
+.c404 strong{color:#d20;font-size:14px;display:block;margin-bottom:10px}
+.c404 a{color:#d20;}
+
+.festival{background:#ff0 url("../images/games2010/special/year2011bg.png") repeat-x 0 0;}
+.festival body{padding-top:291px;background:url("../images/games2010/special/newyear2011top.png") no-repeat center 0;}
+.festival .wrapper{margin-top:-106px}

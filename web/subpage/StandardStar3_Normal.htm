@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title>
+
+    <link rel="Stylesheet" href="../css/ssc.css">
+    <link rel="Stylesheet" href="../css/speed_cq.css">
+    <script type="text/javascript" src="../js/Core.js"></script>
+    <script type="text/javascript" src="../js/Bet.js"></script>
+    <script type="text/javascript" src="../js/standardstar3_normal.js"></script>
+    
+
+    <style type="text/css">
+    html{ background-image:none;}
+    </style>
+</head>
+<body class="frameInner">
+    <form name="aspnetForm" method="post" action="" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1MmRkB7TeVT4VMqvE/y5IVNVBYjju9jc=">
+</div>
+
+        
+			<div class="panelLeft">
+				<ul class="tab_panel" id="ContainerUpdateDataMenu">
+				    <li class="active"><span>常用遗漏</span></li>
+					<li><span>标准遗漏</span></li>
+					<li><span>形态遗漏</span></li>
+					<li><span>万能复式遗漏</span></li>
+					<li><span>10期走势</span></li>
+				</ul>
+				<div class="panelList" style="">
+				    <div class="panelTble panelTble2" id="ContainerNormalYiLou"></div>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				<div class="panelList" style="display:none;">
+					<div class="panelTble" id="Container10Trend"></div>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>				
+				<div class="panelList" id="ContainerStandardYiLou" style="display:none;">
+				</div>
+				<div class="panelList" id="ContainerXingTaiYiLou" style="display:none;">
+				</div>
+				<div class="panelList" id="ContainerWanNengFuShiLou" style="display:none;">
+				</div>
+			</div>
+
+			<div class="numCheck">
+				<div class="numArea">
+				    <ul id="pick100" class="btn_numlist"></ul>
+					<ul id="pick10" class="btn_numlist"></ul>
+					<ul id="pick1" class="btn_numlist"></ul>
+				</div>
+				<ul class="switch" id="cbRadio">
+				    <li title="查看当前遗漏"><input type="checkbox" id="cbRadioYiLou" value="1"><label for="cbRadioYiLou">遗漏</label></li>
+				    <li title="查看近10期号码出现次数"><input type="checkbox" id="cbRadioLengRe" value="0"><label for="cbRadioLengRe">冷热</label></li>
+				</ul>
+				<div id="ContainerFilterWrap" class="siftTool" style="display:none;">
+					<div class="siftTab">
+					    <span class="sift_tool"><input type="checkbox" id="ss1" onclick="PickFilter.setEnabled(this)"><label for="ss1">可选缩水工具</label></span> 
+					    <span class="tab" id="ContainerFilterMenu" style="display:none;">
+					        <a href="javascript:void(0)" index="0" onclick="PickFilter.setCurrentMenu(this)">常用</a>
+					        <a href="javascript:void(0)" index="1" onclick="PickFilter.setCurrentMenu(this)">大小</a>
+					        <a href="javascript:void(0)" index="2" onclick="PickFilter.setCurrentMenu(this)">奇偶</a>
+					        <a href="javascript:void(0)" index="3" onclick="PickFilter.setCurrentMenu(this)">质合</a>
+					        <a href="javascript:void(0)" index="4" onclick="PickFilter.setCurrentMenu(this)">012路</a>
+					        <a href="javascript:void(0)" index="5" onclick="PickFilter.setCurrentMenu(this)">和值</a>
+					        <a href="javascript:void(0)" index="6" onclick="PickFilter.setCurrentMenu(this)">定胆</a>
+					    </span>
+					</div>
+					<dl class="siftList" style="display:none;">
+						<dt>类型排除：</dt>
+						<dd>
+						    <ul dt="类型排除">
+						        <li><input type="checkbox" value="豹子">豹子</li>
+						        <li><input type="checkbox" value="组3">组3</li>
+						        <li><input type="checkbox" value="组6">组6</li>
+						        <li><input type="checkbox" value="全0路">全0路</li>
+						        <li><input type="checkbox" value="全1路">全1路</li>
+						        <li><input type="checkbox" value="全2路">全2路</li>
+						        <li><input type="checkbox" value="全大">全大</li>
+						        <li><input type="checkbox" value="全小">全小</li>
+						        <li><input type="checkbox" value="全奇">全奇</li>
+						        <li><input type="checkbox" value="全偶">全偶</li>
+						        <li><input type="checkbox" value="全质">全质</li>
+						        <li><input type="checkbox" value="全合">全合</li>
+						        <li><input type="checkbox" value="顺子">顺子</li>
+						        <li><input type="checkbox" value="半顺">半顺</li>
+						        <li><input type="checkbox" value="非顺子">非顺子</li>
+						    </ul>
+						</dd>
+						<dt title="与上期相同的号码个数">传号个数：</dt>
+						<dd>
+						    <ul dt="传号个数">
+						        <li><input type="checkbox" value="1个"> 1个</li>
+						        <li><input type="checkbox" value="2个"> 2个</li>
+						        <li><input type="checkbox" value="3个"> 3个</li>
+						    </ul>
+						</dd>
+					</dl>
+					<dl class="siftList" style="display:none;">
+						<dt>大小排除：<ul><li>遗漏：</li><li>冷热：</li></ul></dt>
+						<dd>
+						    <ul dt="大小排除">
+						        <li><input type="checkbox" value="大大大">大大大<p></p><p></p></li>
+						        <li><input type="checkbox" value="大大小">大大小<p></p><p></p></li>
+						        <li><input type="checkbox" value="大小大">大小大<p></p><p></p></li>
+						        <li><input type="checkbox" value="大小小">大小小<p></p><p></p></li>
+						        <li><input type="checkbox" value="小大大">小大大<p></p><p></p></li>
+						        <li><input type="checkbox" value="小大小">小大小<p></p><p></p></li>
+						        <li><input type="checkbox" value="小小大">小小大<p></p><p></p></li>
+						        <li><input type="checkbox" value="小小小">小小小<p></p><p></p></li>
+						    </ul>
+						</dd>
+					</dl>
+					<dl class="siftList" style="display:none;">
+						<dt>奇偶排除：<ul><li>遗漏：</li><li>冷热：</li></ul></dt>
+						<dd>
+						    <ul dt="奇偶排除">
+						        <li><input type="checkbox" value="奇奇奇">奇奇奇<p></p><p></p></li>
+						        <li><input type="checkbox" value="奇奇偶">奇奇偶<p></p><p></p></li>
+						        <li><input type="checkbox" value="奇偶奇">奇偶奇<p></p><p></p></li>
+						        <li><input type="checkbox" value="奇偶偶">奇偶偶<p></p><p></p></li>
+						        <li><input type="checkbox" value="偶奇奇">偶奇奇<p></p><p></p></li>
+						        <li><input type="checkbox" value="偶奇偶">偶奇偶<p></p><p></p></li>
+						        <li><input type="checkbox" value="偶偶奇">偶偶奇<p></p><p></p></li>
+						        <li><input type="checkbox" value="偶偶偶">偶偶偶<p></p><p></p></li>
+						    </ul>
+						</dd>
+					</dl>
+					<dl class="siftList" style="display:none;">
+						<dt>质合排除：<ul><li>遗漏：</li><li>冷热：</li></ul></dt>
+						<dd>
+						    <ul dt="质合排除">
+						        <li><input type="checkbox" value="质质质">质质质<p></p><p></p></li>
+						        <li><input type="checkbox" value="质质合">质质合<p></p><p></p></li>
+						        <li><input type="checkbox" value="质合质">质合质<p></p><p></p></li>
+						        <li><input type="checkbox" value="质合合">质合合<p></p><p></p></li>
+						        <li><input type="checkbox" value="合质质">合质质<p></p><p></p></li>
+						        <li><input type="checkbox" value="合质合">合质合<p></p><p></p></li>
+						        <li><input type="checkbox" value="合合质">合合质<p></p><p></p></li>
+						        <li><input type="checkbox" value="合合合">合合合<p></p><p></p></li>
+						    </ul>
+						</dd>
+					</dl>
+					<dl class="siftList" style="display:none;">
+						<dt>012路排除：<ul><li>遗漏：</li></ul></dt>
+						<dd>
+						    <ul dt="012路排除">
+						        <li><input type="checkbox" value="000">000<p></p></li>
+						        <li><input type="checkbox" value="001">001<p></p></li>
+						        <li><input type="checkbox" value="002">002<p></p></li>
+						        <li><input type="checkbox" value="010">010<p></p></li>
+						        <li><input type="checkbox" value="011">011<p></p></li>
+						        <li><input type="checkbox" value="012">012<p></p></li>
+						        <li><input type="checkbox" value="020">020<p></p></li>
+						        <li><input type="checkbox" value="021">021<p></p></li>
+						        <li><input type="checkbox" value="022">022<p></p></li>
+						        <li><input type="checkbox" value="100">100<p></p></li>
+						        <li><input type="checkbox" value="101">101<p></p></li>
+						        <li><input type="checkbox" value="102">102<p></p></li>
+						        <li><input type="checkbox" value="110">110<p></p></li>
+						        <li><input type="checkbox" value="111">111<p></p></li>
+						        <li><input type="checkbox" value="112">112<p></p></li>
+						        <li><input type="checkbox" value="120">120<p></p></li>
+						        <li><input type="checkbox" value="121">121<p></p></li>
+						        <li><input type="checkbox" value="122">122<p></p></li>
+						        <li><input type="checkbox" value="200">200<p></p></li>
+						        <li><input type="checkbox" value="201">201<p></p></li>
+						        <li><input type="checkbox" value="202">202<p></p></li>
+						        <li><input type="checkbox" value="210">210<p></p></li>
+						        <li><input type="checkbox" value="211">211<p></p></li>
+						        <li><input type="checkbox" value="212">212<p></p></li>
+						        <li><input type="checkbox" value="220">220<p></p></li>
+						        <li><input type="checkbox" value="221">221<p></p></li>
+						        <li><input type="checkbox" value="222">222<p></p></li>
+						    </ul>
+						</dd>
+					</dl>
+					<dl class="siftList" style="display:none;">
+						<dt>和值排除：<ul><li>遗漏：</li></ul></dt>
+						<dd>
+						    <ul dt="和值排除">
+						        <li><input type="checkbox" value="0">0<p></p></li>
+						        <li><input type="checkbox" value="1">1<p></p></li>
+						        <li><input type="checkbox" value="2">2<p></p></li>
+						        <li><input type="checkbox" value="3">3<p></p></li>
+						        <li><input type="checkbox" value="4">4<p></p></li>
+						        <li><input type="checkbox" value="5">5<p></p></li>
+						        <li><input type="checkbox" value="6">6<p></p></li>
+						        <li><input type="checkbox" value="7">7<p></p></li>
+						        <li><input type="checkbox" value="8">8<p></p></li>
+						        <li><input type="checkbox" value="9">9<p></p></li>
+						        <li><input type="checkbox" value="10">10<p></p></li>
+						        <li><input type="checkbox" value="11">11<p></p></li>
+						        <li><input type="checkbox" value="12">12<p></p></li>
+						        <li><input type="checkbox" value="13">13<p></p></li>
+						        <li><input type="checkbox" value="14">14<p></p></li>
+						        <li><input type="checkbox" value="15">15<p></p></li>
+						        <li><input type="checkbox" value="16">16<p></p></li>
+						        <li><input type="checkbox" value="17">17<p></p></li>
+						        <li><input type="checkbox" value="18">18<p></p></li>
+						        <li><input type="checkbox" value="19">19<p></p></li>
+						        <li><input type="checkbox" value="20">20<p></p></li>
+						        <li><input type="checkbox" value="21">21<p></p></li>
+						        <li><input type="checkbox" value="22">22<p></p></li>
+						        <li><input type="checkbox" value="23">23<p></p></li>
+						        <li><input type="checkbox" value="24">24<p></p></li>
+						        <li><input type="checkbox" value="25">25<p></p></li>
+						        <li><input type="checkbox" value="26">26<p></p></li>
+						        <li><input type="checkbox" value="27">27<p></p></li>
+						    </ul>
+						</dd>
+					</dl>
+					<dl class="siftList" style="display:none;">
+						<dt>定胆：<ul><li>遗漏：</li><li>冷热：</li></ul></dt>
+						<dd>
+						    <ul dt="定胆">
+						        <li><input type="checkbox" value="0">0<p></p><p></p></li>
+						        <li><input type="checkbox" value="1">1<p></p><p></p></li>
+						        <li><input type="checkbox" value="2">2<p></p><p></p></li>
+						        <li><input type="checkbox" value="3">3<p></p><p></p></li>
+						        <li><input type="checkbox" value="4">4<p></p><p></p></li>
+						        <li><input type="checkbox" value="5">5<p></p><p></p></li>
+						        <li><input type="checkbox" value="6">6<p></p><p></p></li>
+						        <li><input type="checkbox" value="7">7<p></p><p></p></li>
+						        <li><input type="checkbox" value="8">8<p></p><p></p></li>
+						        <li><input type="checkbox" value="9">9<p></p><p></p></li>
+						    </ul>
+						</dd>
+					</dl>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				
+				<div class="chartCheck">
+				    <span class="suml"><a class="btn btnChartCheck" href="javascript:void(0)" id="SubmitTicket">选号</a></span>
+				    <span id="ShowPickInfo" class="sum"><span id="ShowPickInfo" class="sum">共<em id="PickBetCount">0</em>注，共<em id="PickBetMoney" class="f_highlight">￥0.00</em>元</span></span>
+				</div>
+
+			</div>
+			
+<script type="text/javascript">
+<!--
+        var UpdateDataMenu = new TKCPCEO.Lottery.FCCQSSC.UpdateData();
+        UpdateDataMenu.initialize();
+        var pickClass100 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClass100.CountLen = 3;
+        pickClass100.Container = $("pick100");
+        pickClass100.CssClass.HeadLi = "nums";
+        pickClass100.CssClass.HelpLi = "selectAll p1";
+        pickClass100.CssClass.HelpUl = "s_all";
+        pickClass100.Text.HeadTitle = "百位";
+        pickClass100.ListHelpBtn = ["全", "大", "小", "0", "1", "2", "奇", "偶", "反", "质", "合", "清"];
+        pickClass100.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClass100.initialize();
+        
+        var pickClass10 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClass10.CountLen = 2;
+        pickClass10.Container = $("pick10");
+        pickClass10.CssClass.HeadLi = "nums";
+        pickClass10.CssClass.HelpLi = "selectAll p2";
+        pickClass10.CssClass.HelpUl = "s_all";
+        pickClass10.Text.HeadTitle = "十位";
+        pickClass10.ListHelpBtn = ["全", "大", "小", "0", "1", "2", "奇", "偶", "反", "质", "合", "清"];
+        pickClass10.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClass10.initialize();
+
+        var pickClass1 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClass1.CountLen = 1;
+        pickClass1.Container = $("pick1");
+        pickClass1.CssClass.HeadLi = "nums";
+        pickClass1.CssClass.HelpLi = "selectAll p3";
+        pickClass1.CssClass.HelpUl = "s_all";
+        pickClass1.Text.HeadTitle = "个位";
+        pickClass1.ListHelpBtn = ["全", "大", "小", "0", "1", "2", "奇", "偶", "反", "质", "合", "清"];
+        pickClass1.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClass1.initialize();
+
+
+        PickR.PickInfo.BetCount = $("PickBetCount");
+        PickR.PickInfo.BetMoney = $("PickBetMoney");
+        PickR.PickClass1 = pickClass1;
+        PickR.PickClass10 = pickClass10;
+        PickR.PickClass100 = pickClass100;
+        PickR.initialize();
+
+        var PickFilter = new TKCPCEO.Lottery.FCCQSSC.Filter();
+        PickFilter.Container.Wrap = $("ContainerFilterWrap");
+        PickFilter.Container.Menu = $("ContainerFilterMenu");
+        PickFilter.Container.PickInfo = $("ShowPickInfo");
+        PickFilter.BtnSubmitTicket = $("SubmitTicket");
+        PickFilter.initialize();
+
+        var cbRadio = new parent.CheckBoxToRadio();
+        cbRadio.ObjWrap = document.getElementById("cbRadio");
+        cbRadio.CheckBoxList = cbRadio.ObjWrap.getElementsByTagName("input");
+        cbRadio.checkedEvent = PickR.setRemarkValue.bind(PickR);
+        cbRadio.cancelCheckedEvent = PickR.setRemarkValue.bind(PickR);
+        cbRadio.initialize();
+        cbRadio.CheckBoxList[0].click();
+-->
+</script>
+
+    </form>
+
+
+</body></html>

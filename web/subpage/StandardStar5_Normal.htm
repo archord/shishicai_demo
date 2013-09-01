@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title>
+
+    <link rel="Stylesheet" href="../css/ssc.css">
+    <link rel="Stylesheet" href="../css/speed_cq.css">
+    <script type="text/javascript" src="../js/Core.js"></script>
+    <script type="text/javascript" src="../js/Bet.js"></script>
+    <script type="text/javascript" src="../js/standardstar5_normal.js"></script>
+    
+
+    <style type="text/css">
+    html{ background-image:none;}
+    </style>
+</head>
+<body class="frameInner">
+    <form name="aspnetForm" method="post" action="http://www.shishicai.cn/lottery/speed/fccqssc/standardstar5_normal.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1MmRk8jbkDWwS279l8YmhDmWnRj4EAM4=">
+</div>
+
+        
+			<div class="panelLeft">
+				<ul class="tab_panel" id="ContainerUpdateDataMenu">
+				    <li class="active"><span>常用遗漏</span></li>
+					<li><span>分位遗漏</span></li>
+					<li style="display:none;"><span>形态遗漏</span></li>
+					<li><span>10期走势</span></li>
+				</ul>
+				<div class="panelList" style="">
+				    <div class="panelTble panelTble2" id="ContainerNormalYiLou"></div>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				<div class="panelList" style="display:none;">
+					<div class="panelTble" id="Container10Trend"></div>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				<div class="panelList" id="ContainerFenWeiYiLou" style="display:none;">
+				</div>
+				<div class="panelList" id="ContainerXingTaiYiLou" style="display:none;">
+				</div>
+			</div>
+			
+			<div class="numCheck">
+				<div class="numArea">
+				    <ul id="pick10000" class="btn_numlist"></ul>
+				    <ul id="pick1000" class="btn_numlist"></ul>
+				    <ul id="pick100" class="btn_numlist"></ul>
+					<ul id="pick10" class="btn_numlist"></ul>
+					<ul id="pick1" class="btn_numlist"></ul>
+				</div>
+				<ul class="switch" id="cbRadio">
+				    <li title="查看当前遗漏"><input type="checkbox" id="cbRadioYiLou" value="1"><label for="cbRadioYiLou">遗漏</label></li>
+				    <li title="查看近10期号码出现次数"><input type="checkbox" id="cbRadioLengRe" value="0"><label for="cbRadioLengRe">冷热</label></li>
+				</ul>
+				<div id="ContainerFilterWrap" class="siftTool" style="display:none;">
+					<div class="siftTab">
+					    <span class="sift_tool"><input type="checkbox" id="ss1" onclick="PickFilter.setEnabled(this)"><label for="ss1">可选缩水工具</label></span> 
+					    <span class="tab" id="ContainerFilterMenu" style="display:none;">
+					        <a href="javascript:void(0)" index="0" onclick="PickFilter.setCurrentMenu(this)">三位</a>
+					        <a href="javascript:void(0)" index="1" onclick="PickFilter.setCurrentMenu(this)">两位</a>
+					        <a href="javascript:void(0)" index="2" onclick="PickFilter.setCurrentMenu(this)">比值</a>
+					    </span>
+					</div>
+					<dl class="siftList" style="display:none;">
+						<dt>前三位排除：</dt>
+						<dd>
+						    <ul dt="前三位排除">
+						        <li><input type="checkbox" value="组三形态">组三形态</li>
+						        <li><input type="checkbox" value="组六形态">组六形态</li>
+						        <li><input type="checkbox" value="豹子">豹子</li>
+						        <li><input type="checkbox" value="顺子">顺子</li>
+						        <li><input type="checkbox" value="半顺">半顺</li>
+						        <li><input type="checkbox" value="非顺子">非顺子</li>
+						    </ul>
+						</dd>
+						<dt>中三位排除：</dt>
+						<dd>
+						    <ul dt="中三位排除">
+						        <li><input type="checkbox" value="组三形态">组三形态</li>
+						        <li><input type="checkbox" value="组六形态">组六形态</li>
+						        <li><input type="checkbox" value="豹子">豹子</li>
+						        <li><input type="checkbox" value="顺子">顺子</li>
+						        <li><input type="checkbox" value="半顺">半顺</li>
+						        <li><input type="checkbox" value="非顺子">非顺子</li>
+						    </ul>
+						</dd>
+						<dt>后三位排除：</dt>
+						<dd>
+						    <ul dt="后三位排除">
+						        <li><input type="checkbox" value="组三形态">组三形态</li>
+						        <li><input type="checkbox" value="组六形态">组六形态</li>
+						        <li><input type="checkbox" value="豹子">豹子</li>
+						        <li><input type="checkbox" value="顺子">顺子</li>
+						        <li><input type="checkbox" value="半顺">半顺</li>
+						        <li><input type="checkbox" value="非顺子">非顺子</li>
+						    </ul>
+						</dd>
+					</dl>
+					<dl class="siftList" style="display:none;">
+						<dt>前两位排除：</dt>
+						<dd>
+						    <ul dt="前两位排除">
+						        <li><input type="checkbox" value="对子">对子</li>
+						        <li><input type="checkbox" value="非对子">非对子</li>
+						        <li><input type="checkbox" value="连号">连号</li>
+						        <li><input type="checkbox" value="间隔">间隔</li>
+						    </ul>
+						</dd>
+						<dt>后两位排除：</dt>
+						<dd>
+						    <ul dt="后两位排除">
+						        <li><input type="checkbox" value="对子">对子</li>
+						        <li><input type="checkbox" value="非对子">非对子</li>
+						        <li><input type="checkbox" value="连号">连号</li>
+						        <li><input type="checkbox" value="间隔">间隔</li>
+						    </ul>
+						</dd>
+					</dl>					
+					<dl class="siftList" style="display:none;">
+						<dt>大小比：</dt>
+						<dd>
+						    <ul dt="大小比">
+						        <li><input type="checkbox" value="0:5">0:5</li>
+						        <li><input type="checkbox" value="1:4">1:4</li>
+						        <li><input type="checkbox" value="2:3">2:3</li>
+						        <li><input type="checkbox" value="3:2">3:2</li>
+						        <li><input type="checkbox" value="4:1">4:1</li>
+						        <li><input type="checkbox" value="5:0">5:0</li>
+						    </ul>
+						</dd>
+						<dt>奇偶比：</dt>
+						<dd>
+						    <ul dt="奇偶比">
+						        <li><input type="checkbox" value="0:5">0:5</li>
+						        <li><input type="checkbox" value="1:4">1:4</li>
+						        <li><input type="checkbox" value="2:3">2:3</li>
+						        <li><input type="checkbox" value="3:2">3:2</li>
+						        <li><input type="checkbox" value="4:1">4:1</li>
+						        <li><input type="checkbox" value="5:0">5:0</li>
+						    </ul>
+						</dd>
+						<dt>质合比：</dt>
+						<dd>
+						    <ul dt="质合比">
+						        <li><input type="checkbox" value="0:5">0:5</li>
+						        <li><input type="checkbox" value="1:4">1:4</li>
+						        <li><input type="checkbox" value="2:3">2:3</li>
+						        <li><input type="checkbox" value="3:2">3:2</li>
+						        <li><input type="checkbox" value="4:1">4:1</li>
+						        <li><input type="checkbox" value="5:0">5:0</li>
+						    </ul>
+						</dd>
+					</dl>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				
+				<div class="chartCheck">
+				    <span class="suml"><a class="btn btnChartCheck" href="javascript:void(0)" id="SubmitTicket">选号</a></span>
+				    <span id="ShowPickInfo" class="sum"><span id="ShowPickInfo" class="sum">共<em id="PickBetCount">0</em>注，共<em id="PickBetMoney" class="f_highlight">￥0.00</em>元</span></span>
+				</div>
+
+			</div>
+			
+<script type="text/javascript">
+<!--
+        var UpdateDataMenu = new TKCPCEO.Lottery.FCCQSSC.UpdateData();
+        UpdateDataMenu.initialize();
+        var pickClass10000 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClass10000.CountLen = 2;
+        pickClass10000.Container = $("pick10000");
+        pickClass10000.CssClass.HeadLi = "nums";
+        pickClass10000.CssClass.HelpLi = "selectAll p1";
+        pickClass10000.CssClass.HelpUl = "s_all";
+        pickClass10000.Text.HeadTitle = "万位";
+        pickClass10000.ListHelpBtn = ["全", "大", "小", "0", "1", "2", "奇", "偶", "反", "质", "合", "清"];
+        pickClass10000.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClass10000.initialize();
+
+        var pickClass1000 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClass1000.CountLen = 2;
+        pickClass1000.Container = $("pick1000");
+        pickClass1000.CssClass.HeadLi = "nums";
+        pickClass1000.CssClass.HelpLi = "selectAll p2";
+        pickClass1000.CssClass.HelpUl = "s_all";
+        pickClass1000.Text.HeadTitle = "千位";
+        pickClass1000.ListHelpBtn = ["全", "大", "小", "0", "1", "2", "奇", "偶", "反", "质", "合", "清"];
+        pickClass1000.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClass1000.initialize();
+
+        var pickClass100 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClass100.CountLen = 2;
+        pickClass100.Container = $("pick100");
+        pickClass100.CssClass.HeadLi = "nums";
+        pickClass100.CssClass.HelpLi = "selectAll p3";
+        pickClass100.CssClass.HelpUl = "s_all";
+        pickClass100.Text.HeadTitle = "百位";
+        pickClass100.ListHelpBtn = ["全", "大", "小", "0", "1", "2", "奇", "偶", "反", "质", "合", "清"];
+        pickClass100.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClass100.initialize();
+
+        var pickClass10 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClass10.CountLen = 2;
+        pickClass10.Container = $("pick10");
+        pickClass10.CssClass.HeadLi = "nums";
+        pickClass10.CssClass.HelpLi = "selectAll p4";
+        pickClass10.CssClass.HelpUl = "s_all";
+        pickClass10.Text.HeadTitle = "十位";
+        pickClass10.ListHelpBtn = ["全", "大", "小", "0", "1", "2", "奇", "偶", "反", "质", "合", "清"];
+        pickClass10.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClass10.initialize();
+
+        var pickClass1 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClass1.CountLen = 1;
+        pickClass1.Container = $("pick1");
+        pickClass1.CssClass.HeadLi = "nums";
+        pickClass1.CssClass.HelpLi = "selectAll p5";
+        pickClass1.CssClass.HelpUl = "s_all";
+        pickClass1.Text.HeadTitle = "个位";
+        pickClass1.ListHelpBtn = ["全", "大", "小", "0", "1", "2", "奇", "偶", "反", "质", "合", "清"];
+        pickClass1.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClass1.initialize();
+
+
+        PickR.PickInfo.BetCount = $("PickBetCount");
+        PickR.PickInfo.BetMoney = $("PickBetMoney");
+        PickR.PickClass1 = pickClass1;
+        PickR.PickClass10 = pickClass10;
+        PickR.PickClass100 = pickClass100;
+        PickR.PickClass1000 = pickClass1000;
+        PickR.PickClass10000 = pickClass10000;
+        PickR.initialize();
+
+        var PickFilter = new TKCPCEO.Lottery.FCCQSSC.Filter();
+        PickFilter.Container.Wrap = $("ContainerFilterWrap");
+        PickFilter.Container.Menu = $("ContainerFilterMenu");
+        PickFilter.Container.PickInfo = $("ShowPickInfo");
+        PickFilter.BtnSubmitTicket = $("SubmitTicket");
+        PickFilter.initialize();
+
+        var cbRadio = new parent.CheckBoxToRadio();
+        cbRadio.ObjWrap = document.getElementById("cbRadio");
+        cbRadio.CheckBoxList = cbRadio.ObjWrap.getElementsByTagName("input");
+        cbRadio.checkedEvent = PickR.setRemarkValue.bind(PickR);
+        cbRadio.cancelCheckedEvent = PickR.setRemarkValue.bind(PickR);
+        cbRadio.initialize();
+        cbRadio.CheckBoxList[0].click();
+-->
+</script>
+
+    </form>
+
+
+</body></html>

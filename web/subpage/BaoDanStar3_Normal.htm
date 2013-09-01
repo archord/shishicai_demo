@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title>
+
+    <link rel="Stylesheet" href="../css/ssc.css">
+    <link rel="Stylesheet" href="../css/speed_cq.css">
+    <script type="text/javascript" src="../js/Core.js"></script>
+    <script type="text/javascript" src="../js/Bet.js"></script>
+    <script type="text/javascript" src="../js/baodanstar3_normal.js"></script>
+    
+
+    <style type="text/css">
+    html{ background-image:none;}
+    </style>
+</head>
+<body class="frameInner">
+    <form name="aspnetForm" method="post" action="" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1MmRkS74l73qmBbFZFXxo/tEbiKKH2uE=">
+</div>
+
+        
+			<div class="panelLeft">
+				<ul class="tab_panel" id="ContainerUpdateDataMenu">
+				    <li class="active"><span>常用遗漏</span></li>
+					<li><span>标准遗漏</span></li>
+					<li><span>万能复式遗漏</span></li>
+					<li><span>10期走势</span></li>
+				</ul>
+				<div class="panelList" style="">
+				    <div class="panelTble panelTble2" id="ContainerNormalYiLou"></div>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				<div class="panelList" style="display:none;">
+					<div class="panelTble" id="Container10Trend"></div>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				<div class="panelList" id="ContainerYiLou" style="display:none;">
+				</div>
+				<div class="panelList" id="ContainerWanNengFuShiLou" style="display:none;">
+				</div>
+			</div>
+			
+			<div class="numCheck">
+			    <ul class="numAreaTab">
+					<li><input type="radio" name="radioButtonList" id="radioButtonDanShi" onclick="PickR.setPickType(false)" checked="checked"><label for="radioButtonDanShi">包一胆</label></li>
+					<li><input type="radio" name="radioButtonList" id="radioButtonFuShi" onclick="PickR.setPickType(true)"><label for="radioButtonFuShi">包二胆</label></li>
+				</ul>
+				<div class="numArea" id="ContainerDanShi" style="display:none;">
+					<ul id="pickFS" class="btn_numlist"></ul>
+				</div>
+				<div class="numArea" id="ContainerFuShi" style="display:none;">
+					<ul id="pickDS10" class="btn_numlist" style="border:0;"></ul>
+					<ul id="pickDS1" class="btn_numlist"></ul>
+				</div>
+				<div></div>
+				<div class="chartCheck">
+				    <span class="suml"><a class="btn btnChartCheck" href="javascript:void(0)" id="SubmitTicket">选号</a></span>
+				    <span id="ShowPickInfo" class="sum"><span id="ShowPickInfo" class="sum">共<em id="PickBetCount">0</em>注，共<em id="PickBetMoney" class="f_highlight">￥0.00</em>元</span></span>
+				</div>
+
+			</div>
+			
+<script type="text/javascript">
+<!--
+        var UpdateDataMenu = new TKCPCEO.Lottery.FCCQSSC.UpdateData();
+        UpdateDataMenu.initialize();
+        var pickClassDS10 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClassDS10.CountLen = 1;
+        pickClassDS10.IsFuShi = false;
+        pickClassDS10.IsEnd = false;
+        pickClassDS10.Container = $("pickDS10");
+        pickClassDS10.CssClass.HeadLi = "nums";
+        pickClassDS10.CssClass.HelpLi = "selectAll p2";
+        pickClassDS10.CssClass.HelpUl = "s_all";
+        pickClassDS10.Text.HeadTitle = "胆一";
+        pickClassDS10.ListHelpBtn = [];
+        pickClassDS10.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClassDS10.initialize();
+
+        var pickClassDS1 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClassDS1.CountLen = 1;
+        pickClassDS1.IsFuShi = false;
+        pickClassDS1.IsEnd = true;
+        pickClassDS1.Container = $("pickDS1");
+        pickClassDS1.CssClass.HeadLi = "nums";
+        pickClassDS1.CssClass.HelpLi = "selectAll p1";
+        pickClassDS1.CssClass.HelpUl = "s_all";
+        pickClassDS1.Text.HeadTitle = "胆二";
+        pickClassDS1.ListHelpBtn = [];
+        pickClassDS1.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClassDS1.initialize();
+
+        var pickClassFS = new TKCPCEO.Lottery.FCCQSSC.Pick();
+        pickClassFS.CountLen = 1;
+        pickClassFS.IsFuShi = true;
+        pickClassFS.IsEnd = true;
+        pickClassFS.Container = $("pickFS");
+        pickClassFS.CssClass.HeadLi = "nums";
+        pickClassFS.CssClass.HelpLi = "selectAll p1";
+        pickClassFS.CssClass.HelpUl = "s_all";
+        pickClassFS.Text.HeadTitle = "胆码";
+        pickClassFS.ListHelpBtn = [];
+        pickClassFS.ListData = [
+            { Text: "0", Value: 0 },
+            { Text: "1", Value: 1 },
+            { Text: "2", Value: 2 },
+            { Text: "3", Value: 3 },
+            { Text: "4", Value: 4 },
+            { Text: "5", Value: 5 },
+            { Text: "6", Value: 6 },
+            { Text: "7", Value: 7 },
+            { Text: "8", Value: 8 },
+            { Text: "9", Value: 9 }
+        ];
+        pickClassFS.initialize();
+
+
+        PickR.PickInfo.BetCount = $("PickBetCount");
+        PickR.PickInfo.BetMoney = $("PickBetMoney");
+        PickR.PickClassDS10 = pickClassDS10;
+        PickR.PickClassDS1 = pickClassDS1;
+        PickR.PickClassFS = pickClassFS;
+        PickR.initialize();
+
+        var PickFilter = new TKCPCEO.Lottery.FCCQSSC.Filter();
+        PickFilter.Container.PickInfo = $("ShowPickInfo");
+        PickFilter.BtnSubmitTicket = $("SubmitTicket");
+        PickFilter.initialize();
+
+        PickR.setPickType(false)
+-->
+</script>
+
+    </form>
+
+
+</body></html>

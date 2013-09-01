@@ -1,0 +1,1931 @@
+﻿Action Script Viewer 2010/06
+C:\project\ssc\flash\时时彩出奖\BetFlash.swf
+
+SWF version : 9
+Compressed  : Yes
+Width       : 470
+Height      : 183
+Frame rate  : 36
+Frame count : 2
+Background color   : #FFFFFF
+Bounding rectangle : (0,0) (470,183)
+Center             : (235,91.5)
+Document class     : _fla.MainTimeline
+
+----------------------------------------------------------------------
+AS3 Scripts
+----------------------------------------------------------------------
+
+//MainTimeline (_fla.MainTimeline)
+package _fla {
+    import flash.events.*;
+    import flash.utils.*;
+    import flash.display.*;
+    import flash.text.*;
+    import flash.ui.*;
+    import flash.net.*;
+    import flash.external.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.filters.*;
+    import flash.geom.*;
+    import flash.media.*;
+    import flash.system.*;
+
+    public dynamic class MainTimeline extends MovieClip {
+
+        public var loading_mc:MovieClip;
+        public var urlAry:Array;
+        public var mymenu:ContextMenu;
+        public var dataMovie:MovieClip;
+        public var thisname:String;
+        public var bonusIssue_txt:TextField;
+        public var drawTime:int;
+        public var type_mc:MovieClip;
+        public var timer:MyTimer;
+        public var sound_mc:Music;
+        public var poster_mc:Poster;
+        public var allow:Boolean;
+        public var time_mc:Countdown;
+        public var myitem0:ContextMenuItem;
+        public var myitem1:ContextMenuItem;
+        public var statusType:String;
+        public var betIssue:String;
+        public var bonusNumber:String;
+        public var hasAd:Boolean;
+        public var clock_mc:Clock;
+        public var i:uint;
+        public var trueIssue:String;
+        public var just:Boolean;
+        public var bonusInfo:Array;
+        public var back_mc:MovieClip;
+        public var url:String;
+        public var lc:LocalConnection;
+        public var betIssue_txt:TextField;
+        public var bonusIssue:String;
+        public var betTime:int;
+
+        public function MainTimeline(){
+            addFrameScript(0, frame1, 1, frame2);
+        }
+        public function asCallJS_1():void{
+            ExternalInterface.call("fvClass.flash_BonusEnd");
+        }
+        public function xmlLoadHandler(_arg1:Event):void{
+            var _local2:XML = new XML(_arg1.target.data);
+            poster_mc.xmlShow(_local2);
+        }
+        public function drawTimeEndHd(_arg1:Event):void{
+            asCallJS_1();
+        }
+        public function colorShow(_arg1:String):void{
+            switch (_arg1.length){
+                case 6:
+                    type_mc.ssc_mc.mcColor(_arg1);
+                    break;
+                case 5:
+                    type_mc.fiveBall_mc.mcColor(_arg1);
+                    break;
+                case 3:
+                    type_mc.threeBall_mc.mcColor(_arg1);
+                    break;
+            };
+        }
+        public function statusShow(_arg1:String):void{
+            clock_mc.changStatus(_arg1);
+            lc.send(thisname, "changeStatus", statusType);
+            if (_arg1 == "0"){
+                if (dataMovie.currentFrame != 1){
+                    dataMovie.gotoAndPlay("up");
+                };
+                if (hasAd){
+                    poster_mc.visible = false;
+                    poster_mc.timer.reset();
+                };
+            } else {
+                if (dataMovie.currentFrame != 25){
+                    dataMovie.gotoAndPlay("down");
+                };
+                if (hasAd){
+                    poster_mc.visible = true;
+                    poster_mc.timer.start();
+                };
+            };
+        }
+        public function flashHd(_arg1:Event):void{
+            if (_arg1.target.statu == "获取中"){
+                trace("闪光");
+                dataMovie.data_mc.flash_mc.gotoAndPlay("g2");
+                back_mc.flash_mc.gotoAndPlay("g2");
+            } else {
+                trace("停止闪光");
+                dataMovie.data_mc.flash_mc.gotoAndStop(1);
+                back_mc.flash_mc.gotoAndStop(1);
+            };
+        }
+        public function hasNumberSoundHd(_arg1:Event):void{
+            sound_mc.soundPlay("2");
+        }
+        public function bonusInfoShow():void{
+            switch (bonusInfo.length){
+                case 4:
+                    dataMovie.data_mc.gotoAndStop(1);
+                    setTimeout(function ():void{
+                        dataMovie.data_mc.a0_txt.text = bonusInfo[0].Name;
+                        dataMovie.data_mc.a1_txt.text = bonusInfo[0].Value;
+                        dataMovie.data_mc.b0_txt.text = bonusInfo[1].Name;
+                        dataMovie.data_mc.b1_txt.text = bonusInfo[1].Value;
+                        dataMovie.data_mc.c0_txt.text = bonusInfo[2].Name;
+                        dataMovie.data_mc.c1_txt.text = bonusInfo[2].Value;
+                        dataMovie.data_mc.d0_txt.text = bonusInfo[3].Name;
+                        dataMovie.data_mc.d1_txt.text = bonusInfo[3].Value;
+                    }, 100);
+                    break;
+                case 3:
+                    dataMovie.data_mc.gotoAndStop(2);
+                    setTimeout(function ():void{
+                        dataMovie.data_mc.a0_txt.text = bonusInfo[0].Name;
+                        dataMovie.data_mc.a1_txt.text = bonusInfo[0].Value;
+                        dataMovie.data_mc.b0_txt.text = bonusInfo[1].Name;
+                        dataMovie.data_mc.b1_txt.text = bonusInfo[1].Value;
+                        dataMovie.data_mc.c0_txt.text = bonusInfo[2].Name;
+                        dataMovie.data_mc.c1_txt.text = bonusInfo[2].Value;
+                    }, 100);
+                    break;
+                case 2:
+                    dataMovie.data_mc.gotoAndStop(3);
+                    setTimeout(function ():void{
+                        dataMovie.data_mc.a0_txt.text = bonusInfo[0].Name;
+                        dataMovie.data_mc.a1_txt.text = bonusInfo[0].Value;
+                        dataMovie.data_mc.b0_txt.text = bonusInfo[1].Name;
+                        dataMovie.data_mc.b1_txt.text = bonusInfo[1].Value;
+                    }, 100);
+                    break;
+                case 1:
+                    dataMovie.data_mc.gotoAndStop(3);
+                    setTimeout(function ():void{
+                        dataMovie.data_mc.a0_txt.text = bonusInfo[0].Name;
+                        dataMovie.data_mc.a1_txt.text = bonusInfo[0].Value;
+                    }, 100);
+                    break;
+                default:
+                    dataMovie.data_mc.gotoAndStop(1);
+                    setTimeout(function ():void{
+                        dataMovie.data_mc.a0_txt.text = bonusInfo[0].Name;
+                        dataMovie.data_mc.a1_txt.text = bonusInfo[0].Value;
+                        dataMovie.data_mc.b0_txt.text = bonusInfo[1].Name;
+                        dataMovie.data_mc.b1_txt.text = bonusInfo[1].Value;
+                        dataMovie.data_mc.c0_txt.text = bonusInfo[2].Name;
+                        dataMovie.data_mc.c1_txt.text = bonusInfo[2].Value;
+                        dataMovie.data_mc.d0_txt.text = bonusInfo[3].Name;
+                        dataMovie.data_mc.d1_txt.text = bonusInfo[3].Value;
+                    }, 100);
+            };
+        }
+        function frame1(){
+            stop();
+            stage.scaleMode = StageScaleMode.NO_SCALE;
+            mymenu = new ContextMenu();
+            myitem0 = new ContextMenuItem("www.shishicai.cn");
+            myitem1 = new ContextMenuItem("时时彩网免费开奖视频 2.24a");
+            mymenu.customItems.push(myitem0);
+            mymenu.customItems.push(myitem1);
+            mymenu.hideBuiltInItems();
+            this.contextMenu = mymenu;
+            loading_mc.gotoAndStop(1);
+            this.loaderInfo.addEventListener(ProgressEvent.PROGRESS, loadingHd);
+            this.loaderInfo.addEventListener(Event.COMPLETE, loadedHd);
+        }
+        public function soundCountDownHd(_arg1:Event):void{
+            sound_mc.soundPlay("1");
+        }
+        public function trueIssueShow(_arg1:String):void{
+            time_mc.num_txt.text = (("距  " + _arg1) + "  期开奖还有 ： ");
+        }
+        public function timerHd(_arg1:Event):void{
+            clock_mc.changTime(betTime);
+            betTime = (betTime - 1);
+            time_mc.changTime(drawTime);
+            drawTime = (drawTime - 1);
+            trace("嘀嗒");
+            lc.send(thisname, "changTime", betTime);
+        }
+        public function bonusIssueShow(_arg1:String):void{
+            bonusIssue_txt.text = ((((thisname + "   ") + "第 ") + _arg1) + " 期");
+        }
+        public function init():void{
+            clock_mc.addEventListener("betTime_evt", betTimeEndHd);
+            clock_mc.addEventListener("soundCountDown_evt", soundCountDownHd);
+            this.addEventListener("hasNumberSound_evt", hasNumberSoundHd);
+            time_mc.addEventListener("drawTime_evt", drawTimeEndHd);
+            this.addEventListener("flashing_evt", flashHd);
+            this.addEventListener("numberInfoShow_evt", numberInfoShowHd);
+            poster_mc.visible = false;
+            loadVars();
+            if (ExternalInterface.available){
+                ExternalInterface.addCallback("BetFlash", flashHandler);
+            };
+        }
+        public function loadVars():void{
+            if (stage.loaderInfo.parameters["group"] != undefined){
+                switch (stage.loaderInfo.parameters["group"]){
+                    case "1":
+                        type_mc.gotoAndStop(1);
+                        dataMovie.data_mc.pillar_mc.visible = false;
+                        time_mc.pillar_mc.visible = false;
+                        break;
+                    case "2":
+                        type_mc.gotoAndStop(2);
+                        dataMovie.data_mc.pillar_mc.visible = true;
+                        time_mc.pillar_mc.visible = true;
+                        break;
+                    case "3":
+                        type_mc.gotoAndStop(3);
+                        dataMovie.data_mc.pillar_mc.visible = true;
+                        time_mc.pillar_mc.visible = true;
+                        break;
+                    default:
+                        type_mc.gotoAndStop(1);
+                        dataMovie.data_mc.pillar_mc.visible = false;
+                        time_mc.pillar_mc.visible = false;
+                };
+            };
+            if (stage.loaderInfo.parameters["lt"] != undefined){
+                thisname = unescape(stage.loaderInfo.parameters["lt"]);
+            };
+            if (stage.loaderInfo.parameters["ad"] != undefined){
+                if (stage.loaderInfo.parameters["ad"] == "1"){
+                    hasAd = true;
+                    getXml();
+                } else {
+                    hasAd = false;
+                };
+            };
+            if (stage.loaderInfo.parameters["color"] != undefined){
+                colorShow(stage.loaderInfo.parameters["color"]);
+            };
+        }
+        public function bonusShow(_arg1:String):void{
+            if (_arg1 != ""){
+                asCallJS_2();
+            };
+            trace((("当前在  ：" + type_mc.currentFrame) + "  帧"));
+            switch (type_mc.currentFrame){
+                case 1:
+                    type_mc.ssc_mc.movieAhandler(_arg1);
+                    break;
+                case 2:
+                    type_mc.fiveBall_mc.movieBhandler(_arg1);
+                    break;
+                case 3:
+                    type_mc.threeBall_mc.movieChandler(_arg1);
+                    break;
+                default:
+                    type_mc.ssc_mc.movieAhandler(_arg1);
+            };
+        }
+        public function flashHandler(_arg1:Object):void{
+            loading_mc.visible = false;
+            loading_mc.gotoAndStop(2);
+            statusType = _arg1.Status;
+            statusShow(statusType);
+            betIssue = _arg1.DataModel.BetIssue;
+            betIssueShow(betIssue);
+            trueIssue = _arg1.DataModel.TrueIssue;
+            trueIssueShow(trueIssue);
+            if (_arg1.DataModel.BetLeaveTime > -10000){
+                betTime = _arg1.DataModel.BetLeaveTime;
+            };
+            if (_arg1.DataModel.DrawLeaveTime > -10000){
+                drawTime = _arg1.DataModel.DrawLeaveTime;
+            };
+            bonusInfo = _arg1.BonusInfo;
+            if (!(((bonusIssue == _arg1.DataModel.BonusIssue)) && ((bonusNumber == _arg1.DataModel.BonusNumber)))){
+                bonusIssue = _arg1.DataModel.BonusIssue;
+                bonusIssueShow(bonusIssue);
+                bonusNumber = _arg1.DataModel.BonusNumber;
+                bonusShow(bonusNumber);
+            };
+            if (just){
+                timer.startTimer();
+                just = false;
+            };
+        }
+        public function numberInfoShowHd(_arg1:Event):void{
+            bonusInfoShow();
+        }
+        public function loadingHd(_arg1:ProgressEvent):void{
+            trace("加载中...");
+        }
+        public function loadedHd(_arg1:Event):void{
+            trace("加载完成");
+            this.loaderInfo.removeEventListener(ProgressEvent.PROGRESS, loadingHd);
+            this.loaderInfo.removeEventListener(Event.COMPLETE, loadedHd);
+            gotoAndStop(2);
+        }
+        public function betIssueShow(_arg1:String):void{
+            betIssue_txt.text = _arg1;
+        }
+        public function betTimeEndHd(_arg1:Event):void{
+            asCallJS_0();
+        }
+        public function getXml():void{
+            var _local1:URLLoader = new URLLoader();
+            _local1.load(new URLRequest("http://soft.shishicai.cn/InCome/SwfInCome.aspx"));
+            _local1.addEventListener(Event.COMPLETE, xmlLoadHandler);
+        }
+        public function asCallJS_0():void{
+            ExternalInterface.call("fvClass.flash_BetEnd");
+        }
+        public function asCallJS_2():void{
+            ExternalInterface.call("fvClass.flash_BonusOK");
+        }
+        function frame2(){
+            stop();
+            hasAd = false;
+            bonusInfo = [];
+            just = true;
+            url = stage.loaderInfo.url;
+            urlAry = [".shishicai.cn", ".shishicai.com", ".cqdream.cn", ".cqdream.com", "demo.shishicai.cn", "开奖视频"];
+            i = 0;
+            while (i < urlAry.length) {
+                if (url.toString().indexOf(urlAry[i].toString()) > -1){
+                    allow = true;
+                    break;
+                };
+                i++;
+            };
+            if (!allow){
+                return;
+            };
+            timer = new MyTimer();
+            timer.addEventListener("myTimer_evt", timerHd);
+            lc = new LocalConnection();
+            lc.addEventListener(StatusEvent.STATUS, function (){
+            });
+            init();
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Timeline_12 (_fla.Timeline_12)
+package _fla {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+    import flash.text.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.external.*;
+    import flash.filters.*;
+    import flash.media.*;
+    import flash.net.*;
+    import flash.system.*;
+    import flash.ui.*;
+
+    public dynamic class Timeline_12 extends MovieClip {
+
+        public function Timeline_12(){
+            addFrameScript(0, frame1);
+        }
+        function frame1(){
+            stop();
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Timeline_13 (_fla.Timeline_13)
+package _fla {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+    import flash.text.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.external.*;
+    import flash.filters.*;
+    import flash.media.*;
+    import flash.net.*;
+    import flash.system.*;
+    import flash.ui.*;
+
+    public dynamic class Timeline_13 extends MovieClip {
+
+        public function Timeline_13(){
+            addFrameScript(0, frame1);
+        }
+        function frame1(){
+            stop();
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Timeline_16 (_fla.Timeline_16)
+package _fla {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+    import flash.text.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.external.*;
+    import flash.filters.*;
+    import flash.media.*;
+    import flash.net.*;
+    import flash.system.*;
+    import flash.ui.*;
+
+    public dynamic class Timeline_16 extends MovieClip {
+
+        public var data_mc:MovieClip;
+
+        public function Timeline_16(){
+            addFrameScript(0, frame1, 5, frame6, 24, frame25, 34, frame35);
+        }
+        function frame25(){
+            stop();
+        }
+        function frame1(){
+            stop();
+        }
+        function frame6(){
+            data_mc.pillar_mc.alpha = 0;
+        }
+        function frame35(){
+            data_mc.pillar_mc.alpha = 1;
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Timeline_17 (_fla.Timeline_17)
+package _fla {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+    import flash.text.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.external.*;
+    import flash.filters.*;
+    import flash.media.*;
+    import flash.net.*;
+    import flash.system.*;
+    import flash.ui.*;
+
+    public dynamic class Timeline_17 extends MovieClip {
+
+        public var b1_txt:TextField;
+        public var a1_txt:TextField;
+        public var b0_txt:TextField;
+        public var pillar_mc:MovieClip;
+        public var flash_mc:MovieClip;
+        public var c0_txt:TextField;
+        public var a0_txt:TextField;
+        public var d0_txt:TextField;
+        public var d1_txt:TextField;
+        public var c1_txt:TextField;
+
+        public function Timeline_17(){
+            addFrameScript(0, frame1);
+        }
+        function frame1(){
+            stop();
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Timeline_18 (_fla.Timeline_18)
+package _fla {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+    import flash.text.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.external.*;
+    import flash.filters.*;
+    import flash.media.*;
+    import flash.net.*;
+    import flash.system.*;
+    import flash.ui.*;
+
+    public dynamic class Timeline_18 extends MovieClip {
+
+        public var ssc_mc:Movie_0;
+        public var fiveBall_mc:Movie_1;
+        public var threeBall_mc:Movie_2;
+
+        public function Timeline_18(){
+            addFrameScript(0, frame1);
+        }
+        function frame1(){
+            stop();
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Timeline_29 (_fla.Timeline_29)
+package _fla {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+    import flash.text.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.external.*;
+    import flash.filters.*;
+    import flash.media.*;
+    import flash.net.*;
+    import flash.system.*;
+    import flash.ui.*;
+
+    public dynamic class Timeline_29 extends MovieClip {
+
+        public function Timeline_29(){
+            addFrameScript(0, frame1);
+        }
+        function frame1(){
+            stop();
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Timeline_5 (_fla.Timeline_5)
+package _fla {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+    import flash.text.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.external.*;
+    import flash.filters.*;
+    import flash.media.*;
+    import flash.net.*;
+    import flash.system.*;
+    import flash.ui.*;
+
+    public dynamic class Timeline_5 extends MovieClip {
+
+        public function Timeline_5(){
+            addFrameScript(0, frame1, 19, frame20);
+        }
+        function frame20(){
+            gotoAndPlay("g2");
+        }
+        function frame1(){
+            stop();
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Timeline_8 (_fla.Timeline_8)
+package _fla {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+    import flash.text.*;
+    import flash.accessibility.*;
+    import flash.errors.*;
+    import flash.external.*;
+    import flash.filters.*;
+    import flash.media.*;
+    import flash.net.*;
+    import flash.system.*;
+    import flash.ui.*;
+
+    public dynamic class Timeline_8 extends MovieClip {
+
+        public function Timeline_8(){
+            addFrameScript(0, frame1);
+        }
+        function frame1(){
+            stop();
+        }
+
+    }
+}//package _fla 
+
+----------------------------------------------------------------------
+
+//Clock (Clock)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.text.*;
+
+    public class Clock extends Sprite {
+
+        public var timeStr:String;
+        public var movie_mc:MovieClip;
+        public var lock_mc:MovieClip;
+        public var s:String;
+        public var num_txt:TextField;
+        public var tfTime:TextFormat;
+
+        public function Clock():void{
+            tfTime = new TextFormat();
+            super();
+            movie_mc.alpha = 0;
+        }
+        public function changTime(_arg1:int):void{
+            if (_arg1 >= 60){
+                movie_mc.alpha = 0;
+            } else {
+                if ((((60 > _arg1)) && ((_arg1 > 0)))){
+                    if ((((10 > _arg1)) && ((_arg1 > 0)))){
+                        dispatchEvent(new Event("soundCountDown_evt"));
+                    };
+                    movie_mc.alpha = 1;
+                    movie_mc.gotoAndStop(_arg1);
+                } else {
+                    if (_arg1 == 0){
+                        movie_mc.alpha = 0;
+                        trace("投注倒计时完成");
+                        dispatchEvent(new Event("betTime_evt"));
+                    } else {
+                        movie_mc.alpha = 0;
+                    };
+                };
+            };
+            txtShow(_arg1);
+        }
+        public function timeTxt(_arg1:Number):String{
+            var _local2 = "";
+            var _local3:int = Math.floor(_arg1);
+            var _local4:int = Math.floor((_local3 / 60));
+            var _local5:int = Math.floor((_local4 / 60));
+            _local3 = (_local3 % 60);
+            _local4 = (_local4 % 60);
+            if (_local5 != 0){
+                if (_local5 < 10){
+                    _local2 = (_local2 + "0");
+                };
+                _local2 = (_local2 + String(_local5));
+                _local2 = (_local2 + ":");
+            };
+            if (((!((_local5 == 0))) || (!((_local4 == 0))))){
+                if (_local4 < 10){
+                    _local2 = (_local2 + "0");
+                };
+                _local2 = (_local2 + String(_local4));
+                _local2 = (_local2 + ":");
+            };
+            if (_local3 < 10){
+                _local2 = (_local2 + "0");
+            };
+            _local2 = (_local2 + String(_local3));
+            return (_local2.replace(/1/ig, " 1"));
+        }
+        public function changStatus(_arg1:String):void{
+            s = _arg1;
+            if (_arg1 == "0"){
+                movie_mc.visible = true;
+                num_txt.visible = true;
+                lock_mc.visible = false;
+            } else {
+                movie_mc.visible = false;
+                num_txt.visible = false;
+                lock_mc.visible = true;
+            };
+        }
+        public function txtShow(_arg1:int):void{
+            timeStr = timeTxt(_arg1);
+            switch (timeStr.replace(/\s/ig, "").length){
+                case 5:
+                    num_txt.text = timeStr;
+                    tfTime.size = 26;
+                    num_txt.y = -17;
+                    num_txt.x = -50;
+                    break;
+                case 2:
+                    num_txt.text = timeStr;
+                    tfTime.size = 51;
+                    num_txt.y = -29.4;
+                    num_txt.x = -50;
+                    break;
+                case 8:
+                    num_txt.text = timeStr;
+                    tfTime.size = 19;
+                    num_txt.y = -12.4;
+                    num_txt.x = -50;
+                    break;
+                default:
+                    num_txt.text = " ";
+            };
+            num_txt.setTextFormat(tfTime);
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//Countdown (Countdown)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.text.*;
+
+    public class Countdown extends Sprite {
+
+        public var time_txt:TextField;
+        public var num_txt:TextField;
+        public var pillar_mc:MovieClip;
+
+        public function Countdown():void{
+        }
+        private function timeTxt(_arg1:Number):String{
+            var _local2 = "";
+            var _local3:uint = Math.floor(_arg1);
+            var _local4:uint = Math.floor((_local3 / 60));
+            _local3 = (_local3 % 60);
+            if (_local4 < 10){
+                _local2 = (_local2 + "0");
+            };
+            _local2 = (_local2 + _local4.toString());
+            _local2 = (_local2 + ":");
+            if (_local3 < 10){
+                _local2 = (_local2 + "0");
+            };
+            _local2 = (_local2 + _local3.toString());
+            return (_local2.replace(/1/ig, " 1"));
+        }
+        public function changTime(_arg1:int):void{
+            if (_arg1 > 0){
+                time_txt.text = timeTxt(_arg1);
+            } else {
+                if (_arg1 == 0){
+                    dispatchEvent(new Event("drawTime_evt"));
+                    trace("完成开奖倒计时");
+                    time_txt.text = "00:00";
+                } else {
+                    time_txt.text = " ";
+                };
+            };
+        }
+        public function hasPillar(_arg1:Boolean=true):void{
+            if (_arg1){
+                pillar_mc.visible = true;
+            } else {
+                pillar_mc.visible = false;
+            };
+        }
+        public function numTxt(_arg1:String=""):void{
+            num_txt.text = (("距  " + _arg1) + "  期开奖还有 ： ");
+        }
+        public function changStatus(_arg1:String):void{
+            if (_arg1 == "0"){
+                this.alpha = 0;
+            } else {
+                this.alpha = 1;
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//Movie_0 (Movie_0)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.geom.*;
+    import flash.utils.*;
+
+    public class Movie_0 extends MovieClip {
+
+        public var num:String = "";
+        public var mccolor:ColorTransform;
+        public var mc44:MovieClip;
+        public var mc0:MovieClip;
+        public var mc1:MovieClip;
+        public var mc2:MovieClip;
+        public var mc3:MovieClip;
+        public var mc4:MovieClip;
+        public var statu:String;
+        public var m2:MovieClip;
+        public var bonusTimer:Timer;
+        public var mc22:MovieClip;
+        public var mc33:MovieClip;
+        public var mc00:MovieClip;
+        public var mc11:MovieClip;
+
+        public function Movie_0():void{
+        }
+        public function movieAhandler(_arg1:String):void{
+            num = _arg1;
+            if (_arg1 == ""){
+                statu = "获取中";
+                mc00.visible = false;
+                mc11.visible = false;
+                mc22.visible = false;
+                mc33.visible = false;
+                mc44.visible = false;
+                mc0.visible = true;
+                mc1.visible = true;
+                mc2.visible = true;
+                mc3.visible = true;
+                mc4.visible = true;
+                dispatchEvent(new Event("flashing_evt", true));
+                dispatchEvent(new Event("numberInfoShow_evt", true));
+            } else {
+                statu = "已获取";
+                dispatchEvent(new Event("hasNumberSound_evt", true));
+                bonusTimer = new Timer(500);
+                bonusTimer.addEventListener(TimerEvent.TIMER, bonusTimerHandler);
+                bonusTimer.reset();
+                bonusTimer.start();
+            };
+        }
+        private function ballNumber(_arg1:String, _arg2:uint):String{
+            var _local3:String = _arg1;
+            var _local4:Array = _arg1.split(",");
+            if (_local4.length > 1){
+                _local3 = _local4[_arg2];
+            } else {
+                _local3 = _arg1.charAt(_arg2);
+            };
+            return (_local3);
+        }
+        public function mcColor(_arg1:String):void{
+            mccolor = new ColorTransform();
+            mccolor.color = ("0x" + _arg1);
+            mc0._mc.transform.colorTransform = mccolor;
+            mc1._mc.transform.colorTransform = mccolor;
+            mc2._mc.transform.colorTransform = mccolor;
+            mc3._mc.transform.colorTransform = mccolor;
+            mc4._mc.transform.colorTransform = mccolor;
+            mc00.transform.colorTransform = mccolor;
+            mc11.transform.colorTransform = mccolor;
+            mc22.transform.colorTransform = mccolor;
+            mc33.transform.colorTransform = mccolor;
+            mc44.transform.colorTransform = mccolor;
+        }
+        private function bonusTimerHandler(_arg1:TimerEvent):void{
+            switch (bonusTimer.currentCount){
+                case 1:
+                    mc44.txt.text = ballNumber(num, 4);
+                    mc44.visible = true;
+                    mc4.visible = false;
+                    break;
+                case 2:
+                    mc33.txt.text = ballNumber(num, 3);
+                    mc33.visible = true;
+                    mc3.visible = false;
+                    break;
+                case 3:
+                    mc22.txt.text = ballNumber(num, 2);
+                    mc22.visible = true;
+                    mc2.visible = false;
+                    break;
+                case 4:
+                    mc11.txt.text = ballNumber(num, 1);
+                    mc11.visible = true;
+                    mc1.visible = false;
+                    break;
+                case 5:
+                    mc00.txt.text = ballNumber(num, 0);
+                    mc00.visible = true;
+                    mc0.visible = false;
+                    break;
+                default:
+                    bonusTimer.removeEventListener(TimerEvent.TIMER, bonusTimerHandler);
+                    dispatchEvent(new Event("flashing_evt", true));
+                    dispatchEvent(new Event("numberInfoShow_evt", true));
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//Movie_1 (Movie_1)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.utils.*;
+
+    public class Movie_1 extends MovieClip {
+
+        public var num:String;
+        public var mc00:MovieClip;
+        public var mc0:MovieClip;
+        public var mc1:MovieClip;
+        public var mc2:MovieClip;
+        public var mc3:MovieClip;
+        public var mc4:MovieClip;
+        public var statu:String;
+        public var mc22:MovieClip;
+        public var bonusTimer:Timer;
+        public var mc44:MovieClip;
+        public var mc33:MovieClip;
+        public var mc11:MovieClip;
+
+        public function Movie_1():void{
+            num = "";
+            mc00.visible = false;
+            mc11.visible = false;
+            mc22.visible = false;
+            mc33.visible = false;
+            mc44.visible = false;
+            mc1.ballType_mc.gotoAndStop(2);
+            mc2.ballType_mc.gotoAndStop(3);
+            mc3.ballType_mc.gotoAndStop(4);
+            mc4.ballType_mc.gotoAndStop(5);
+            mc11.ballType_mc.gotoAndStop(2);
+            mc22.ballType_mc.gotoAndStop(3);
+            mc33.ballType_mc.gotoAndStop(4);
+            mc44.ballType_mc.gotoAndStop(5);
+        }
+        private function ballNumber(_arg1:String, _arg2:uint):String{
+            var _local3:String = _arg1;
+            var _local4:Array = _arg1.split(",");
+            if (_local4.length > 1){
+                _local3 = _local4[_arg2];
+            } else {
+                _local3 = _arg1.charAt(_arg2);
+            };
+            return (_local3);
+        }
+        public function mcColor(_arg1:String):void{
+            mc0.ballType_mc.gotoAndStop(int(_arg1.charAt(0)));
+            mc1.ballType_mc.gotoAndStop(int(_arg1.charAt(1)));
+            mc2.ballType_mc.gotoAndStop(int(_arg1.charAt(2)));
+            mc3.ballType_mc.gotoAndStop(int(_arg1.charAt(3)));
+            mc4.ballType_mc.gotoAndStop(int(_arg1.charAt(4)));
+            mc00.ballType_mc.gotoAndStop(int(_arg1.charAt(0)));
+            mc11.ballType_mc.gotoAndStop(int(_arg1.charAt(1)));
+            mc22.ballType_mc.gotoAndStop(int(_arg1.charAt(2)));
+            mc33.ballType_mc.gotoAndStop(int(_arg1.charAt(3)));
+            mc44.ballType_mc.gotoAndStop(int(_arg1.charAt(4)));
+        }
+        private function bonusTimerHandler(_arg1:TimerEvent):void{
+            switch (bonusTimer.currentCount){
+                case 1:
+                    mc0.visible = false;
+                    mc00.visible = true;
+                    mc00.num_txt.text = ballNumber(num, 0);
+                    break;
+                case 2:
+                    mc1.visible = false;
+                    mc11.visible = true;
+                    mc11.num_txt.text = ballNumber(num, 1);
+                    break;
+                case 3:
+                    mc2.visible = false;
+                    mc22.visible = true;
+                    mc22.num_txt.text = ballNumber(num, 2);
+                    break;
+                case 4:
+                    mc3.visible = false;
+                    mc33.visible = true;
+                    mc33.num_txt.text = ballNumber(num, 3);
+                    break;
+                case 5:
+                    mc4.visible = false;
+                    mc44.visible = true;
+                    mc44.num_txt.text = ballNumber(num, 4);
+                    break;
+                default:
+                    bonusTimer.removeEventListener(TimerEvent.TIMER, bonusTimerHandler);
+                    dispatchEvent(new Event("flashing_evt", true));
+                    dispatchEvent(new Event("numberInfoShow_evt", true));
+            };
+        }
+        public function movieBhandler(_arg1:String):void{
+            num = _arg1;
+            if (_arg1 == ""){
+                statu = "获取中";
+                mc00.visible = false;
+                mc11.visible = false;
+                mc22.visible = false;
+                mc33.visible = false;
+                mc44.visible = false;
+                mc0.visible = true;
+                mc1.visible = true;
+                mc2.visible = true;
+                mc3.visible = true;
+                mc4.visible = true;
+                dispatchEvent(new Event("flashing_evt", true));
+                dispatchEvent(new Event("numberInfoShow_evt", true));
+            } else {
+                statu = "已获取";
+                dispatchEvent(new Event("hasNumberSound_evt", true));
+                bonusTimer = new Timer(500);
+                bonusTimer.addEventListener(TimerEvent.TIMER, bonusTimerHandler);
+                bonusTimer.reset();
+                bonusTimer.start();
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//Movie_2 (Movie_2)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.utils.*;
+
+    public class Movie_2 extends MovieClip {
+
+        public var statu:String;
+        public var mc00:MovieClip;
+        public var num:String;
+        public var bonusTimer:Timer;
+        public var mc22:MovieClip;
+        public var mc11:MovieClip;
+        public var mc0:MovieClip;
+        public var mc1:MovieClip;
+        public var mc2:MovieClip;
+
+        public function Movie_2():void{
+            num = "";
+            mc00.visible = false;
+            mc11.visible = false;
+            mc22.visible = false;
+            mc0.ballType_mc.gotoAndStop(3);
+            mc1.ballType_mc.gotoAndStop(2);
+            mc2.ballType_mc.gotoAndStop(4);
+            mc00.ballType_mc.gotoAndStop(3);
+            mc11.ballType_mc.gotoAndStop(2);
+            mc22.ballType_mc.gotoAndStop(4);
+        }
+        private function ballNumber(_arg1:String, _arg2:uint):String{
+            var _local3:String = _arg1;
+            var _local4:Array = _arg1.split(",");
+            if (_local4.length > 1){
+                _local3 = _local4[_arg2];
+            } else {
+                _local3 = _arg1.charAt(_arg2);
+            };
+            return (_local3);
+        }
+        public function mcColor(_arg1:String):void{
+            mc0.ballType_mc.gotoAndStop(int(_arg1.charAt(0)));
+            mc1.ballType_mc.gotoAndStop(int(_arg1.charAt(1)));
+            mc2.ballType_mc.gotoAndStop(int(_arg1.charAt(2)));
+            mc00.ballType_mc.gotoAndStop(int(_arg1.charAt(0)));
+            mc11.ballType_mc.gotoAndStop(int(_arg1.charAt(1)));
+            mc22.ballType_mc.gotoAndStop(int(_arg1.charAt(2)));
+        }
+        private function bonusTimerHandler(_arg1:TimerEvent):void{
+            switch (bonusTimer.currentCount){
+                case 1:
+                    mc0.visible = false;
+                    mc00.visible = true;
+                    mc00.num_txt.text = ballNumber(num, 0);
+                    break;
+                case 2:
+                    mc1.visible = false;
+                    mc11.visible = true;
+                    mc11.num_txt.text = ballNumber(num, 1);
+                    break;
+                case 3:
+                    mc2.visible = false;
+                    mc22.visible = true;
+                    mc22.num_txt.text = ballNumber(num, 2);
+                    break;
+                default:
+                    bonusTimer.removeEventListener(TimerEvent.TIMER, bonusTimerHandler);
+                    dispatchEvent(new Event("flashing_evt", true));
+                    dispatchEvent(new Event("numberInfoShow_evt", true));
+            };
+        }
+        public function movieChandler(_arg1:String):void{
+            num = _arg1;
+            if (_arg1 == ""){
+                statu = "获取中";
+                trace(statu, num);
+                mc00.visible = false;
+                mc11.visible = false;
+                mc22.visible = false;
+                mc0.visible = true;
+                mc1.visible = true;
+                mc2.visible = true;
+                dispatchEvent(new Event("flashing_evt", true));
+                dispatchEvent(new Event("numberInfoShow_evt", true));
+            } else {
+                statu = "已获取";
+                trace(statu, num);
+                dispatchEvent(new Event("hasNumberSound_evt", true));
+                bonusTimer = new Timer(500);
+                bonusTimer.addEventListener(TimerEvent.TIMER, bonusTimerHandler);
+                bonusTimer.reset();
+                bonusTimer.start();
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//Music (Music)
+package {
+    import flash.events.*;
+    import flash.display.*;
+
+    public class Music extends MovieClip {
+
+        public var onoff:Boolean = true;
+        public var sound1_mc:MovieClip;
+        public var sound0_mc:MovieClip;
+        public var isSound:Boolean = true;
+
+        public function Music():void{
+            addFrameScript(0, frame1);
+            this.buttonMode = true;
+            this.addEventListener(MouseEvent.CLICK, soundHd);
+        }
+        public function soundPlay(_arg1:String):void{
+            if (isSound){
+                switch (_arg1){
+                    case "1":
+                        sound0_mc.play();
+                        break;
+                    case "2":
+                        sound1_mc.play();
+                        break;
+                };
+            };
+        }
+        function frame1(){
+            stop();
+        }
+        function soundHd(_arg1:MouseEvent):void{
+            if (onoff){
+                this.gotoAndStop(2);
+                onoff = false;
+                isSound = false;
+            } else {
+                this.gotoAndStop(1);
+                onoff = true;
+                isSound = true;
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//MyTimer (MyTimer)
+package {
+    import flash.events.*;
+    import flash.utils.*;
+
+    public class MyTimer extends EventDispatcher {
+
+        private var lastTime:Number = 0;
+        private var timer:Timer;
+        private var nowTime:Number;
+        private var date:Date;
+        private var numA:Number;
+        private var numB:Number;
+
+        public function MyTimer():void{
+            date = new Date();
+            timer = new Timer(100);
+            super();
+        }
+        public function stopTimer():void{
+            if (timer.hasEventListener(TimerEvent.TIMER)){
+                timer.removeEventListener(TimerEvent.TIMER, handler);
+            };
+        }
+        public function startTimer():void{
+            numA = date.getTime();
+            if (timer.hasEventListener(TimerEvent.TIMER) == false){
+                timer.addEventListener(TimerEvent.TIMER, handler);
+                timer.start();
+            };
+        }
+        private function handler(_arg1:TimerEvent):void{
+            numB = new Date().getTime();
+            nowTime = ((numB - numA) / 1000);
+            if (Math.floor(nowTime) > lastTime){
+                lastTime = Math.floor(nowTime);
+                dispatchEvent(new Event("myTimer_evt"));
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//Poster (Poster)
+package {
+    import flash.events.*;
+    import flash.utils.*;
+    import flash.display.*;
+
+    public class Poster extends MovieClip {
+
+        public var timer:Timer;
+        public var speed:Number = 10000;
+        public var two_mc:PosterTwo;
+        public var four_mc:PosterFour;
+        private var i:uint = 0;
+        public var one_mc:PosterOne;
+        public var three_mc:PosterThree;
+
+        public function Poster():void{
+            this.stop();
+            timer = new Timer(speed);
+            timer.addEventListener(TimerEvent.TIMER, timerHandler);
+        }
+        private function timerHandler(_arg1:TimerEvent):void{
+            switch (i){
+                case 0:
+                    one_mc.visible = true;
+                    two_mc.visible = false;
+                    three_mc.visible = false;
+                    four_mc.visible = false;
+                    i = 1;
+                    break;
+                case 1:
+                    one_mc.visible = false;
+                    two_mc.visible = true;
+                    three_mc.visible = false;
+                    four_mc.visible = false;
+                    i = 2;
+                    break;
+                case 2:
+                    one_mc.visible = false;
+                    two_mc.visible = false;
+                    three_mc.visible = true;
+                    four_mc.visible = false;
+                    i = 3;
+                    break;
+                case 3:
+                    one_mc.visible = false;
+                    two_mc.visible = false;
+                    three_mc.visible = false;
+                    four_mc.visible = true;
+                    i = 0;
+                    break;
+            };
+        }
+        public function xmlShow(_arg1:XML):void{
+            if (_arg1.IsShowAd == true){
+                this.one_mc.picUrl = ((_arg1.ListTemplate.Template[0].Image + "?r=") + (Math.random() * 10).toString());
+                this.one_mc.link.push(_arg1.ListTemplate.Template[0].Url.string);
+                this.one_mc.init();
+                this.two_mc.picUrl = ((_arg1.ListTemplate.Template[1].Image + "?r=") + (Math.random() * 10).toString());
+                this.two_mc.link.push(_arg1.ListTemplate.Template[1].Url.string[0]);
+                this.two_mc.link.push(_arg1.ListTemplate.Template[1].Url.string[1]);
+                this.two_mc.init();
+                this.three_mc.picUrl = ((_arg1.ListTemplate.Template[2].Image + "?r=") + (Math.random() * 10).toString());
+                this.three_mc.link.push(_arg1.ListTemplate.Template[2].Url.string[0]);
+                this.three_mc.link.push(_arg1.ListTemplate.Template[2].Url.string[1]);
+                this.three_mc.link.push(_arg1.ListTemplate.Template[2].Url.string[2]);
+                this.three_mc.link.push(_arg1.ListTemplate.Template[2].Url.string[3]);
+                this.three_mc.init();
+                this.four_mc.picUrl = ((_arg1.ListTemplate.Template[3].Image + "?r=") + (Math.random() * 10).toString());
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[0]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[1]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[2]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[3]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[4]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[5]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[6]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[7]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[8]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[9]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[10]);
+                this.four_mc.link.push(_arg1.ListTemplate.Template[3].Url.string[11]);
+                this.four_mc.init();
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//PosterFour (PosterFour)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.net.*;
+    import flash.external.*;
+
+    public class PosterFour extends MovieClip {
+
+        public var link:Array;
+        public var picUrl:String = "";
+        public var box:MovieClip;
+        private var loader:Loader;
+        public var btn0:SimpleButton;
+        public var btn1:SimpleButton;
+        public var btn3:SimpleButton;
+        public var btn4:SimpleButton;
+        public var btn5:SimpleButton;
+        public var btn6:SimpleButton;
+        public var btn7:SimpleButton;
+        public var btn8:SimpleButton;
+        public var btn9:SimpleButton;
+        public var btn2:SimpleButton;
+        public var btn10:SimpleButton;
+        public var btn11:SimpleButton;
+
+        public function PosterFour():void{
+            loader = new Loader();
+            link = new Array();
+            super();
+        }
+        private function btn3Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[3].toString(), "_blank");
+            };
+        }
+        private function btn11Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[11].toString(), "_blank");
+            };
+        }
+        private function comHandler(_arg1:Event):void{
+            this.box.addChild(loader);
+            this.btn0.addEventListener(MouseEvent.CLICK, btn0Handler);
+            this.btn1.addEventListener(MouseEvent.CLICK, btn1Handler);
+            this.btn2.addEventListener(MouseEvent.CLICK, btn2Handler);
+            this.btn3.addEventListener(MouseEvent.CLICK, btn3Handler);
+            this.btn4.addEventListener(MouseEvent.CLICK, btn4Handler);
+            this.btn5.addEventListener(MouseEvent.CLICK, btn5Handler);
+            this.btn6.addEventListener(MouseEvent.CLICK, btn6Handler);
+            this.btn7.addEventListener(MouseEvent.CLICK, btn7Handler);
+            this.btn8.addEventListener(MouseEvent.CLICK, btn8Handler);
+            this.btn9.addEventListener(MouseEvent.CLICK, btn9Handler);
+            this.btn10.addEventListener(MouseEvent.CLICK, btn10Handler);
+            this.btn11.addEventListener(MouseEvent.CLICK, btn11Handler);
+        }
+        private function btn8Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[8].toString(), "_blank");
+            };
+        }
+        private function btn0Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[0].toString(), "_blank");
+            };
+        }
+        public function init():void{
+            loader.load(new URLRequest(picUrl));
+            loader.contentLoaderInfo.addEventListener(Event.COMPLETE, comHandler);
+        }
+        private function btn4Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[4].toString(), "_blank");
+            };
+        }
+        private function btn10Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[10].toString(), "_blank");
+            };
+        }
+        private function btn6Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[6].toString(), "_blank");
+            };
+        }
+        private function btn2Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[2].toString(), "_blank");
+            };
+        }
+        private function btn9Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[9].toString(), "_blank");
+            };
+        }
+        private function btn7Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[7].toString(), "_blank");
+            };
+        }
+        private function btn5Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[5].toString(), "_blank");
+            };
+        }
+        private function btn1Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[1].toString(), "_blank");
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//PosterOne (PosterOne)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.net.*;
+    import flash.external.*;
+
+    public class PosterOne extends MovieClip {
+
+        private var loader:Loader;
+        public var picUrl:String = "";
+        public var box:MovieClip;
+        public var btn0:SimpleButton;
+        public var link:Array;
+
+        public function PosterOne():void{
+            loader = new Loader();
+            link = new Array();
+            super();
+        }
+        private function comHandler(_arg1:Event):void{
+            this.box.addChild(loader);
+            this.btn0.addEventListener(MouseEvent.CLICK, btn0Handler);
+        }
+        public function init():void{
+            loader.load(new URLRequest(picUrl));
+            loader.contentLoaderInfo.addEventListener(Event.COMPLETE, comHandler);
+        }
+        private function btn0Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[0].toString(), "_blank");
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//PosterThree (PosterThree)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.net.*;
+    import flash.external.*;
+
+    public class PosterThree extends MovieClip {
+
+        public var picUrl:String = "";
+        public var box:MovieClip;
+        private var loader:Loader;
+        public var btn0:SimpleButton;
+        public var btn1:SimpleButton;
+        public var btn2:SimpleButton;
+        public var btn3:SimpleButton;
+        public var link:Array;
+
+        public function PosterThree():void{
+            loader = new Loader();
+            link = new Array();
+            super();
+        }
+        private function btn3Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[3].toString(), "_blank");
+            };
+        }
+        private function btn2Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[2].toString(), "_blank");
+            };
+        }
+        private function comHandler(_arg1:Event):void{
+            this.box.addChild(loader);
+            this.btn0.addEventListener(MouseEvent.CLICK, btn0Handler);
+            this.btn1.addEventListener(MouseEvent.CLICK, btn1Handler);
+            this.btn2.addEventListener(MouseEvent.CLICK, btn2Handler);
+            this.btn3.addEventListener(MouseEvent.CLICK, btn3Handler);
+        }
+        public function init():void{
+            loader.load(new URLRequest(picUrl));
+            loader.contentLoaderInfo.addEventListener(Event.COMPLETE, comHandler);
+        }
+        private function btn0Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[0].toString(), "_blank");
+            };
+        }
+        private function btn1Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[1].toString(), "_blank");
+            };
+        }
+
+    }
+}//package 
+
+----------------------------------------------------------------------
+
+//PosterTwo (PosterTwo)
+package {
+    import flash.events.*;
+    import flash.display.*;
+    import flash.net.*;
+    import flash.external.*;
+
+    public class PosterTwo extends MovieClip {
+
+        public var picUrl:String = "";
+        public var box:MovieClip;
+        private var loader:Loader;
+        public var btn0:SimpleButton;
+        public var btn1:SimpleButton;
+        public var link:Array;
+
+        public function PosterTwo():void{
+            loader = new Loader();
+            link = new Array();
+            super();
+        }
+        private function comHandler(_arg1:Event):void{
+            this.box.addChild(loader);
+            this.btn0.addEventListener(MouseEvent.CLICK, btn0Handler);
+            this.btn1.addEventListener(MouseEvent.CLICK, btn1Handler);
+        }
+        public function init():void{
+            loader.load(new URLRequest(picUrl));
+            loader.contentLoaderInfo.addEventListener(Event.COMPLETE, comHandler);
+        }
+        private function btn1Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[1].toString(), "_blank");
+            };
+        }
+        private function btn0Handler(_arg1:MouseEvent):void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("window.open", link[0].toString(), "_blank");
+            };
+        }
+
+    }
+}//package 
+
+
+----------------------------------------------------------------------
+Frame Labels
+----------------------------------------------------------------------
+"g2"	Symbol 158 MovieClip {_fla.Timeline_5} Frame 2
+"down"	Symbol 191 MovieClip {_fla.Timeline_16} Frame 2
+"柱子隐藏"	Symbol 191 MovieClip {_fla.Timeline_16} Frame 6
+"up"	Symbol 191 MovieClip {_fla.Timeline_16} Frame 26
+"柱子可见"	Symbol 191 MovieClip {_fla.Timeline_16} Frame 35
+
+----------------------------------------------------------------------
+Instance Names
+----------------------------------------------------------------------
+"loading_mc"	Frame 1	Symbol 6 MovieClip
+"back_mc"	Frame 2	Symbol 159 MovieClip
+"clock_mc"	Frame 2	Symbol 147 MovieClip {Clock}
+"bonusIssue_txt"	Frame 2	Symbol 160 EditableText
+"betIssue_txt"	Frame 2	Symbol 166 EditableText
+"sound_mc"	Frame 2	Symbol 79 MovieClip {Music}
+"time_mc"	Frame 2	Symbol 71 MovieClip {Countdown}
+"dataMovie"	Frame 2	Symbol 191 MovieClip {_fla.Timeline_16}
+"type_mc"	Frame 2	Symbol 192 MovieClip {_fla.Timeline_18}
+"poster_mc"	Frame 2	Symbol 18 MovieClip {Poster}
+"box"	Symbol 10 MovieClip {PosterOne} Frame 1	Symbol 7 MovieClip
+"btn0"	Symbol 10 MovieClip {PosterOne} Frame 1	Symbol 9 Button
+"box"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 7 MovieClip
+"btn0"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn5"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn4"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn3"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn2"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn1"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn6"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn11"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn10"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn9"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn8"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"btn7"	Symbol 13 MovieClip {PosterFour} Frame 1	Symbol 12 Button
+"box"	Symbol 15 MovieClip {PosterThree} Frame 1	Symbol 7 MovieClip
+"btn0"	Symbol 15 MovieClip {PosterThree} Frame 1	Symbol 14 Button
+"btn1"	Symbol 15 MovieClip {PosterThree} Frame 1	Symbol 14 Button
+"btn2"	Symbol 15 MovieClip {PosterThree} Frame 1	Symbol 14 Button
+"btn3"	Symbol 15 MovieClip {PosterThree} Frame 1	Symbol 14 Button
+"box"	Symbol 17 MovieClip {PosterTwo} Frame 1	Symbol 7 MovieClip
+"btn0"	Symbol 17 MovieClip {PosterTwo} Frame 1	Symbol 16 Button
+"btn1"	Symbol 17 MovieClip {PosterTwo} Frame 1	Symbol 16 Button
+"two_mc"	Symbol 18 MovieClip {Poster} Frame 1	Symbol 17 MovieClip {PosterTwo}
+"three_mc"	Symbol 18 MovieClip {Poster} Frame 1	Symbol 15 MovieClip {PosterThree}
+"four_mc"	Symbol 18 MovieClip {Poster} Frame 1	Symbol 13 MovieClip {PosterFour}
+"one_mc"	Symbol 18 MovieClip {Poster} Frame 1	Symbol 10 MovieClip {PosterOne}
+"why_mc"	Symbol 37 MovieClip Frame 1	Symbol 36 MovieClip
+"_mc"	Symbol 38 MovieClip Frame 1	Symbol 37 MovieClip
+"ballType_mc"	Symbol 39 MovieClip Frame 1	Symbol 31 MovieClip {_fla.Timeline_29}
+"ballType_mc"	Symbol 43 MovieClip Frame 1	Symbol 31 MovieClip {_fla.Timeline_29}
+"num_txt"	Symbol 43 MovieClip Frame 1	Symbol 42 EditableText
+"mc0"	Symbol 44 MovieClip {Movie_2} Frame 1	Symbol 39 MovieClip
+"mc1"	Symbol 44 MovieClip {Movie_2} Frame 1	Symbol 39 MovieClip
+"mc2"	Symbol 44 MovieClip {Movie_2} Frame 1	Symbol 39 MovieClip
+"mc00"	Symbol 44 MovieClip {Movie_2} Frame 1	Symbol 43 MovieClip
+"mc11"	Symbol 44 MovieClip {Movie_2} Frame 1	Symbol 43 MovieClip
+"mc22"	Symbol 44 MovieClip {Movie_2} Frame 1	Symbol 43 MovieClip
+"mc0"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 39 MovieClip
+"mc1"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 39 MovieClip
+"mc2"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 39 MovieClip
+"mc3"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 39 MovieClip
+"mc4"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 39 MovieClip
+"mc00"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 43 MovieClip
+"mc11"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 43 MovieClip
+"mc22"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 43 MovieClip
+"mc33"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 43 MovieClip
+"mc44"	Symbol 45 MovieClip {Movie_1} Frame 1	Symbol 43 MovieClip
+"txt"	Symbol 50 MovieClip Frame 1	Symbol 49 EditableText
+"mask_mc"	Symbol 61 MovieClip Frame 1	Symbol 53 MovieClip
+"_mc"	Symbol 61 MovieClip Frame 1	Symbol 59 MovieClip
+"mc44"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 50 MovieClip
+"mc33"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 50 MovieClip
+"mc22"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 50 MovieClip
+"mc11"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 50 MovieClip
+"mc00"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 50 MovieClip
+"m2"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 52 MovieClip
+"m2"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 52 MovieClip
+"m2"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 52 MovieClip
+"m2"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 52 MovieClip
+"m2"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 52 MovieClip
+"mc0"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 61 MovieClip
+"mc1"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 61 MovieClip
+"mc2"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 61 MovieClip
+"mc3"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 61 MovieClip
+"mc4"	Symbol 62 MovieClip {Movie_0} Frame 1	Symbol 61 MovieClip
+"num_txt"	Symbol 71 MovieClip {Countdown} Frame 1	Symbol 65 EditableText
+"time_txt"	Symbol 71 MovieClip {Countdown} Frame 1	Symbol 67 EditableText
+"pillar_mc"	Symbol 71 MovieClip {Countdown} Frame 1	Symbol 70 MovieClip
+"sound0_mc"	Symbol 79 MovieClip {Music} Frame 1	Symbol 75 MovieClip {_fla.Timeline_12}
+"sound1_mc"	Symbol 79 MovieClip {Music} Frame 1	Symbol 76 MovieClip {_fla.Timeline_13}
+"movie_mc"	Symbol 147 MovieClip {Clock} Frame 1	Symbol 141 MovieClip {_fla.Timeline_8}
+"num_txt"	Symbol 147 MovieClip {Clock} Frame 1	Symbol 142 EditableText
+"lock_mc"	Symbol 147 MovieClip {Clock} Frame 1	Symbol 146 MovieClip
+"sharp_mc"	Symbol 159 MovieClip Frame 1	Symbol 151 MovieClip
+"flash_mc"	Symbol 159 MovieClip Frame 1	Symbol 158 MovieClip {_fla.Timeline_5}
+"a0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 169 EditableText
+"a1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 170 EditableText
+"d1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 171 EditableText
+"b0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 172 EditableText
+"c0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 173 EditableText
+"c1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 174 EditableText
+"d0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 175 EditableText
+"b1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 176 EditableText
+"pillar_mc"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 70 MovieClip
+"flash_mc"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 1	Symbol 158 MovieClip {_fla.Timeline_5}
+"a0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 2	Symbol 178 EditableText
+"a1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 2	Symbol 179 EditableText
+"b0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 2	Symbol 180 EditableText
+"c0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 2	Symbol 181 EditableText
+"c1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 2	Symbol 182 EditableText
+"b1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 2	Symbol 183 EditableText
+"a0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 3	Symbol 184 EditableText
+"a1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 3	Symbol 185 EditableText
+"b0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 3	Symbol 186 EditableText
+"b1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 3	Symbol 187 EditableText
+"a0_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 4	Symbol 188 EditableText
+"a1_txt"	Symbol 190 MovieClip {_fla.Timeline_17} Frame 4	Symbol 189 EditableText
+"data_mc"	Symbol 191 MovieClip {_fla.Timeline_16} Frame 1	Symbol 190 MovieClip {_fla.Timeline_17}
+"ssc_mc"	Symbol 192 MovieClip {_fla.Timeline_18} Frame 1	Symbol 62 MovieClip {Movie_0}
+"fiveBall_mc"	Symbol 192 MovieClip {_fla.Timeline_18} Frame 2	Symbol 45 MovieClip {Movie_1}
+"threeBall_mc"	Symbol 192 MovieClip {_fla.Timeline_18} Frame 3	Symbol 44 MovieClip {Movie_2}
+
+----------------------------------------------------------------------
+Library
+----------------------------------------------------------------------
+Symbol 1 Graphic		Used by:6 	
+Symbol 2 Graphic		Used by:3 	
+Symbol 3 MovieClip	Uses:2 	Used by:6 	
+Symbol 4 Font		Used by:5 65 160 169 170 171 172 173 174 175 176 178 179 180 181 182 183 184 185 186 187 188 189 	
+Symbol 5 EditableText	Uses:4 	Used by:6 	
+Symbol 6 MovieClip	Uses:1 3 5 	Used by:时 间 线	
+Symbol 7 MovieClip		Used by:10 13 15 17 	
+Symbol 8 Graphic		Used by:9 53 	
+Symbol 9 Button	Uses:8 	Used by:10 	
+Symbol 10 MovieClip {PosterOne}	Uses:7 9 	Used by:18 	
+Symbol 11 Graphic		Used by:12 14 16 	
+Symbol 12 Button	Uses:11 	Used by:13 	
+Symbol 13 MovieClip {PosterFour}	Uses:7 12 	Used by:18 	
+Symbol 14 Button	Uses:11 	Used by:15 	
+Symbol 15 MovieClip {PosterThree}	Uses:7 14 	Used by:18 	
+Symbol 16 Button	Uses:11 	Used by:17 	
+Symbol 17 MovieClip {PosterTwo}	Uses:7 16 	Used by:18 	
+Symbol 18 MovieClip {Poster}	Uses:17 15 13 10 	Used by:时 间 线	
+Symbol 19 Bitmap		Used by:20 	
+Symbol 20 Graphic	Uses:19 	Used by:44 45 	
+Symbol 21 Bitmap		Used by:22 	
+Symbol 22 Graphic	Uses:21 	Used by:31 	
+Symbol 23 Bitmap		Used by:24 	
+Symbol 24 Graphic	Uses:23 	Used by:31 	
+Symbol 25 Bitmap		Used by:26 	
+Symbol 26 Graphic	Uses:25 	Used by:31 	
+Symbol 27 Bitmap		Used by:28 	
+Symbol 28 Graphic	Uses:27 	Used by:31 	
+Symbol 29 Bitmap		Used by:30 	
+Symbol 30 Graphic	Uses:29 	Used by:31 	
+Symbol 31 MovieClip {_fla.Timeline_29}	Uses:22 24 26 28 30 	Used by:39 43 	
+Symbol 32 Graphic		Used by:39 	
+Symbol 33 Bitmap		Used by:34 	
+Symbol 34 Graphic	Uses:33 	Used by:37 40 	
+Symbol 35 Graphic		Used by:36 	
+Symbol 36 MovieClip	Uses:35 	Used by:37 	
+Symbol 37 MovieClip	Uses:34 36 	Used by:38 	
+Symbol 38 MovieClip	Uses:37 	Used by:39 	
+Symbol 39 MovieClip	Uses:31 32 38 	Used by:44 45 	
+Symbol 40 MovieClip	Uses:34 	Used by:43 	
+Symbol 41 Font		Used by:42 	
+Symbol 42 EditableText	Uses:41 	Used by:43 	
+Symbol 43 MovieClip	Uses:31 40 42 	Used by:44 45 	
+Symbol 44 MovieClip {Movie_2}	Uses:20 39 43 	Used by:192 	
+Symbol 45 MovieClip {Movie_1}	Uses:20 39 43 	Used by:192 	
+Symbol 46 Bitmap		Used by:47 	
+Symbol 47 Graphic	Uses:46 	Used by:62 	
+Symbol 48 Font		Used by:49 	
+Symbol 49 EditableText	Uses:48 	Used by:50 	
+Symbol 50 MovieClip	Uses:49 	Used by:62 	
+Symbol 51 Graphic		Used by:52 	
+Symbol 52 MovieClip	Uses:51 	Used by:62 	
+Symbol 53 MovieClip	Uses:8 	Used by:61 	
+Symbol 54 Graphic		Used by:61 	
+Symbol 55 Graphic		Used by:56 	
+Symbol 56 MovieClip	Uses:55 	Used by:59 	
+Symbol 57 Graphic		Used by:58 	
+Symbol 58 MovieClip	Uses:57 	Used by:59 	
+Symbol 59 MovieClip	Uses:56 58 	Used by:61 	
+Symbol 60 Graphic		Used by:61 	
+Symbol 61 MovieClip	Uses:53 54 59 60 	Used by:62 	
+Symbol 62 MovieClip {Movie_0}	Uses:47 50 52 61 	Used by:192 	
+Symbol 63 Bitmap		Used by:64 	
+Symbol 64 Graphic	Uses:63 	Used by:71 	
+Symbol 65 EditableText	Uses:4 	Used by:71 	
+Symbol 66 Font		Used by:67 142 	
+Symbol 67 EditableText	Uses:66 	Used by:71 	
+Symbol 68 Bitmap		Used by:69 	
+Symbol 69 Graphic	Uses:68 	Used by:70 	
+Symbol 70 MovieClip	Uses:69 	Used by:71 190 	
+Symbol 71 MovieClip {Countdown}	Uses:64 65 67 70 	Used by:时 间 线	
+Symbol 72 Bitmap		Used by:73 	
+Symbol 73 Graphic	Uses:72 	Used by:79 	
+Symbol 74 Sound		Used by:75 	
+Symbol 75 MovieClip {_fla.Timeline_12}	Uses:74 	Used by:79 	
+Symbol 76 MovieClip {_fla.Timeline_13}	Uses:SS1 	Used by:79 	
+Symbol 77 Bitmap		Used by:78 	
+Symbol 78 Graphic	Uses:77 	Used by:79 	
+Symbol 79 MovieClip {Music}	Uses:73 75 76 78 	Used by:时 间 线	
+Symbol 80 Bitmap		Used by:81 	
+Symbol 81 Graphic	Uses:80 	Used by:147 	
+Symbol 82 Graphic		Used by:141 	
+Symbol 83 Graphic		Used by:141 	
+Symbol 84 Graphic		Used by:141 	
+Symbol 85 Graphic		Used by:141 	
+Symbol 86 Graphic		Used by:141 	
+Symbol 87 Graphic		Used by:141 	
+Symbol 88 Graphic		Used by:141 	
+Symbol 89 Graphic		Used by:141 	
+Symbol 90 Graphic		Used by:141 	
+Symbol 91 Graphic		Used by:141 	
+Symbol 92 Graphic		Used by:141 	
+Symbol 93 Graphic		Used by:141 	
+Symbol 94 Graphic		Used by:141 	
+Symbol 95 Graphic		Used by:141 	
+Symbol 96 Graphic		Used by:141 	
+Symbol 97 Graphic		Used by:141 	
+Symbol 98 Graphic		Used by:141 	
+Symbol 99 Graphic		Used by:141 	
+Symbol 100 Graphic		Used by:141 	
+Symbol 101 Graphic		Used by:141 	
+Symbol 102 Graphic		Used by:141 	
+Symbol 103 Graphic		Used by:141 	
+Symbol 104 Graphic		Used by:141 	
+Symbol 105 Graphic		Used by:141 	
+Symbol 106 Graphic		Used by:141 	
+Symbol 107 Graphic		Used by:141 	
+Symbol 108 Graphic		Used by:141 	
+Symbol 109 Graphic		Used by:141 	
+Symbol 110 Graphic		Used by:141 	
+Symbol 111 Graphic		Used by:141 	
+Symbol 112 Graphic		Used by:141 	
+Symbol 113 Graphic		Used by:141 	
+Symbol 114 Graphic		Used by:141 	
+Symbol 115 Graphic		Used by:141 	
+Symbol 116 Graphic		Used by:141 	
+Symbol 117 Graphic		Used by:141 	
+Symbol 118 Graphic		Used by:141 	
+Symbol 119 Graphic		Used by:141 	
+Symbol 120 Graphic		Used by:141 	
+Symbol 121 Graphic		Used by:141 	
+Symbol 122 Graphic		Used by:141 	
+Symbol 123 Graphic		Used by:141 	
+Symbol 124 Graphic		Used by:141 	
+Symbol 125 Graphic		Used by:141 	
+Symbol 126 Graphic		Used by:141 	
+Symbol 127 Graphic		Used by:141 	
+Symbol 128 Graphic		Used by:141 	
+Symbol 129 Graphic		Used by:141 	
+Symbol 130 Graphic		Used by:141 	
+Symbol 131 Graphic		Used by:141 	
+Symbol 132 Graphic		Used by:141 	
+Symbol 133 Graphic		Used by:141 	
+Symbol 134 Graphic		Used by:141 	
+Symbol 135 Graphic		Used by:141 	
+Symbol 136 Graphic		Used by:141 	
+Symbol 137 Graphic		Used by:141 	
+Symbol 138 Graphic		Used by:141 	
+Symbol 139 Graphic		Used by:141 	
+Symbol 140 Graphic		Used by:141 	
+Symbol 141 MovieClip {_fla.Timeline_8}	Uses:82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 	Used by:147 	
+Symbol 142 EditableText	Uses:66 	Used by:147 	
+Symbol 143 Bitmap		Used by:144 	
+Symbol 144 Graphic	Uses:143 	Used by:145 	
+Symbol 145 MovieClip	Uses:144 	Used by:146 	
+Symbol 146 MovieClip	Uses:145 	Used by:147 	
+Symbol 147 MovieClip {Clock}	Uses:81 141 142 146 	Used by:时 间 线	
+Symbol 148 Bitmap		Used by:149 	
+Symbol 149 Graphic	Uses:148 	Used by:159 	
+Symbol 150 Graphic		Used by:151 	
+Symbol 151 MovieClip	Uses:150 	Used by:159 	
+Symbol 152 Bitmap		Used by:154 	
+Symbol 153 Bitmap		Used by:154 	
+Symbol 154 Graphic	Uses:152 153 	Used by:159 	
+Symbol 155 Bitmap		Used by:156 	
+Symbol 156 Graphic	Uses:155 	Used by:157 	
+Symbol 157 MovieClip	Uses:156 	Used by:158 	
+Symbol 158 MovieClip {_fla.Timeline_5}	Uses:157 	Used by:159 190 	
+Symbol 159 MovieClip	Uses:149 151 154 158 	Used by:时 间 线	
+Symbol 160 EditableText	Uses:4 	Used by:时 间 线	
+Symbol 161 Font		Used by:162 163 164 	
+Symbol 162 EditableText	Uses:161 	Used by:时 间 线	
+Symbol 163 EditableText	Uses:161 	Used by:时 间 线	
+Symbol 164 EditableText	Uses:161 	Used by:时 间 线	
+Symbol 165 Font		Used by:166 	
+Symbol 166 EditableText	Uses:165 	Used by:时 间 线	
+Symbol 167 Bitmap		Used by:168 	
+Symbol 168 Graphic	Uses:167 	Used by:190 	
+Symbol 169 EditableText	Uses:4 	Used by:190 	
+Symbol 170 EditableText	Uses:4 	Used by:190 	
+Symbol 171 EditableText	Uses:4 	Used by:190 	
+Symbol 172 EditableText	Uses:4 	Used by:190 	
+Symbol 173 EditableText	Uses:4 	Used by:190 	
+Symbol 174 EditableText	Uses:4 	Used by:190 	
+Symbol 175 EditableText	Uses:4 	Used by:190 	
+Symbol 176 EditableText	Uses:4 	Used by:190 	
+Symbol 177 Graphic		Used by:190 	
+Symbol 178 EditableText	Uses:4 	Used by:190 	
+Symbol 179 EditableText	Uses:4 	Used by:190 	
+Symbol 180 EditableText	Uses:4 	Used by:190 	
+Symbol 181 EditableText	Uses:4 	Used by:190 	
+Symbol 182 EditableText	Uses:4 	Used by:190 	
+Symbol 183 EditableText	Uses:4 	Used by:190 	
+Symbol 184 EditableText	Uses:4 	Used by:190 	
+Symbol 185 EditableText	Uses:4 	Used by:190 	
+Symbol 186 EditableText	Uses:4 	Used by:190 	
+Symbol 187 EditableText	Uses:4 	Used by:190 	
+Symbol 188 EditableText	Uses:4 	Used by:190 	
+Symbol 189 EditableText	Uses:4 	Used by:190 	
+Symbol 190 MovieClip {_fla.Timeline_17}	Uses:168 169 170 171 172 173 174 175 176 70 177 158 178 179 180 181 182 183 184 185 186 187 188 189 	Used by:191 	
+Symbol 191 MovieClip {_fla.Timeline_16}	Uses:190 	Used by:时 间 线	
+Symbol 192 MovieClip {_fla.Timeline_18}	Uses:62 45 44 	Used by:时 间 线	
+Streaming Sound 1		Used by: Symbol 76 MovieClip {_fla.Timeline_13}
+
+----------------------------------------------------------------------
+Special Tags
+----------------------------------------------------------------------
+FileAttributes (69)	Timeline Frame 1	Access local files only, Metadata present, AS3.
+MetaData (77)	Timeline Frame 1	1284 bytes "<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmln ..."

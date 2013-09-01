@@ -1,0 +1,156 @@
+HTML {
+	WIDTH: 100%; BACKGROUND: url(../images/ssc/cq/bg.gif); FLOAT: left
+}
+BODY {
+	PADDING-BOTTOM: 30px; WIDTH: 100%; BACKGROUND: url(../images/ssc/cq/topbg.gif) repeat-x 0px 0px; FLOAT: left
+}
+.head {
+	BACKGROUND: url(../images/ssc/cq/cqbg.png) repeat-x 0px -86px
+}
+.logo {
+	WIDTH: 129px
+}
+.logo A {
+	WIDTH: 129px; BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 0px 0px
+}
+.logo_s {
+	WIDTH: 130px
+}
+.logo_s A {
+	WIDTH: 130px; BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat -129px -10px
+}
+.headTop {
+	WIDTH: 851px; BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 100% -171px
+}
+.subMenu {
+	WIDTH: 851px
+}
+.lottery {
+	WIDTH: 988px; BACKGROUND: url(../images/ssc/cq/cqbg.png) repeat-x 0px -468px; HEIGHT: 210px; LEFT: -4px
+}
+.lotNow {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 0px -257px; HEIGHT: 200px; PADDING-TOP: 13px
+}
+.sumInfo {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 12px; BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 100% -679px; HEIGHT: 210px; PADDING-TOP: 14px
+}
+.section {
+	BORDER-BOTTOM: 0px; POSITION: relative; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 988px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; LEFT: -4px
+}
+.section H3.stn {
+	BACKGROUND-IMAGE: url(../images/ssc/cq/sectiontbg.png) !important; FILTER: none !important; MARGIN: 0px; WIDTH: 100%; BACKGROUND-POSITION: 0px 0px; HEIGHT: 39px; PADDING-TOP: 5px; _position: relative
+}
+.section H3 .str {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.stnmain {
+	BACKGROUND-IMAGE: url(../images/ssc/cq/sectionborderbg.png) !important; FILTER: none !important; WIDTH: 100%; FLOAT: left
+}
+.stnbottom {
+	BACKGROUND-IMAGE: url(../images/ssc/cq/sectionbbg.png) !important; FILTER: none !important; WIDTH: 100%; FLOAT: left; HEIGHT: 11px; OVERFLOW: hidden
+}
+.sectionChart .stnmain {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+.classCheck {
+	POSITION: relative; WIDTH: 988px; BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 100% -1399px; PADDING-TOP: 3px; LEFT: 1px
+}
+.classCheck .c1 {
+	BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 0px -1020px
+}
+.classCheck .c2 {
+	BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 0px -1083px
+}
+.classCheck .c3 {
+	WIDTH: 200px; BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 0px -1146px
+}
+.classCheck .c4 {
+	WIDTH: 100px; BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 0px -1209px
+}
+.classCheck .c5 {
+	BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 0px -1272px
+}
+.classCheck .c6 {
+	BACKGROUND: url(../images/ssc/cq/cqbg.png) no-repeat 0px -1335px
+}
+.classCheck LI A.active {
+	COLOR: #ffea00
+}
+.panelItem {
+	MARGIN: 0px; WIDTH: 99%
+}
+.panelList .panelTble TD .f {
+	COLOR: #f50
+}
+.panelList .pItem {
+	WIDTH: 135px; MARGIN-LEFT: 0px
+}
+.panelList .pItem LI {
+	WIDTH: 135px
+}
+.panelList .pItem .plitem {
+	WIDTH: 86px; BACKGROUND: url(../images/11sport/plitembg.gif) no-repeat right 0px
+}
+.panelList .pItem .active {
+	BACKGROUND-POSITION: 0px -22px
+}
+.panelList .pItem .tip {
+	LEFT: 130px
+}
+.numCheck {
+	MARGIN-TOP: 5px
+}
+.numCheck .switch {
+	WIDTH: 55px
+}
+.numCheck .switch LI {
+	FLOAT: left
+}
+.numArea .btn_numlist {
+	BORDER-BOTTOM: #535353 1px solid; PADDING-BOTTOM: 4px; MARGIN-BOTTOM: 0px; PADDING-TOP: 10px
+}
+.btn_numlist LI {
+	TEXT-ALIGN: center; WIDTH: 30px; DISPLAY: inline; FLOAT: left; MARGIN-RIGHT: 5px
+}
+.btn_numlist LI SPAN {
+	LINE-HEIGHT: 28px; WIDTH: 30px; BACKGROUND: url(../images/11sport/btn_numbg.gif) no-repeat 0px 0px; HEIGHT: 30px; FONT-SIZE: 16px
+}
+.btn_numlist LI SPAN.active {
+	LINE-HEIGHT: 30px; BACKGROUND-POSITION: right 0px; TOP: -1px
+}
+.btn_numlist .nums {
+	WIDTH: 40px
+}
+.btn_numlist .nums EM {
+	LINE-HEIGHT: 30px; DISPLAY: block; HEIGHT: 30px
+}
+.btn_numlist LI P {
+	LINE-HEIGHT: 16px; HEIGHT: 16px
+}
+.btn_numlist .nums P {
+	MARGIN-TOP: -3px
+}
+.numArea .btn_numlist_first {
+	
+}
+.btn_numlist .selectAll {
+	MARGIN-RIGHT: 0px
+}
+.btn_numlist .s_all {
+	LEFT: -35px
+}
+DIV.chartCheck {
+	MARGIN-TOP: 0px; BORDER-TOP: #393939 0px solid; PADDING-TOP: 15px
+}
+.itemListC {
+	HEIGHT: auto
+}
+.numCheck DIV.chartCheck P.sum {
+	PADDING-LEFT: 0px; WIDTH: auto; DISPLAY: block
+}
+.btnChartCheck {
+	POSITION: relative; WIDTH: 109px; BACKGROUND: url(../images/11sport/btn_ChartCheck.gif) no-repeat 0px 0px; HEIGHT: 44px
+}
+.btnChartCheckAuto {
+	BACKGROUND: url(../images/11sport/btn_ChartCheck.gif) no-repeat right 0px
+}

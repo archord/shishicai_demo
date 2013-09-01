@@ -1,0 +1,474 @@
+.gelptn {
+	MARGIN: 0px 0px 10px
+}
+.cols {
+	PADDING-BOTTOM: 20px; MARGIN: 0px; WIDTH: 100%; BACKGROUND: #2c2c2c; FLOAT: left; CLEAR: both
+}
+.main {
+	MARGIN: 0px 0px 0px 10px;
+	WIDTH: 700px;
+	DISPLAY: inline;
+	FLOAT: left
+}
+.rnd H2 {
+	LINE-HEIGHT: 20px; HEIGHT: 26px; COLOR: #f9b300; FONT-SIZE: 14px
+}
+.rnd .b {
+	DISPLAY: block; BACKGROUND: url(../images/games2010/blkbg.png) no-repeat 0px 0px
+}
+.rnd .b1 {
+	PADDING-LEFT: 12px; BACKGROUND-POSITION: 0px 0px
+}
+.rnd .b2 {
+	BACKGROUND-POSITION: 100% 0px; PADDING-TOP: 10px
+}
+.rnd .b3 {
+	PADDING-LEFT: 12px; BACKGROUND-POSITION: 0px bottom; MARGIN-LEFT: -12px
+}
+.rnd .b4 {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 12px; BACKGROUND-POSITION: 100% bottom; PADDING-TOP: 8px
+}
+.clear {
+	CLEAR: both
+}
+A.btn {
+	MARGIN-LEFT: 25px
+}
+.btn SPAN {
+	PADDING-LEFT: 25px; LEFT: -25px
+}
+A.btn:hover {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A.btn2 {
+	MARGIN-TOP: 4px; MARGIN-LEFT: 25px
+}
+H2.ins {
+	LINE-HEIGHT: 300px; WIDTH: 100%; MARGIN-BOTTOM: 8px; BACKGROUND: url(../images/games2010/games2010_sprt.png) no-repeat 0px -921px; FLOAT: left; HEIGHT: 25px; OVERFLOW: hidden
+}
+H2.lgn {
+	BACKGROUND-POSITION: 0px -947px
+}
+H2.reg {
+	BACKGROUND-POSITION: 0px -921px
+}
+H2.chg {
+	BACKGROUND-POSITION: 0px -1179px
+}
+H2.charge {
+	BACKGROUND-POSITION: 0px -258px
+}
+.memarea {
+	PADDING-BOTTOM: 25px;
+	MARGIN: 0px 0px 20px 5px;
+	PADDING-LEFT: 20px;
+	WIDTH: 100%;
+	PADDING-RIGHT: 20px;
+	DISPLAY: inline;
+	BACKGROUND: #1e1e1e;
+	FLOAT: left;
+	PADDING-TOP: 25px
+}
+.memarea A {
+	COLOR: #f9b300; TEXT-DECORATION: underline
+}
+.memarea .ml {
+	WIDTH: 455px; FLOAT: left
+}
+.memarea .ml DIV {
+	WIDTH: 100%; MARGIN-BOTTOM: 15px; FLOAT: left
+}
+.memarea .ml LABEL {
+	TEXT-ALIGN: right; MARGIN-TOP: 3px; WIDTH: 5em; FLOAT: left; FONT-SIZE: 14px
+}
+.memarea .ml .ipt {
+	FLOAT: left
+}
+.memarea .ml INPUT {
+	BORDER-BOTTOM: #404040 1px solid; BORDER-LEFT: #404040 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 4px; WIDTH: 15em; PADDING-RIGHT: 4px; FONT: 14px/160% Arial, Verdana, Tahoma, "宋体"; BACKGROUND: #000; FLOAT: left; COLOR: #e3e3e3; BORDER-TOP: #404040 1px solid; BORDER-RIGHT: #404040 1px solid; PADDING-TOP: 5px
+}
+.memarea .ml INPUT.chk {
+	WIDTH: 5em; FLOAT: left
+}
+.memarea .ml IMG.chk {
+	MARGIN: 0px 8px 0px 5px; FLOAT: left
+}
+#valimg {
+	MARGIN: 0px 10px 0px 8px; FLOAT: left
+}
+.memarea .mr {
+	FLOAT: left
+}
+.memarea .mr .way {
+	FONT-SIZE: 14px
+}
+.memarea .mr UL {
+	MARGIN-TOP: 20px; COLOR: #999
+}
+.memarea DIV.reg {
+	WIDTH: 650px;
+	float: left;
+}
+.memarea .reg .c {
+	BORDER-BOTTOM: #373737 1px dotted; PADDING-BOTTOM: 4px; COLOR: #f9b300; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.memarea .lgn .c {
+	BORDER-BOTTOM: #373737 1px dotted; PADDING-BOTTOM: 4px; COLOR: #f9b300; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.memarea .reg DIV {
+	MARGIN-BOTTOM: 10px
+}
+.memarea .reg LABEL {
+	TEXT-ALIGN: left; HEIGHT: 23px; MARGIN-LEFT: 15px
+}
+.memarea .reg .ipt {
+	FLOAT: left; MARGIN-LEFT: 15px; CLEAR: both
+}
+.memarea .ipt .tip {
+	BORDER-BOTTOM: #1e1e1e 1px solid; BORDER-LEFT: #1e1e1e 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 10px; WIDTH: 300px; PADDING-RIGHT: 10px; DISPLAY: inline; FLOAT: left; COLOR: #474747; MARGIN-LEFT: 8px; BORDER-TOP: #1e1e1e 1px solid; BORDER-RIGHT: #1e1e1e 1px solid; PADDING-TOP: 3px
+}
+.memarea .ipt .active {
+	BORDER-BOTTOM: #58b300 1px solid; BORDER-LEFT: #58b300 1px solid; BACKGROUND: #deff90; COLOR: #3d7c00; BORDER-TOP: #58b300 1px solid; BORDER-RIGHT: #58b300 1px solid
+}
+.memarea .ipt .error {
+	BORDER-BOTTOM: #bd4700 1px solid; BORDER-LEFT: #bd4700 1px solid; BACKGROUND: #ffc29a; COLOR: #ca0000; BORDER-TOP: #bd4700 1px solid; BORDER-RIGHT: #bd4700 1px solid
+}
+SPAN.tipOK {
+	MARGIN: 2px 0px 0px; WIDTH: 24px; DISPLAY: block; BACKGROUND: url(../images/games2010/games2010_sprt.png) no-repeat 100% -1039px; FLOAT: left; HEIGHT: 24px
+}
+SPAN.tipOK2 {
+	MARGIN: 3px 0px 0px 5px; FLOAT: left; COLOR: #deff90
+}
+.memarea DIV.agreement {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 0px
+}
+.memarea DIV.agreement INPUT {
+	BORDER-BOTTOM: 0px; POSITION: relative; BORDER-LEFT: 0px; WIDTH: auto; BOTTOM: -2px; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-LEFT: 15px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.memarea DIV.agreement LABEL {
+	TEXT-ALIGN: left; MARGIN-TOP: 0px; WIDTH: auto; FLOAT: none; MARGIN-LEFT: 0px; FONT-SIZE: 12px
+}
+.memarea .reg .btn {
+	MARGIN: 20px 0px 20px 40px
+}
+.memarea .lgn {
+	WIDTH: 100%; FLOAT: left
+}
+.memarea .lgn .c {
+	BORDER-BOTTOM: #373737 0px dotted; TEXT-ALIGN: center; MARGIN-TOP: 40px; BORDER-TOP: #373737 1px dotted; PADDING-TOP: 10px
+}
+.memarea .lgn .ifnot {
+	POSITION: relative; TOP: -10px; MARGIN-RIGHT: 15px
+}
+.memarea DIV.succeed {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; WIDTH: 590px; PADDING-RIGHT: 20px; MARGIN-BOTTOM: 0px; FONT-SIZE: 14px; PADDING-TOP: 20px
+}
+.lgn P.rn {
+	TEXT-ALIGN: left; MARGIN-LEFT: 30px; CLEAR: left; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.succeed .mem {
+	MARGIN: 0px 2px; FONT: bold 14px Arial, Tahoma, "宋体"; COLOR: #ffd100
+}
+.succeed P {
+	MARGIN: 0px 0px 0px 90px; FONT-SIZE: 12px; PADDING-TOP: 25px
+}
+.succeed P.can {
+	MARGIN: 0px 0px 20px; COLOR: #fff; FONT-SIZE: 14px; PADDING-TOP: 10px
+}
+.succeed P SPAN {
+	MARGIN: 5px 0px 0px 20px; FLOAT: left
+}
+.succeed .btnRegCharge {
+	LINE-HEIGHT: 300px; WIDTH: 128px; BACKGROUND: url(../images/games2010/games2010_sprt.png) no-repeat 0px -1115px; FLOAT: left; HEIGHT: 60px; OVERFLOW: hidden
+}
+.succeed H4 {
+	TEXT-ALIGN: center; COLOR: #f60; FONT-SIZE: 16px
+}
+.succeed DIV.chargeInner {
+	MARGIN-TOP: 30px; WIDTH: 100%; FLOAT: left
+}
+.succeed .chargeInner DIV {
+	MARGIN: 0px 0px 5px; WIDTH: 100%
+}
+.succeed .chargeInner .cl {
+	TEXT-ALIGN: right; MARGIN-TOP: 0px; WIDTH: 8em; COLOR: #999; MARGIN-LEFT: 60px
+}
+.succeed .chargeInner .cr {
+	FLOAT: left
+}
+.succeed .f-orange {
+	COLOR: #f9b300; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.succeed DIV.done {
+	TEXT-ALIGN: center; MARGIN: 30px 0px 0px; CLEAR: both
+}
+.btnSubmit {
+	LINE-HEIGHT: 300px; WIDTH: 102px; DISPLAY: inline-block; BACKGROUND: url(../images/games2010/games2010_sprt.png) no-repeat 0px -1225px; HEIGHT: 32px; OVERFLOW: hidden
+}
+.btnReset {
+	BACKGROUND-POSITION: 0px -1258px; MARGIN-LEFT: 18px
+}
+.reg_suc {
+	BORDER-BOTTOM: #c7ec8e 1px solid; BORDER-LEFT: #c7ec8e 1px solid; BACKGROUND: #f8ffec; FONT-SIZE: 14px; BORDER-TOP: #c7ec8e 1px solid; BORDER-RIGHT: #c7ec8e 1px solid
+}
+.reg_suc P {
+	MARGIN: 5px 0px 0px
+}
+.reg_suc .return {
+	MARGIN: 20px 0px 48px
+}
+.reg_suc EM {
+	MARGIN: 0px 3px; FONT-FAMILY: "Arial black", Arial, Verdana, Tahoma, "宋体"; COLOR: red; FONT-SIZE: 14px
+}
+.chk_fail {
+	BORDER-BOTTOM: #ca0000 1px solid; BORDER-LEFT: #ca0000 1px solid; BACKGROUND: #fff2f2; BORDER-TOP: #ca0000 1px solid; BORDER-RIGHT: #ca0000 1px solid
+}
+.chk_fail EM {
+	COLOR: #ca0000
+}
+.chk_order {
+	BORDER-BOTTOM: #c7ec8e 1px solid; BORDER-LEFT: #c7ec8e 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 670px; PADDING-RIGHT: 10px; BACKGROUND: #f8ffec; FONT-SIZE: 14px; BORDER-TOP: #c7ec8e 1px solid; BORDER-RIGHT: #c7ec8e 1px solid; PADDING-TOP: 10px
+}
+.chk_order .chked {
+	BORDER-BOTTOM: #c8ef91 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c8ef91 1px solid; WIDTH: 100%; BACKGROUND: #ebfece; BORDER-TOP: #c8ef91 1px solid; BORDER-RIGHT: #c8ef91 1px solid
+}
+.chk_order .chked TH {
+	BACKGROUND: #c8ef91; BORDER-RIGHT: #b8dc85 1px dotted
+}
+.chk_order .chked TD {
+	PADDING-BOTTOM: 30px; PADDING-LEFT: 23px; PADDING-RIGHT: 23px; FONT-SIZE: 14px; BORDER-RIGHT: #d0e7af 1px dotted; PADDING-TOP: 30px
+}
+.chk_order .chked .prj {
+	COLOR: #ca0000
+}
+.chk_order .chked .cal {
+	FONT-SIZE: 20px
+}
+.chk_order .chked EM {
+	FONT-SIZE: 24px
+}
+.chk_order .chked EM.sum {
+	COLOR: red; FONT-SIZE: 30px; FONT-WEIGHT: bold
+}
+.chk_order .agreement {
+	TEXT-ALIGN: right; MARGIN-TOP: 10px; MARGIN-BOTTOM: 0px; FONT-SIZE: 12px
+}
+.chk_order .agreement INPUT {
+	POSITION: relative; BOTTOM: -2px
+}
+.btnouter {
+	POSITION: relative; TEXT-ALIGN: right; BOTTOM: -30px; MARGIN-BOTTOM: -35px; RIGHT: -15px
+}
+.chking {
+	BORDER-BOTTOM: #ffe56e 1px solid; BORDER-LEFT: #ffe56e 1px solid; BACKGROUND: #fffcdf; FONT-SIZE: 14px; BORDER-TOP: #ffe56e 1px solid; BORDER-RIGHT: #ffe56e 1px solid
+}
+.chking .chked {
+	BORDER-BOTTOM: #ffe56e 1px solid; BORDER-LEFT: #ffe56e 1px solid; BACKGROUND: #fffbbf; BORDER-TOP: #ffe56e 1px solid; BORDER-RIGHT: #ffe56e 1px solid
+}
+.chking .chked TH {
+	BACKGROUND: #ffe67b; BORDER-RIGHT: #ead371 1px dotted
+}
+.chking .chked TD {
+	PADDING-BOTTOM: 30px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BORDER-RIGHT: #eae7b0 1px dotted; PADDING-TOP: 30px
+}
+.chking INPUT.s {
+	TEXT-ALIGN: center; WIDTH: 60px; FONT-FAMILY: Arial, Verdana, Tahoma, "宋体"; FONT-SIZE: 20px
+}
+.chking .udt {
+	MARGIN-TOP: 8px; FONT-SIZE: 12px
+}
+.chking .udt EM {
+	COLOR: #ca0000; FONT-SIZE: 14px
+}
+.chking .smy {
+	MARGIN-TOP: 10px; WIDTH: 100%; FLOAT: left; COLOR: #ca0000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.chking .smy LI {
+	FLOAT: left
+}
+.chking .smy .sum {
+	FLOAT: right; FONT-SIZE: 24px; FONT-WEIGHT: normal; MARGIN-RIGHT: 30px
+}
+.h_tip {
+	BORDER-BOTTOM: #ca0000 1px solid; BORDER-LEFT: #ca0000 1px solid; PADDING-BOTTOM: 4px; MARGIN: 15px 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #fff2f2; COLOR: #333; CLEAR: both; FONT-SIZE: 14px; BORDER-TOP: #ca0000 1px solid; BORDER-RIGHT: #ca0000 1px solid; PADDING-TOP: 4px
+}
+.helplist {
+	MARGIN: 20px 10px
+}
+.helplist DT {
+	POSITION: relative; PADDING-BOTTOM: 3px; PADDING-LEFT: 50px; PADDING-RIGHT: 50px; BACKGROUND: #f4f4f4; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.helplist DT SPAN {
+	POSITION: absolute; FONT-STYLE: italic; FONT-FAMILY: Arial; FONT-SIZE: 38px; TOP: 0px; FONT-WEIGHT: normal; LEFT: 15px
+}
+.helplist DD {
+	MARGIN: 10px 0px 45px 50px; COLOR: #666
+}
+.help_more {
+	MARGIN: 20px 20px 110px; FONT-SIZE: 14px
+}
+.myCharge {
+	BORDER-BOTTOM: #ddd 1px dashed; BORDER-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; DISPLAY: inline; FLOAT: left; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 5px
+}
+.myCharge .cl {
+	WIDTH: 6em; FLOAT: left; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.myChargeIn .cr {
+	WIDTH: 560px; FLOAT: left
+}
+.banks {
+	WIDTH: 560px; MARGIN-BOTTOM: 15px; FLOAT: left
+}
+.defaultcheck {
+	BORDER-BOTTOM: #ddd 1px dashed; PADDING-BOTTOM: 5px; WIDTH: 100%; MARGIN-BOTTOM: 10px; FLOAT: left
+}
+.defaultcheck LI LABEL {
+	MARGIN-TOP: -9px; MARGIN-RIGHT: 15px
+}
+.defaultcheck EM {
+	COLOR: red
+}
+.defaultcheck A {
+	COLOR: #234c94; TEXT-DECORATION: underline
+}
+.banks LI {
+	MARGIN-TOP: 0px
+}
+.banks LI LABEL {
+	FLOAT: left; CURSOR: pointer
+}
+.banks LI INPUT {
+	MARGIN-TOP: 10px; FLOAT: left
+}
+.banks LI IMG {
+	MARGIN-TOP: 2px; FLOAT: left
+}
+.banklsit {
+	WIDTH: 100%; FLOAT: left
+}
+.banklsit LI {
+	BORDER-BOTTOM: #f9f9f9 2px solid; BORDER-LEFT: #f9f9f9 2px solid; WIDTH: 30%; DISPLAY: inline; MARGIN-BOTTOM: 0px; FLOAT: left; BORDER-TOP: #f9f9f9 2px solid; MARGIN-RIGHT: 10px; BORDER-RIGHT: #f9f9f9 2px solid
+}
+.banks LI.active {
+	BORDER-BOTTOM: #ffd43c 2px solid; BORDER-LEFT: #ffd43c 2px solid; BORDER-TOP: #ffd43c 2px solid; BORDER-RIGHT: #ffd43c 2px solid
+}
+.myChargeIn {
+	BORDER-BOTTOM: 0px; MARGIN-TOP: 15px
+}
+.myChargeIn .cr .cipt {
+	WIDTH: 100%; FLOAT: left
+}
+.myChargeIn .cr .cipt LI {
+	MARGIN-BOTTOM: 8px; FLOAT: left; HEIGHT: 35px; CLEAR: both
+}
+.myChargeIn .cg_cash {
+	BORDER-BOTTOM: #a7a6aa 1px solid; POSITION: relative; BORDER-LEFT: #a7a6aa 1px solid; PADDING-BOTTOM: 3px; MARGIN: -4px 5px 0px 3px; PADDING-LEFT: 2px; WIDTH: 8em; PADDING-RIGHT: 2px; FONT-FAMILY: Arial, Tahoma; BACKGROUND: url(../images/member/input_bg.png) #fff no-repeat 0px 0px; FLOAT: left; COLOR: #f40; FONT-SIZE: 16px; BORDER-TOP: #a7a6aa 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #a7a6aa 1px solid; PADDING-TOP: 3px
+}
+.plan {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; WIDTH: 450px; MARGIN-BOTTOM: 15px; BACKGROUND: #f4f4f4; FLOAT: left; CLEAR: both; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid
+}
+.plan H3 {
+	PADDING-BOTTOM: 4px; TEXT-INDENT: 0.5em; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #ececec; FLOAT: left; FONT-SIZE: 14px; PADDING-TOP: 4px
+}
+.plan .det {
+	WIDTH: 100%; FLOAT: left
+}
+.plan .awd {
+	TEXT-ALIGN: center; WIDTH: 115px; FLOAT: left
+}
+.plan .awd IMG {
+	MARGIN-TOP: 20px
+}
+.plan .detail {
+	BORDER-LEFT: #d6d3a0 1px dotted; PADDING-BOTTOM: 12px; PADDING-LEFT: 0px; WIDTH: 334px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 12px
+}
+.plan .detail .list {
+	MARGIN-LEFT: 20px; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.plan .detail TD {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 3px
+}
+.plan .detail TD.l {
+	TEXT-ALIGN: right
+}
+.plan .detail TD EM {
+	COLOR: red; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.plan .btn {
+	BACKGROUND-IMAGE: url(../images/invest/btn_detail02.png); LINE-HEIGHT: 31px; MARGIN: 10px 0px 0px 45px; HEIGHT: 33px; FONT-SIZE: 14px
+}
+.plan .btn SPAN {
+	BACKGROUND-IMAGE: url(../images/invest/btn_detail02.png); PADDING-LEFT: 20px; HEIGHT: 33px; LEFT: -20px
+}
+.paward {
+	BORDER-BOTTOM: #ffdb3f 1px solid; BORDER-LEFT: #ffdb3f 1px solid; BACKGROUND: #fffbbf; BORDER-TOP: #ffdb3f 1px solid; BORDER-RIGHT: #ffdb3f 1px solid
+}
+.paward H3 {
+	BACKGROUND: #ffe67b
+}
+.paward .btn {
+	BACKGROUND-IMAGE: url(../images/invest/btn_detail01.png)
+}
+.paward .btn SPAN {
+	BACKGROUND-IMAGE: url(../images/invest/btn_detail01.png)
+}
+.pages {
+	TEXT-ALIGN: center; MARGIN: 30px 0px 40px; WIDTH: 100%; FLOAT: left
+}
+.pages A {
+	MARGIN: 0px 30px; COLOR: #333; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.aside {
+	MARGIN: 0px 4px; WIDTH: 225px; DISPLAY: inline; FLOAT: right
+}
+.aside .b {
+	BACKGROUND: #1e1e1e
+}
+.aside .b1 {
+	PADDING-LEFT: 15px
+}
+.aside .b2 {
+	PADDING-TOP: 10px
+}
+.aside .b3 {
+	PADDING-LEFT: 15px; MARGIN-LEFT: -15px
+}
+.aside .b4 {
+	PADDING-BOTTOM: 25px; PADDING-LEFT: 0px; PADDING-RIGHT: 15px; PADDING-TOP: 0px
+}
+.aside H2 {
+	MARGIN-BOTTOM: 8px; FONT-SIZE: 14px
+}
+.scd {
+	MARGIN-LEFT: 120px
+}
+.succeed {
+	
+}
+.succeed LI {
+	FLOAT: left; FONT-SIZE: 16px
+}
+.succeed .sr {
+	POSITION: relative; MARGIN-TOP: -5px; FLOAT: right
+}
+.memarea .recommend {
+	MARGIN: 15px -5px -25px; FLOAT: left
+}
+.memarea .recommend .list {
+	MARGIN: 0px 0px 15px; WIDTH: 100%; BACKGROUND: url(../images/member/recommend_thead.png) #131313 repeat-x 0px 0px; FLOAT: left
+}
+.memarea .recommend .list H3 {
+	LINE-HEIGHT: 31px; PADDING-LEFT: 35px; BACKGROUND: url(../images/member/ico_hot.png) no-repeat 12px 8px; HEIGHT: 31px; FONT-SIZE: 12px
+}
+.memarea .recommend .list LI {
+	BORDER-BOTTOM: #2b2b2b 1px dotted; PADDING-BOTTOM: 10px; MARGIN: 0px 15px -1px; PADDING-LEFT: 10px; WIDTH: 610px; PADDING-RIGHT: 10px; FLOAT: left; PADDING-TOP: 10px
+}
+.memarea .recommend .list2 H3 {
+	BACKGROUND-POSITION: 12px -125px
+}
+.memarea .recommend .bd {
+	MARGIN: 0px 20px 0px 10px; WIDTH: 120px; FLOAT: left
+}
+.memarea .recommend .bdinfo {
+	WIDTH: 425px; FLOAT: left
+}

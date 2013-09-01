@@ -1,0 +1,173 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+    <HEAD>
+        <TITLE>免费注册时时彩网会员</TITLE>
+        <META content="text/html; charset=utf-8" http-equiv=Content-Type>
+        <LINK rel="shortcut icon" href="img/favicon.ico"/>
+        <LINK rel=stylesheet type="text/css" href="css/games.v2010.css">
+        <LINK rel=stylesheet type="text/css" href="css/reg_login.css">
+        <META content=IE=7 http-equiv=X-UA-Compatible>
+        <SCRIPT type="text/javascript" src="js/Core.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/Enum.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/DateTime.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/ModalDialog.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/json2.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/AjaxHelper.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/ProjectCommon.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/Reg.js"></SCRIPT>
+
+        <SCRIPT type="text/javascript">
+            var serverDate = new Date(2011, 7, 13, 18, 14, 44, 845);
+        </SCRIPT>
+        <STYLE type="text/css">
+            SPAN.hide {
+                DISPLAY: none
+            }
+        </STYLE>
+    <BODY>
+        <FORM id=aspnetForm method=post name=aspnetForm action="/RegeditServlet">
+            <SCRIPT type="text/javascript">
+                var theForm = document.forms['aspnetForm'];
+                if (!theForm) {
+                    theForm = document.aspnetForm;
+                }
+                function __doPostBack(eventTarget, eventArgument) {    
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) 
+                    {        
+                        theForm.__EVENTTARGET.value = eventTarget;        
+                        theForm.__EVENTARGUMENT.value = eventArgument;        
+                        theForm.submit();    
+                    }
+                }
+            </SCRIPT>
+            <DIV class=wrapper>
+                <DIV id=Reg_MainBox class=memarea>
+                    <H2 class=c align=center>注册账号</H2>
+                    <br>
+                    <DIV class="ml reg">
+                        <DIV class=c>账号信息</DIV>
+                        <DIV>
+                            <LABEL>登录账号</LABEL>
+                            <SPAN class=ipt>
+                                <INPUT onblur=Reg_CheckUserName(this)
+                                       id=ctl00_ContentPlaceHolder_Body_txtUserName onfocus=ShowTip(this); maxLength=16
+                                       type=text name=ctl00$ContentPlaceHolder_Body$txtUserName oErr=""
+                                       oTip="用户名长度为3～10个字符，由英文字母(不区分大小写)、数字、下划线及汉字组成。">
+                                <SPAN class=tip></SPAN><SPAN
+                                    class="tipOK hide"></SPAN><SPAN class="tipOK2 hide"></SPAN></SPAN></DIV>
+                        <DIV>
+                            <LABEL>登录密码</LABEL>
+                            <SPAN class=ipt>
+                                <INPUT onblur=Reg_CheckPass(this)
+                                       id=ctl00_ContentPlaceHolder_Body_txtPassWord class=Reg_Pass
+                                       onfocus=ShowTip(this); maxLength=16 type=password
+                                       name=ctl00$ContentPlaceHolder_Body$txtPassWord oErr="" oTip="密码长度6～16位。">
+                                <SPAN
+                                    class=tip></SPAN><SPAN class="tipOK hide"></SPAN><SPAN
+                                    class="tipOK2 hide"></SPAN></SPAN></DIV>
+                        <DIV>
+                            <LABEL>确认密码</LABEL>
+                            <SPAN class=ipt>
+                                <INPUT onblur=Reg_CheckConfirmPass(this)
+                                       id=ctl00_ContentPlaceHolder_Body_txtPassWord2 class=Reg_Pass
+                                       onfocus=ShowTip(this); maxLength=16 type=password
+                                       name=ctl00$ContentPlaceHolder_Body$txtPassWord2 oErr="" oTip="请再次输入密码。">
+                                <SPAN
+                                    class=tip></SPAN><SPAN class="tipOK hide"></SPAN><SPAN
+                                    class="tipOK2 hide"></SPAN></SPAN></DIV>
+                        <DIV style="MARGIN-TOP: 20px" class=c>个人信息</DIV>
+                        <DIV>
+                            <LABEL>真实姓名</LABEL>
+                            <SPAN class=ipt>
+                                <INPUT onblur=Reg_CheckTrueName(this)
+                                       id=ctl00_ContentPlaceHolder_Body_txtTrueName onfocus=ShowTip(this); maxLength=20
+                                       type=text name=ctl00$ContentPlaceHolder_Body$txtTrueName
+                                       oErr="请正确填写您的真实姓名，作为提款的依据(确保和身份证件上的姓名一致)，填写后无法修改。"
+                                       oTip="您的真实姓名，作为提款的依据(确保和身份证件上的姓名一致)，填写后无法修改。">
+                                <SPAN class=tip></SPAN><SPAN
+                                    class="tipOK hide"></SPAN><SPAN class="tipOK2 hide"></SPAN></SPAN></DIV>
+                        <DIV>
+                            <LABEL>身份证号</LABEL>
+                            <SPAN class=ipt>
+                                <INPUT
+                                    onblur=Reg_CheckIdentityCard(this)
+                                    id=ctl00_ContentPlaceHolder_Body_txtIdentityCard class=Reg_IdentityCard
+                                    onfocus=ShowTip(this); type=text
+                                    name=ctl00$ContentPlaceHolder_Body$txtIdentityCard oErr=""
+                                    oTip="请输入18位身份证号码，作为提款的依据，填写后无法修改。">
+                                <SPAN class=tip></SPAN><SPAN
+                                    class="tipOK hide"></SPAN><SPAN class="tipOK2 hide"></SPAN></SPAN></DIV>
+                        <DIV>
+                            <LABEL>手机号码</LABEL>
+                            <SPAN class=ipt>
+                                <INPUT onblur=Reg_CheckMobilePhone(this)
+                                       id=ctl00_ContentPlaceHolder_Body_txtMobilePhone onfocus=ShowTip(this);
+                                       maxLength=15 type=text name=ctl00$ContentPlaceHolder_Body$txtMobilePhone oErr=""
+                                       oTip="中大奖能与您及时联系。">
+                                <SPAN class=tip></SPAN><SPAN class="tipOK hide"></SPAN><SPAN
+                                    class="tipOK2 hide"></SPAN></SPAN></DIV>
+                        <DIV>
+                            <LABEL>QQ号码</LABEL>
+                            <SPAN class=ipt>
+                                <INPUT onblur=Reg_CheckQQ(this)
+                                       id=ctl00_ContentPlaceHolder_Body_txtQQ onfocus=ShowTip(this);
+                                       onkeyup=autoFillEmail() maxLength=12 type=text
+                                       name=ctl00$ContentPlaceHolder_Body$txtQQ oErr=""
+                                       oTip="请输入您的QQ号码，5位号码以上，例如：800019790">
+                                <SPAN class=tip></SPAN><SPAN
+                                    class="tipOK hide"></SPAN><SPAN class="tipOK2 hide"></SPAN></SPAN></DIV>
+                        <DIV>
+                            <LABEL>电子邮箱</LABEL>
+                            <SPAN class=ipt>
+                                <INPUT onblur=Reg_CheckEmail(this)
+                                       id=ctl00_ContentPlaceHolder_Body_txtEmail onfocus=ShowTip(this); maxLength=50
+                                       type=text name=ctl00$ContentPlaceHolder_Body$txtEmail oErr=""
+                                       oTip="请输入您正确的电子邮箱。（推荐QQ邮箱，例如：您的QQ号码@qq.com）">
+                                <SPAN class=tip></SPAN><SPAN
+                                    class="tipOK hide"></SPAN><SPAN class="tipOK2 hide"></SPAN></SPAN></DIV>
+                        <DIV class=agreement>
+                            <LABEL>
+                                <INPUT id=cbAgree1 onclick=Reg_CheckAgreement(this)
+                                       CHECKED type=checkbox>
+                                我已年满18周岁并且已仔细阅读并接受“<A
+                                    href="http://www.shishicai.cn/help/details.aspx?id=63"
+                                    target=_blank>用户服务协议</A>”。</LABEL>
+                        </DIV>
+                        <DIV class=agreement>
+                            <LABEL>
+                                <INPUT onclick=Reg_CheckAgreement(this)
+                                       type=checkbox>
+                                我已确认如实填写姓名、身份证号码等信息，以此作为我领奖身份凭据。</LABEL>
+                        </DIV>
+                        <DIV><A id=ctl00_ContentPlaceHolder_Body_lbtnSubmit class=btn onclick="return Reg_formSubmit();" href="javascript:__doPostBack('ctl00_ContentPlaceHolder_Body_lbtnSubmit','')"><SPAN>填写完毕，注册！</SPAN></A>
+                        </DIV>
+                    </DIV>
+                </DIV>
+                <SCRIPT type="text/javascript">
+                    if (eval("true")) {
+                        var inputList = $("Reg_MainBox").getElementsByTagName("input");
+                        for (var i = 0; i < inputList.length; i++) {
+                            if (inputList[i].type == "text" || inputList[i].type == "password") {
+                                inputList[i].parentNode.getElementsByTagName("span")[0].innerHTML = inputList[i].getAttribute("oTip");
+                            }
+                        }
+                    }
+                    Reg_CheckAgreement($("cbAgree1"));
+
+                    function autoFillEmail(e) {
+                        var txtQQ = $("ctl00_ContentPlaceHolder_Body_txtQQ");
+                        var txtEmail = $("ctl00_ContentPlaceHolder_Body_txtEmail");
+                        if (txtQQ.value.trim() != "") {
+                            txtEmail.value = txtQQ.value.trim() + "@qq.com";
+                        } else {
+                            txtEmail.value = "";
+                        }
+                    }
+                </SCRIPT>
+                <DIV class=clear></DIV>
+                <DIV></DIV>
+            </DIV>
+        </FORM>
+    </BODY>
+</HTML>

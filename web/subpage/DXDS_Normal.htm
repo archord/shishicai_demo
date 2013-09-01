@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title>
+
+    <link rel="Stylesheet" href="../css/ssc.css">
+    <link rel="Stylesheet" href="../css/speed_cq.css">
+    <script type="text/javascript" src="../js/Core.js"></script>
+    <script type="text/javascript" src="../js/Bet.js"></script>
+    <script type="text/javascript" src="../js/dxds_normal.js"></script>
+    
+
+    <style type="text/css">
+    html{ background-image:none;}
+    </style>
+</head>
+<body class="frameInner">
+    <form name="aspnetForm" method="post" action="" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1MmRkTWi+WKKJxQiukRWGsgBpqFOwur4=">
+</div>
+
+        
+			<div class="panelLeft panelLeftYilou">
+				<ul class="tab_panel" id="ContainerUpdateDataMenu">
+				    <li class="active"><span>常用遗漏</span></li>
+					<li><span>形态遗漏</span></li>
+				    <li><span>10期走势</span></li>
+				</ul>
+				<div class="panelList" style="">
+				    <div class="panelTble panelTble2" id="ContainerNormalYiLou"></div>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				<div class="panelList" style="display:none;">
+					<div class="panelTble" id="Container10Trend"></div>
+					<i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+				<div class="panelList panelListYilou" id="ContainerXingTaiYiLou" style="display:none;">
+				    <table class="panelYilou">
+				        <tbody><tr>
+							<td></td>
+							<td><span class="ybtn">大大</span></td>
+							<td><span class="ybtn">大小</span></td>
+							<td><span class="ybtn">大单</span></td>
+							<td><span class="ybtn">大双</span></td>
+							<td><span class="ybtn">小大</span></td>
+							<td><span class="ybtn">小小</span></td>
+							<td><span class="ybtn">小单</span></td>
+							<td><span class="ybtn">小双</span></td>
+						</tr>
+						<tr>
+							<th>遗漏</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr style="display:none;">
+							<th>最大遗漏</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>平均遗漏</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>冷热</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				    </tbody></table>
+				    <table class="panelYilou panelYilou2">
+				        <tbody><tr>
+							<td></td>
+							<td><span class="ybtn">单大</span></td>
+							<td><span class="ybtn">单小</span></td>
+							<td><span class="ybtn">单单</span></td>
+							<td><span class="ybtn">单双</span></td>
+							<td><span class="ybtn">双大</span></td>
+							<td><span class="ybtn">双小</span></td>
+							<td><span class="ybtn">双单</span></td>
+							<td><span class="ybtn">双双</span></td>
+						</tr>
+						<tr>
+							<th>遗漏</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr style="display:none;">
+							<th>最大遗漏</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>平均遗漏</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>冷热</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				    </tbody></table>
+				    <i class="shadowBottom"><i class="shadowBottomL"></i></i>
+				</div>
+			</div>
+
+			<div class="numCheck numCheckDS">
+				<div class="numArea">
+					<ul id="pick10" class="btn_numlist"></ul>
+					<ul id="pick1" class="btn_numlist"></ul>
+				</div>
+				
+				<div class="chartCheck">
+				    <span class="suml"><a class="btn btnChartCheck" href="javascript:void(0)" id="SubmitTicket">选号</a></span>
+				    <span id="ShowPickInfo" class="sum"><span id="ShowPickInfo" class="sum">共<em id="PickBetCount">0</em>注，共<em id="PickBetMoney" class="f_highlight">￥0.00</em>元</span></span>
+				</div>
+
+			</div>
+			
+<script type="text/javascript">
+<!--
+    var UpdateDataMenu = new TKCPCEO.Lottery.FCCQSSC.UpdateData();
+    UpdateDataMenu.initialize();
+    var pickClass10 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+    pickClass10.Container = $("pick10");
+    pickClass10.CssClass.HeadLi = "nums";
+    pickClass10.Text.HeadTitle = "十位";
+    pickClass10.ListData = [
+            { Text: "大", Value: 2 },
+            { Text: "小", Value: 1 },
+            { Text: "单", Value: 5 },
+            { Text: "双", Value: 4 }
+        ];
+    pickClass10.initialize();
+
+    var pickClass1 = new TKCPCEO.Lottery.FCCQSSC.Pick();
+    pickClass1.Container = $("pick1");
+    pickClass1.CssClass.HeadLi = "nums";
+    pickClass1.Text.HeadTitle = "个位";
+    pickClass1.ListData = [
+            { Text: "大", Value: 2 },
+            { Text: "小", Value: 1 },
+            { Text: "单", Value: 5 },
+            { Text: "双", Value: 4 }
+        ];
+    pickClass1.initialize();
+
+    PickR.PickInfo.BetCount = $("PickBetCount");
+    PickR.PickInfo.BetMoney = $("PickBetMoney");
+    PickR.PickClass1 = pickClass1;
+    PickR.PickClass10 = pickClass10;
+    PickR.initialize();
+
+    var PickFilter = new TKCPCEO.Lottery.FCCQSSC.Filter();
+    PickFilter.BtnSubmitTicket = $("SubmitTicket");
+    PickFilter.initialize();
+-->
+</script>
+
+    </form>
+
+
+</body></html>

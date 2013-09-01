@@ -1,0 +1,1455 @@
+HTML {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+BODY {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL LI {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+SPAN {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+LEGEND {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+LABEL {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+Q {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+UL LI {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+INPUT {
+	FONT-FAMILY: "宋体", Arial, Tahoma; FONT-SIZE: 12px
+}
+SELECT {
+	FONT-FAMILY: "宋体", Arial, Tahoma; FONT-SIZE: 12px
+}
+TABLE {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-COLLAPSE: collapse; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+BODY {
+	FONT: 12px/160% "宋体", Arial, Verdana, Tahoma; BACKGROUND: url(../img/bg.gif) #232323; COLOR: #333
+}
+A {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; COLOR: #333; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000; TEXT-DECORATION: underline
+}
+A:active {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px
+}
+EM {
+	FONT-STYLE: normal; FONT-SIZE: 12px
+}
+I {
+	FONT-STYLE: normal; FONT-SIZE: 12px
+}
+.f_highlight {
+	COLOR: #fc0
+}
+.f-red {
+	COLOR: red
+}
+.icos {
+	LINE-HEIGHT: 200px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(../img/ico_clock.gif) no-repeat 0px center; HEIGHT: 16px; OVERFLOW: hidden
+}
+#wrapper {
+	MARGIN: 0px auto; WIDTH: 980px
+}
+.head {
+	MARGIN: 0px auto; WIDTH: 980px; BACKGROUND: url(../img/headbg.gif) repeat-x 0px 0px; HEIGHT: 85px
+}
+.logo {
+	MARGIN: 0px; WIDTH: 127px; FLOAT: left; HEIGHT: 85px
+}
+.logo A {
+	LINE-HEIGHT: 300px; WIDTH: 127px; BACKGROUND: url(../img/logo_ssc.gif) no-repeat 0px 0px; FLOAT: left; HEIGHT: 85px; OVERFLOW: hidden
+}
+.logo_s {
+	MARGIN: 10px 0px 0px; WIDTH: 108px; FLOAT: left; HEIGHT: 38px
+}
+.logo_s A {
+	LINE-HEIGHT: 300px; WIDTH: 108px; BACKGROUND: url(../img/logo_ssc.gif) no-repeat -122px -10px; FLOAT: left; HEIGHT: 38px; OVERFLOW: hidden
+}
+.headTop {
+	MARGIN: 0px auto; WIDTH: 853px; BACKGROUND: url(../img/headbgr.gif) no-repeat 100% 0px; FLOAT: left; HEIGHT: 85px
+}
+.login {
+	Z-INDEX: 150; POSITION: relative; MARGIN: 10px 10px 0px 0px; DISPLAY: inline; FONT: 11px Arial, Verdana, Tahoma, "細明體", "PMingLiU", "宋体"; FLOAT: right; COLOR: #eee
+}
+.login .id {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; WIDTH: 90px; PADDING-RIGHT: 1px; FONT-FAMILY: Arial, Verdana, Tahoma, "宋体"; BACKGROUND: #fff; COLOR: #494949; FONT-SIZE: 11px; BORDER-TOP: #000 1px solid; MARGIN-RIGHT: 4px; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 1px
+}
+.login .pw {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; WIDTH: 90px; PADDING-RIGHT: 1px; FONT-FAMILY: Arial, Verdana, Tahoma, "宋体"; BACKGROUND: #fff; COLOR: #494949; FONT-SIZE: 11px; BORDER-TOP: #000 1px solid; MARGIN-RIGHT: 4px; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 1px
+}
+.login .value {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; WIDTH: 90px; PADDING-RIGHT: 1px; FONT-FAMILY: Arial, Verdana, Tahoma, "宋体"; BACKGROUND: #fff; COLOR: #494949; FONT-SIZE: 11px; BORDER-TOP: #000 1px solid; MARGIN-RIGHT: 4px; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 1px
+}
+.login .lgn {
+	BORDER-BOTTOM: 0px; POSITION: relative; TEXT-ALIGN: center; BORDER-LEFT: 0px; WIDTH: 31px; BOTTOM: -2px; FONT: 12px "細明體", "PMingLiU", "宋体"; BACKGROUND: url(../img/button_t_login_dark.gif) no-repeat; HEIGHT: 17px; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px
+}
+.login A.free-reg {
+	MARGIN-TOP: 2px; FONT-FAMILY: Arial, Verdana, Tahoma, "宋体"; FLOAT: left; MARGIN-LEFT: 2px; FONT-SIZE: 12px
+}
+.login A.forget-pw {
+	MARGIN-TOP: 2px; FONT-FAMILY: Arial, Verdana, Tahoma, "宋体"; FLOAT: left; MARGIN-LEFT: 52px; FONT-SIZE: 12px
+}
+.login .val {
+	BORDER-BOTTOM: #444 1px solid; POSITION: absolute; BORDER-LEFT: #444 1px solid; PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; FONT-FAMILY: "細明體", "PMingLiU", "宋体"; BACKGROUND: #c7c7c7; COLOR: #333; FONT-SIZE: 12px; BORDER-TOP: #444 1px solid; TOP: 2px; RIGHT: 0px; BORDER-RIGHT: #444 1px solid; PADDING-TOP: 8px
+}
+.login .val .valimg {
+	TEXT-ALIGN: center; MARGIN: 4px 0px 6px
+}
+.login .value {
+	BORDER-BOTTOM-COLOR: #444; BORDER-TOP-COLOR: #444; WIDTH: 70px; BORDER-RIGHT-COLOR: #444; BORDER-LEFT-COLOR: #444
+}
+.login .go {
+	MARGIN: 3px 0px 5px 42px
+}
+.login .go .lgn {
+	MARGIN: 0px 5px 0px 0px
+}
+.lot_switch {
+	Z-INDEX: 100; POSITION: relative; MARGIN-TOP: 10px; DISPLAY: inline; FLOAT: left
+}
+.lot_switch .prd {
+	LINE-HEIGHT: 21px; TEXT-INDENT: 10px; WIDTH: 79px; DISPLAY: block; BACKGROUND: url(../img/lot_switch.gif) no-repeat 0px 0px; HEIGHT: 21px; COLOR: #fff
+}
+.lot_switch .prd:hover {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.lot_switch UL {
+	Z-INDEX: 100; BORDER-BOTTOM: #ea9222 1px solid; POSITION: absolute; BORDER-LEFT: #ea9222 1px solid; PADDING-BOTTOM: 8px; LINE-HEIGHT: 16px; PADDING-LEFT: 0px; WIDTH: 10em; PADDING-RIGHT: 0px; DISPLAY: none; BACKGROUND: #fff; BORDER-TOP: #ea9222 1px solid; TOP: 19px; BORDER-RIGHT: #ea9222 1px solid; PADDING-TOP: 8px; LEFT: 0px
+}
+.lot_switch LI {
+	WIDTH: 100%; WHITE-SPACE: nowrap; FLOAT: left
+}
+.lot_switch LI A {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; DISPLAY: block; WHITE-SPACE: nowrap; PADDING-TOP: 6px
+}
+.lot_switch LI A:hover {
+	BACKGROUND: #ffa041; COLOR: #fff; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.lot_switch LI A.gx10f {
+	BACKGROUND-IMAGE: url(../img/ico_add.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 11em 2px
+}
+.lot_switch LI A.gx10f:hover {
+	BACKGROUND: url(../img/ico_add.gif) #ffa041 no-repeat 11em 2px
+}
+.instruction {
+	MARGIN-TOP: 12px; FLOAT: left; MARGIN-LEFT: 15px
+}
+.instruction LI {
+	Z-INDEX: 100; POSITION: relative; MARGIN: 0px 8px; FLOAT: left; FONT-SIZE: 14px
+}
+.instruction LI A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; DISPLAY: inline-block; PADDING-TOP: 0px
+}
+.instruction LI A:hover {
+	BACKGROUND: #000; COLOR: #fff; TEXT-DECORATION: none
+}
+.instruction .lotins {
+	BORDER-BOTTOM: #ebab00 1px solid; POSITION: absolute; BORDER-LEFT: #ebab00 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #fff; BORDER-TOP: #ebab00 1px solid; TOP: 18px; BORDER-RIGHT: #ebab00 1px solid; PADDING-TOP: 10px; LEFT: 0px
+}
+.instruction .lotins LI {
+	WHITE-SPACE: nowrap; MARGIN-BOTTOM: 15px; FLOAT: none; FONT-SIZE: 12px
+}
+.instruction .lotclass {
+	POSITION: absolute; WIDTH: 290px; FONT-SIZE: 12px; TOP: 18px; LEFT: 0px
+}
+.instruction .lotclass TABLE {
+	BORDER-BOTTOM: #ebab00 1px solid; BORDER-LEFT: #ebab00 1px solid; BORDER-SPACING: 0; WIDTH: 100%; BORDER-COLLAPSE: separate; BACKGROUND: #fff; BORDER-TOP: #ebab00 1px solid; BORDER-RIGHT: #ebab00 1px solid
+}
+.instruction .lotclass TABLE TD {
+	BORDER-BOTTOM: #ffe9c6 1px solid; BORDER-LEFT: #ffe9c6 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #fff 1px solid; PADDING-TOP: 1px
+}
+.subMenu {
+	MARGIN-TOP: 10px; WIDTH: 853px; FLOAT: left
+}
+.subl {
+	FLOAT: left
+}
+.subr {
+	POSITION: relative; DISPLAY: inline; FLOAT: right; MARGIN-RIGHT: 10px
+}
+.subMenu .mmc {
+	FLOAT: left
+}
+.subMenu .mmc .ins {
+	FLOAT: left; FONT-WEIGHT: bold; MARGIN-RIGHT: 15px
+}
+.subMenu .mmc .u {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+.subMenu .mmc .u LI {
+	FLOAT: left
+}
+.subMenu .mmc .msg {
+	MARGIN: 0px 10px; PADDING-LEFT: 17px; BACKGROUND: url(../img/ico_msg.gif) no-repeat 0px 3px
+}
+.subMenu .mmc .msg EM {
+	COLOR: red; FONT-WEIGHT: bold
+}
+.subMenu .mmc .g {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+.subMenu .mmc .g LABEL {
+	FLOAT: left
+}
+.subMenu .mmc .ipt {
+	BORDER-BOTTOM: #fff 1px solid; BORDER-LEFT: #b3ae87 1px solid; WIDTH: 60px; BACKGROUND: #fff8c1; FLOAT: left; HEIGHT: 14px; BORDER-TOP: #b3ae87 1px solid; BORDER-RIGHT: #fff 1px solid
+}
+.subMenu .mmc .btn_mmc {
+	BORDER-BOTTOM: #890002 1px solid; BORDER-LEFT: #da9091 1px solid; PADDING-BOTTOM: 2px; LINE-HEIGHT: 1em; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; BACKGROUND: #ca0000; COLOR: #fff; BORDER-TOP: #da9091 1px solid; BORDER-RIGHT: #890002 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.subMenu .mmc .btn_mmc:hover {
+	COLOR: #ff0; TEXT-DECORATION: none
+}
+.subMenu .mmc A {
+	COLOR: #ca0000; TEXT-DECORATION: underline
+}
+.subMenu .mmc .g2 .btn_mmc {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; MARGIN-RIGHT: 5px; PADDING-TOP: 2px
+}
+.top_admin {
+	MARGIN: 12px 12px 0px 0px; FLOAT: right
+}
+.ico_count {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 18px; BACKGROUND: url(../img/icons.gif) no-repeat 0px -32px
+}
+.ico_charge {
+	PADDING-LEFT: 6px
+}
+.ico_account {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 18px; BACKGROUND: url(../img/icons.gif) no-repeat 0px -64px; MARGIN-LEFT: 2px
+}
+.ico_qq {
+	POSITION: relative; LINE-HEIGHT: 300px; WIDTH: 78px; DISPLAY: inline-block; BACKGROUND: url(../img/ico_qqonline.gif) no-repeat 0px 0px; HEIGHT: 20px; OVERFLOW: hidden
+}
+.count_time {
+	COLOR: #df0000; FONT-WEIGHT: bold
+}
+.cLoading {
+	TEXT-ALIGN: center; MARGIN: 15px 0px; WIDTH: 98%; FLOAT: left; COLOR: #fff
+}
+.cLoading SPAN {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 30px; PADDING-RIGHT: 0px; DISPLAY: inline-block; BACKGROUND: url(../img/loading.gif) no-repeat 0px center; PADDING-TOP: 8px
+}
+.liHighlight LI {
+	BORDER-BOTTOM: #b77e3b 1px solid; BORDER-LEFT: #f5d314 1px solid; LINE-HEIGHT: 20px; BACKGROUND: #ebab00; COLOR: #000; OVERFLOW: hidden; BORDER-TOP: #f5d314 1px solid; BORDER-RIGHT: #b77e3b 1px solid
+}
+.deftlight LI {
+	BORDER-BOTTOM: #343434 1px solid; BORDER-LEFT: #636363 1px solid; LINE-HEIGHT: 21px; BACKGROUND: #474747; HEIGHT: 21px; COLOR: #ccc; OVERFLOW: hidden; BORDER-TOP: #636363 1px solid; BORDER-RIGHT: #343434 1px solid
+}
+.frameInner {
+	BACKGROUND: #474747
+}
+.lottery {
+	Z-INDEX: 10; POSITION: relative; MARGIN-TOP: 5px; WIDTH: 980px; BACKGROUND: url(../img/lottery_drawm.gif) repeat-x 0px 0px; FLOAT: left; HEIGHT: 202px; OVERFLOW: hidden
+}
+.lotNow {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 190px; PADDING-LEFT: 7px; WIDTH: 478px; PADDING-RIGHT: 0px; DISPLAY: inline; FONT-FAMILY: Arial, Tahoma; BACKGROUND: url(../img/lottery_drawl.gif) no-repeat 0px 0px; FLOAT: left; HEIGHT: 195px; COLOR: #fff; FONT-SIZE: 16px; FONT-WEIGHT: bold; PADDING-TOP: 7px
+}
+.sumInfo {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 475px; PADDING-RIGHT: 8px; DISPLAY: inline; FONT-FAMILY: "宋体", Arial, Tahoma; BACKGROUND: url(../img/lottery_drawr.gif) no-repeat right 0px; FLOAT: right; HEIGHT: 191px; PADDING-TOP: 11px
+}
+.sumInfo .sListt {
+	WIDTH: 100%; FLOAT: left
+}
+.sListt .sumInfoMore A {
+	MARGIN-TOP: -2px; PADDING-LEFT: 10px; FLOAT: right
+}
+.sListt .sumInfoItem {
+	POSITION: relative; MARGIN-TOP: -3px; FLOAT: left; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.sumInfo .tab_sList {
+	FLOAT: left
+}
+.sumInfo .tab_sList LI {
+	TEXT-ALIGN: center; PADDING-LEFT: 10px; BACKGROUND: url(../img/tab_common.gif) no-repeat 0px -92px; FLOAT: left; HEIGHT: 19px; COLOR: #aaa; CURSOR: pointer; MARGIN-RIGHT: 2px
+}
+.sumInfo .tab_sList LI SPAN {
+	PADDING-RIGHT: 10px; BACKGROUND: url(../img/tab_common.gif) no-repeat 100% -92px; FLOAT: left; HEIGHT: 19px
+}
+.sumInfo .tab_sList .active {
+	POSITION: relative; LINE-HEIGHT: 21px; MARGIN-TOP: -2px; BACKGROUND: url(../img/tab_common.gif) no-repeat 0px -55px; HEIGHT: 21px; COLOR: #ebab00
+}
+.sumInfo .tab_sList .active SPAN {
+	BACKGROUND: url(../img/tab_common.gif) no-repeat 100% -55px; HEIGHT: 20px
+}
+.sumInfo .tab_sList .pre {
+	LINE-HEIGHT: 120px; MARGIN: 0px 0px 0px 10px; WIDTH: 10px; BACKGROUND: url(../img/icons.gif) no-repeat 0px -125px; HEIGHT: 13px; OVERFLOW: hidden
+}
+.sumInfo .tab_sList .next {
+	LINE-HEIGHT: 120px; PADDING-LEFT: 0px; WIDTH: 10px; BACKGROUND: url(../img/icons.gif) no-repeat -19px -125px; HEIGHT: 13px; OVERFLOW: hidden
+}
+.sumInfo .tab_sList .imp {
+	POSITION: relative; LINE-HEIGHT: 21px; MARGIN-TOP: -2px; HEIGHT: 21px; COLOR: #ebab00; FONT-WEIGHT: bold
+}
+.sumInfo .tab_sList .imp SPAN {
+	HEIGHT: 20px
+}
+.sumInfo .tab_sList .rctly {
+	MARGIN-RIGHT: 15px
+}
+.sumInfo .sList {
+	BORDER-BOTTOM: #242424 1px solid; BORDER-LEFT: #242424 1px solid; WIDTH: 99%; FLOAT: left; HEIGHT: 138px; OVERFLOW: auto; BORDER-TOP: #242424 1px solid; BORDER-RIGHT: #242424 1px solid
+}
+.sumInfo .sList LI {
+	TEXT-ALIGN: center
+}
+.sumInfo .sList LI.others {
+	BORDER-BOTTOM-COLOR: #b2b2b2; BORDER-TOP-COLOR: #f6f6f6; BACKGROUND: #ddd; BORDER-RIGHT-COLOR: #b2b2b2; BORDER-LEFT-COLOR: #f6f6f6
+}
+.sumInfo .sList LI.thisNew {
+	BORDER-BOTTOM-COLOR: #860000; BORDER-TOP-COLOR: #c73e44; BACKGROUND: #a90003; COLOR: #e5e5e5; BORDER-RIGHT-COLOR: #860000; BORDER-LEFT-COLOR: #c73e44
+}
+.sumInfo .sList LI.othersNew {
+	BORDER-BOTTOM-COLOR: #8e3900; BORDER-TOP-COLOR: #d07a27; BACKGROUND: #b94f00; COLOR: #e5e5e5; BORDER-RIGHT-COLOR: #8e3900; BORDER-LEFT-COLOR: #d07a27
+}
+.sumInfo .sList LI.thisNew A {
+	COLOR: #e5e5e5
+}
+.sumInfo .sList LI.othersNew A {
+	COLOR: #e5e5e5
+}
+.sumInfo .sList LI.none {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 136px; HEIGHT: 138px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.sumInfo .sList LI .gx10f {
+	WIDTH: 470px; DISPLAY: block; HEIGHT: 138px; OVERFLOW: hidden; TOP: 0px; LEFT: 0px
+}
+.sumInfo .sList LI.othersNone {
+	BORDER-BOTTOM-COLOR: #ddd; LINE-HEIGHT: 136px; BORDER-TOP-COLOR: #ddd; BACKGROUND: #ddd; HEIGHT: 136px; BORDER-RIGHT-COLOR: #ddd; BORDER-LEFT-COLOR: #ddd
+}
+.sumInfo .thc {
+	HEIGHT: 19px; OVERFLOW: hidden
+}
+.sumInfo .thc LI {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: #242424; COLOR: #979797; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.sumInfo .thc LI.outof {
+	PADDING-RIGHT: 20px
+}
+.sumInfo .sList LI SPAN {
+	DISPLAY: inline-block; VERTICAL-ALIGN: middle
+}
+.sumInfo .sList .i1 {
+	WIDTH: 16%
+}
+.sumInfo .sList .i2 {
+	WIDTH: 28%; WORD-WRAP: break-word
+}
+.sumInfo .sList .i3 {
+	WIDTH: 7%
+}
+.sumInfo .sList .i4 {
+	WIDTH: 15%
+}
+.sumInfo .sList .i5 {
+	WIDTH: 12%
+}
+.sumInfo .sList .i6 {
+	WIDTH: 18%
+}
+.sumInfo .sList A:hover {
+	TEXT-DECORATION: none
+}
+.sumInfo .deftlight .i1 {
+	WIDTH: 19%
+}
+.sumInfo .deftlight .i2 {
+	WIDTH: 14%
+}
+.sumInfo .deftlight .i3 {
+	WIDTH: 10%
+}
+.sumInfo .deftlight .i4 {
+	WIDTH: 10%
+}
+.sumInfo .deftlight .i5 {
+	WIDTH: 18%
+}
+.sumInfo .deftlight .i6 {
+	WIDTH: 14%
+}
+.sumInfo .deftlight .i7 {
+	WIDTH: 14%
+}
+.shadowBottom {
+	POSITION: relative; WIDTH: 100%; BACKGROUND: url(../img/shadow_b.gif) no-repeat 100% 0px; FLOAT: left; HEIGHT: 6px; RIGHT: -5px
+}
+.shadowBottom .shadowBottomL {
+	POSITION: absolute; WIDTH: 12px; BACKGROUND: url(../img/shadow_bl.gif) no-repeat 0px 0px; FLOAT: left; HEIGHT: 6px; TOP: 0px; LEFT: -5px
+}
+.section {
+	BORDER-BOTTOM: #898989 1px solid; BORDER-LEFT: #898989 1px solid; PADDING-BOTTOM: 10px; MARGIN-TOP: 10px; WIDTH: 978px; FONT-FAMILY: "宋体", Arial, Tahoma; BACKGROUND: url(../img/class_bg.gif) #474747 repeat-x 0px 0px; FLOAT: left; COLOR: #ccc; BORDER-TOP: 0px; BORDER-RIGHT: #898989 1px solid
+}
+.classCheck {
+	POSITION: relative; MARGIN: 0px -1px; WIDTH: 980px; BACKGROUND: url(../img/class_bgr.gif) no-repeat 100% 0px; FLOAT: left; HEIGHT: 63px
+}
+.classCheck LI {
+	PADDING-LEFT: 55px; WIDTH: 100px; BACKGROUND: url(../img/class_ibg01.gif) no-repeat 0px 0px; FLOAT: left; HEIGHT: 58px
+}
+.classCheck .c1 {
+	BACKGROUND-IMAGE: url(../img/class_ibg01.gif); WIDTH: 70px
+}
+.classCheck .c2 {
+	BACKGROUND-IMAGE: url(../img/class_ibg02.gif); WIDTH: 80px
+}
+.classCheck .c3 {
+	BACKGROUND-IMAGE: url(../img/class_ibg03.gif); WIDTH: 180px
+}
+.classCheck .c4 {
+	BACKGROUND-IMAGE: url(../img/class_ibg04.gif); WIDTH: 120px
+}
+.classCheck .c5 {
+	BACKGROUND-IMAGE: url(../img/class_ibg05.gif); WIDTH: 70px
+}
+.classCheck .c6 {
+	BACKGROUND-IMAGE: url(../img/class_ibg06.gif); WIDTH: 125px
+}
+.classCheck LI A {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 17px; MARGIN: 8px 6px 0px 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; FLOAT: left; HEIGHT: 16px; COLOR: #000; PADDING-TOP: 0px
+}
+.classCheck LI A:hover {
+	BACKGROUND-COLOR: #000; COLOR: #ebab00; TEXT-DECORATION: none
+}
+.classCheck LI A.active {
+	PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline-block; BACKGROUND: url(../img/btn_pall.gif) no-repeat right -69px; COLOR: #ebab00; MARGIN-LEFT: 5px; CURSOR: pointer
+}
+.classCheck LI A.active SPAN {
+	POSITION: relative; PADDING-LEFT: 5px; WHITE-SPACE: nowrap; BACKGROUND: url(../img/btn_pall.gif) no-repeat -104px -69px; FLOAT: left; LEFT: -5px
+}
+.classCheck LI A.tr {
+	MARGIN-LEFT: 28px
+}
+.nPanel {
+	PADDING-LEFT: 12px; _position: relative; _width: 976px
+}
+.panelItem {
+	BORDER-BOTTOM: #545454 1px solid; PADDING-BOTTOM: 4px; MARGIN-TOP: 4px; WIDTH: 978px; DISPLAY: inline; FLOAT: left; COLOR: #d0d0d0; MARGIN-LEFT: -12px
+}
+.panelItem EM {
+	MARGIN: 0px 10px; FLOAT: left; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.panelItem Q {
+	COLOR: #aaa; MARGIN-LEFT: 8px
+}
+.panelItem Q:after {
+	CONTENT: ""
+}
+.panelItem Q:before {
+	CONTENT: ""
+}
+.panelItem .panelItemr {
+	FLOAT: right; MARGIN-RIGHT: 10px
+}
+.panelItem A {
+	COLOR: #d0d0d0; MARGIN-LEFT: 15px; FONT-SIZE: 13px; TEXT-DECORATION: underline
+}
+.panelItem A:hover {
+	COLOR: #ebab00; TEXT-DECORATION: none
+}
+.panelItem A.active {
+	PADDING-BOTTOM: 5px; BACKGROUND: url(../img/icons.gif) no-repeat center bottom; COLOR: #ebab00; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.panelLeft {
+	Z-INDEX: 10; POSITION: relative; MARGIN-TOP: 12px; WIDTH: 434px; DISPLAY: inline; FLOAT: left; COLOR: #ccc
+}
+.tab_panel {
+	WIDTH: 420px; DISPLAY: inline; MARGIN-BOTTOM: -1px; FLOAT: left; MARGIN-LEFT: 10px
+}
+.tab_panel LI {
+	TEXT-ALIGN: center; PADDING-LEFT: 8px; BACKGROUND: url(../img/tab_common.gif) no-repeat 0px -25px; FLOAT: left; HEIGHT: 18px; COLOR: #000; CURSOR: pointer; MARGIN-RIGHT: 2px
+}
+.tab_panel LI SPAN {
+	PADDING-RIGHT: 8px; BACKGROUND: url(../img/tab_common.gif) no-repeat 100% -25px; FLOAT: left; HEIGHT: 18px
+}
+.tab_panel LI.active {
+	POSITION: relative; LINE-HEIGHT: 23px; MARGIN-TOP: -3px; BACKGROUND: url(../img/tab_common.gif) no-repeat 0px 0px; HEIGHT: 20px; COLOR: #ccc; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.tab_panel LI.active SPAN {
+	BACKGROUND: url(../img/tab_common.gif) no-repeat 100% 0px; HEIGHT: 20px
+}
+.tab_panel LI.sumInfoMore {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: right; MARGIN-RIGHT: 12px
+}
+.tab_panel LI.sumInfoMore A {
+	POSITION: relative; COLOR: #ccc; TOP: -4px
+}
+.panelList {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 420px; PADDING-RIGHT: 5px; BACKGROUND: url(../img/shadow_r.gif) #242424 no-repeat 100% 0px; FLOAT: left; COLOR: #ccc; PADDING-TOP: 10px
+}
+.panelList .pItem {
+	WIDTH: 128px; DISPLAY: inline; MARGIN-BOTTOM: 15px; FLOAT: left; MARGIN-LEFT: 10px
+}
+.panelList .pItem LI {
+	POSITION: relative; LINE-HEIGHT: 19px; MARGIN-TOP: 2px; WIDTH: 128px; DISPLAY: inline; FLOAT: left; HEIGHT: 19px; CLEAR: left
+}
+.panelList .pItem .plnum {
+	TEXT-ALIGN: right; WIDTH: 38px; DISPLAY: inline-block; MARGIN-RIGHT: 8px
+}
+.panelList .pItem .plitem {
+	WIDTH: 82px; DISPLAY: inline-block
+}
+.panelList .pItem .plitemt {
+	WIDTH: 82px; DISPLAY: inline-block
+}
+.panelList .pItem .plitem {
+	Z-INDEX: 10; POSITION: relative; TEXT-ALIGN: center; LINE-HEIGHT: 19px; WIDTH: 66px; BACKGROUND: url(../img/btn_pall.gif) no-repeat 0px -183px; HEIGHT: 19px; COLOR: #000; CURSOR: pointer
+}
+.panelList .pItem .active {
+	BACKGROUND-POSITION: 0px -207px; COLOR: #fff
+}
+.panelList .pItem .item {
+	TEXT-ALIGN: center; COLOR: #ebab00; FONT-WEIGHT: bold
+}
+.panelList .p1 LI {
+	Z-INDEX: 30
+}
+.panelList .p2 LI {
+	Z-INDEX: 20
+}
+.panelList .p3 LI {
+	Z-INDEX: 10
+}
+.panelList .pItem .tip {
+	Z-INDEX: 210; POSITION: absolute; WIDTH: 207px; DISPLAY: none; BACKGROUND: url(../img/tip_pItem.gif) no-repeat 0px 0px; FLOAT: left; OVERFLOW: hidden; TOP: -10px; PADDING-TOP: 22px; LEFT: 115px
+}
+.panelList .pItem .tip .tip_in {
+	PADDING-BOTTOM: 10px; WIDTH: 207px; BACKGROUND: url(../img/tip_pItem.gif) no-repeat 0px bottom; FLOAT: left
+}
+.panelList .pItem .tip .tip_inC {
+	POSITION: relative; MARGIN: -12px 1em 0px 18px; FLOAT: left; COLOR: #000
+}
+.panelList .panelTble {
+	MARGIN: -5px 0px 10px 8px; WIDTH: 405px; DISPLAY: inline; FLOAT: left; _position: relative
+}
+.panelList .panelTble TABLE {
+	WIDTH: 100%
+}
+.panelList .panelTble TH {
+	TEXT-ALIGN: center; BACKGROUND: #242424; COLOR: #ccc; FONT-WEIGHT: normal
+}
+.panelList .panelTble TD {
+	BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center; BACKGROUND: #ebebeb; COLOR: #333
+}
+.panelList .panelTble TD.n {
+	COLOR: #777
+}
+.panelList .panelTble TD.n STRONG {
+	COLOR: #000; FONT-WEIGHT: normal
+}
+.panelList .t_comn {
+	MARGIN-TOP: 3px
+}
+.panelList .t_comn TH {
+	BACKGROUND: #bbb; COLOR: #000
+}
+.panelList .t_comn TD {
+	BORDER-BOTTOM: #ccc 0px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.panelList .t_comn .bdr {
+	BORDER-LEFT: #ccc 1px solid
+}
+.panelList .t_comn TH.bdr {
+	BORDER-LEFT: #aaa 1px solid
+}
+.panelList .t_comn .s_th TH {
+	BACKGROUND: #d9d9d9
+}
+.panelList .t_comn .s_th TH.bdr {
+	BORDER-LEFT: #ccc 1px solid
+}
+.panelList .panelTble2 TABLE {
+	WIDTH: 24.5%; BACKGROUND: #e4e4e4; FLOAT: left; MARGIN-LEFT: 1px
+}
+.panelList .panelTble2 TH {
+	BACKGROUND: #242424; FONT-WEIGHT: normal
+}
+.panelList .panelTble2 TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #333; BORDER-TOP: #b9b9b9 1px solid; PADDING-TOP: 0px
+}
+.numCheck {
+	MARGIN-TOP: 12px; WIDTH: 512px; DISPLAY: inline; FLOAT: left; COLOR: #ccc; MARGIN-LEFT: 10px; _position: relative; _margin-left: 0
+}
+.numAreaTab {
+	WIDTH: 490px; MARGIN-BOTTOM: 10px; FLOAT: left; MARGIN-LEFT: -6px
+}
+.numAreaTab LI {
+	FLOAT: left; CURSOR: pointer; MARGIN-RIGHT: 15px
+}
+.numAreaTab LI INPUT {
+	POSITION: relative; BOTTOM: -2px
+}
+.numArea {
+	WIDTH: 450px; FLOAT: left
+}
+.numArea .btn_numlist {
+	BORDER-BOTTOM: #535353 1px solid; WIDTH: 445px; MARGIN-BOTTOM: 6px; FLOAT: left
+}
+.btn_numlist LI {
+	TEXT-ALIGN: center; WIDTH: 24px; DISPLAY: inline; FLOAT: left; MARGIN-RIGHT: 8px
+}
+.btn_numlist LI SPAN {
+	POSITION: relative; TEXT-INDENT: -1px; WIDTH: 26px; DISPLAY: inline-block; FONT: bold 14px/24px Arial; BACKGROUND: url(../img/btn_pall.gif) no-repeat -45px -6px; HEIGHT: 26px; COLOR: #000; CURSOR: pointer; -moz-user-select: none
+}
+.btn_numlist LI SPAN.active {
+	BACKGROUND-POSITION: -45px -46px; COLOR: #fff
+}
+.btn_numlist LI P {
+	MARGIN-TOP: -2px; COLOR: #999; PADDING-TOP: 0px
+}
+.btn_numlist LI .hot {
+	COLOR: red
+}
+.btn_numlist .nums {
+	WIDTH: auto
+}
+.btn_numlist .nums EM {
+	LINE-HEIGHT: 26px; DISPLAY: inline-block; HEIGHT: 26px; COLOR: #ebab00; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.btn_numlist .nums P {
+	MARGIN-TOP: -2px; COLOR: #d6d6d6
+}
+.btn_numlist .selectAll {
+	POSITION: relative; WIDTH: 40px; BACKGROUND: url(../img/selectAllbg.gif) no-repeat 100% 0px; FLOAT: right; HEIGHT: 30px
+}
+.btn_numlist .s_all {
+	Z-INDEX: 200; BORDER-BOTTOM: #333 1px solid; POSITION: absolute; BORDER-LEFT: #333 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; WIDTH: 72px; PADDING-RIGHT: 5px; DISPLAY: none; BACKGROUND: #fff7b3; FLOAT: left; BORDER-TOP: #333 1px solid; TOP: 0px; BORDER-RIGHT: #333 1px solid; PADDING-TOP: 5px; LEFT: -30px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px
+}
+.btn_numlist .s_all LI {
+	MARGIN: 2px; WIDTH: 20px; DISPLAY: inline; BACKGROUND: url(../img/btn_pall.gif) no-repeat -82px -6px; HEIGHT: 20px; COLOR: #000; CURSOR: pointer
+}
+.btn_numlist .p1 {
+	Z-INDEX: 30
+}
+.btn_numlist .p2 {
+	Z-INDEX: 20
+}
+.btn_numlist .p3 {
+	Z-INDEX: 15
+}
+.btn_numlist .p4 {
+	Z-INDEX: 10
+}
+.btn_numlist .p5 {
+	Z-INDEX: 5
+}
+.numCheck .switch {
+	FLOAT: right
+}
+.numCheck .switch INPUT {
+	POSITION: relative; BOTTOM: -2px
+}
+.siftTool {
+	WIDTH: 495px; PADDING-RIGHT: 5px; BACKGROUND: url(../img/shadow_r.gif) #242424 no-repeat 100% 0px; FLOAT: left; COLOR: #ccc
+}
+.siftTool .siftTab {
+	LINE-HEIGHT: 26px; WIDTH: 100%; BACKGROUND: #000; FLOAT: left; HEIGHT: 26px
+}
+.siftTool .siftTab .sift_tool {
+	FLOAT: left; MARGIN-LEFT: 5px
+}
+.siftTool .siftTab .sift_tool INPUT {
+	POSITION: relative; BOTTOM: -3px
+}
+.siftTool .siftTab .sift_tool LABEL {
+	CURSOR: pointer
+}
+.siftTool .siftTab .tab {
+	FLOAT: left; MARGIN-LEFT: 15px
+}
+.siftTool .siftTab .tab A {
+	LINE-HEIGHT: 20px; MARGIN-TOP: 4px; FLOAT: left; HEIGHT: 22px; COLOR: #ccc; MARGIN-RIGHT: 10px
+}
+.siftTool .siftTab .tab .active {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #2e2e2e; PADDING-TOP: 0px
+}
+.siftTool .siftTab .tab A:hover {
+	COLOR: #ccc; TEXT-DECORATION: none
+}
+.siftTool .siftList {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #2e2e2e; FLOAT: left; PADDING-TOP: 5px
+}
+.siftTool .siftList DT {
+	WIDTH: 5.5em; DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 8px; FONT-WEIGHT: bold
+}
+.siftTool .siftList DT P {
+	TEXT-ALIGN: right; MARGIN-TOP: -3px; COLOR: #aaa; FONT-WEIGHT: normal; MARGIN-RIGHT: 2px
+}
+.siftTool .siftList DT LI P {
+	FONT-WEIGHT: normal; MARGIN-RIGHT: 8px
+}
+.siftTool .siftList DD {
+	WIDTH: 420px; FLOAT: left
+}
+.siftTool .siftList DD LI {
+	FLOAT: left; MARGIN-RIGHT: 8px
+}
+.siftTool .siftList DD LI P {
+	TEXT-ALIGN: center; MARGIN-TOP: -3px; COLOR: #aaa; MARGIN-LEFT: 18px
+}
+.siftTool .siftList DD LI INPUT {
+	FLOAT: left
+}
+DIV.chartCheck {
+	TEXT-ALIGN: center; MARGIN-TOP: 13px; WIDTH: 100%; FLOAT: left; HEIGHT: 32px
+}
+.btnChartCheck {
+	LINE-HEIGHT: 300px; WIDTH: 109px; DISPLAY: inline-block; BACKGROUND: url(../img/btn_ChartCheck.gif) no-repeat 0px 0px; HEIGHT: 32px; OVERFLOW: hidden
+}
+DIV.chartCheck .suml {
+	TEXT-ALIGN: right; WIDTH: 210px; FLOAT: left
+}
+DIV.chartCheck .sum {
+	MARGIN-TOP: 4px; FLOAT: left; MARGIN-LEFT: 5px
+}
+DIV.chartCheck .sum EM {
+	MARGIN: 0px 2px
+}
+.numCheck DIV.chartCheck .sum {
+	WIDTH: 190px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.btnChartCheckChart {
+	HEIGHT: 57px
+}
+.pick_input {
+	MARGIN: 18px 0px 0px 18px; DISPLAY: inline
+}
+.pick_input DIV {
+	MARGIN-BOTTOM: 10px; FLOAT: left
+}
+.pick_input LABEL {
+	WIDTH: 5em; FLOAT: left
+}
+.pick_input .pick_input_n {
+	WIDTH: 320px; HEIGHT: 135px; FONT-SIZE: 12px
+}
+.pick_input .ins {
+	MARGIN: 5px 0px 0px 5em; COLOR: #999
+}
+.pick_input_ins {
+	MARGIN: 18px 0px 0px -15px; DISPLAY: inline; FLOAT: left
+}
+.pick_input_ins .indt {
+	MARGIN-LEFT: 1.5em
+}
+.pick_input_ins .indtt {
+	MARGIN-TOP: 1.5em
+}
+.pick_input_ins .btnChartCheck {
+	MARGIN: 10px 0px 0px 16px; FLOAT: left; HEIGHT: 57px
+}
+.panelLeftYilou {
+	WIDTH: 455px
+}
+.panelListYilou {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 445px; PADDING-RIGHT: 5px; BACKGROUND: url(../img/shadow_r.gif) #242424 no-repeat 100% 0px; FLOAT: left; PADDING-TOP: 10px
+}
+.panelList .panelYilou {
+	BORDER-BOTTOM: #1a1a1a 1px solid; MARGIN: -5px 0px 0px 10px; DISPLAY: inline; FLOAT: left; COLOR: #ccc
+}
+.panelList .panelYilou TH {
+	TEXT-ALIGN: right; FONT-WEIGHT: normal
+}
+.panelList .panelYilou TD {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 1px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 1px
+}
+.panelList .panelYilou .ybtn {
+	LINE-HEIGHT: 17px; MARGIN: 8px 0px; WIDTH: 42px; DISPLAY: block; BACKGROUND: url(../img/btn_pall.gif) no-repeat -83px -184px; HEIGHT: 17px; COLOR: #000; CURSOR: pointer
+}
+.panelList .panelYilou .ybtn_active {
+	BACKGROUND-POSITION: -83px -207px; COLOR: #000
+}
+.panelList .panelYilou .hlight {
+	COLOR: #c50000
+}
+.panelList .panelYilou2 {
+	BORDER-BOTTOM: 0px; MARGIN: 0px 0px 10px 10px; BORDER-TOP: #303030 1px solid
+}
+.numCheckDS {
+	MARGIN-TOP: 30px; WIDTH: 430px; FLOAT: right
+}
+.numCheckDS .btn_numlist {
+	BORDER-BOTTOM: #535353 1px solid; PADDING-BOTTOM: 10px; MARGIN-BOTTOM: 12px
+}
+.numCheckDS .btn_numlist LI {
+	TEXT-ALIGN: left; WIDTH: 38px; MARGIN-RIGHT: 30px
+}
+.numCheckDS .btn_numlist .nums EM {
+	DISPLAY: block; HEIGHT: 38px
+}
+.numCheckDS .btn_numlist LI P {
+	TEXT-ALIGN: center
+}
+.numCheckDS .btn_numlist LI SPAN {
+	POSITION: relative; LINE-HEIGHT: 33px; TEXT-INDENT: 9px; WIDTH: 38px; DISPLAY: block; BACKGROUND: url(../img/btn_pall.gif) no-repeat 0px -5px; HEIGHT: 38px; COLOR: #000; FONT-SIZE: 16px; CURSOR: pointer; FONT-WEIGHT: bold; -moz-user-select: none; text-shadow: 1px 1px 0 #fff
+}
+.numCheckDS .btn_numlist LI SPAN.active {
+	LINE-HEIGHT: 35px; TEXT-INDENT: 10px; BACKGROUND-POSITION: 0px -46px; COLOR: #fff; text-shadow: 1px 1px 0 #666
+}
+.numCheckDS .btnChartCheck {
+	MARGIN: 0px 0px 0px 105px; FLOAT: left; HEIGHT: 57px
+}
+.panelTrend {
+	WIDTH: 958px
+}
+.panelTrend .panelList {
+	WIDTH: 953px
+}
+.panelTrend .trendShow {
+	WIDTH: 535px; MARGIN-BOTTOM: 8px; FLOAT: left
+}
+.panelTrend .trendShow TABLE {
+	WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+.panelTrend .trendShow TABLE TH {
+	BORDER-BOTTOM: #474747 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #474747 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; BORDER-TOP: #474747 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #474747 1px solid; PADDING-TOP: 1px
+}
+.panelTrend .trendShow TABLE TD {
+	BORDER-BOTTOM: #474747 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #474747 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; BORDER-TOP: #474747 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #474747 1px solid; PADDING-TOP: 1px
+}
+.panelTrend .trendShow TABLE TH {
+	TEXT-ALIGN: left; PADDING-LEFT: 6px
+}
+.panelTrend DIV.chartCheck .sum {
+	WIDTH: 175px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.drawTrend {
+	WIDTH: 958px; FLOAT: left
+}
+.drawTrend .chart {
+	WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+.drawTrend .chart TH {
+	TEXT-ALIGN: right; WIDTH: 65px; FONT-WEIGHT: normal
+}
+.drawTrend .chart TD {
+	TEXT-ALIGN: center
+}
+.drawTrend .c1 TABLE {
+	WIDTH: 100%
+}
+.drawTrend .c1 TABLE TH {
+	TEXT-ALIGN: right; WIDTH: 72px; VERTICAL-ALIGN: bottom; FONT-WEIGHT: normal
+}
+.drawTrend .c1 TD {
+	BORDER-BOTTOM: #1b1b1b 1px solid; TEXT-ALIGN: center; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: bottom
+}
+.drawTrend .c1 TH {
+	VERTICAL-ALIGN: bottom
+}
+.drawTrend .c1 I {
+	BORDER-BOTTOM: 0px; POSITION: relative; BORDER-LEFT: #1b1b1b 1px solid; MARGIN: 0px auto; WIDTH: 9px; DISPLAY: block; BACKGROUND: #272727; HEIGHT: 5px; OVERFLOW: hidden; BORDER-TOP: #3f3f3f 1px solid; BORDER-RIGHT: #1b1b1b 1px solid
+}
+.drawTrend .c1 I EM {
+	POSITION: absolute; WIDTH: 7px; DISPLAY: block; BACKGROUND: #373737; HEIGHT: 100%; BORDER-TOP: #4d4d4d 1px solid; TOP: 0px; LEFT: 1px
+}
+.drawTrend .c1 .lger {
+	COLOR: #ebab00
+}
+.drawTrend .c1 .lger I {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: #5f5437 1px solid; BACKGROUND: #b77e3b; BORDER-TOP: #71674d 1px solid; BORDER-RIGHT: #5f5437 1px solid
+}
+.drawTrend .c1 .lger I EM {
+	BACKGROUND: #ebab00; BORDER-TOP: #f5d314 1px solid
+}
+.drawTrend .c2 TH {
+	COLOR: #ebab00; FONT-WEIGHT: bold
+}
+.drawTrend .c2 TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+.drawTrend .c2 .num {
+	POSITION: relative; TEXT-ALIGN: center; TEXT-INDENT: -1px; WIDTH: 26px; DISPLAY: inline-block; FONT: bold 14px/22px Arial; BACKGROUND: url(../img/btn_pall.gif) no-repeat -45px -6px; HEIGHT: 26px; COLOR: #000; CURSOR: pointer; -moz-user-select: none
+}
+.drawTrend .c2 .num_on {
+	LINE-HEIGHT: 24px; BACKGROUND-POSITION: -45px -46px; COLOR: #fff
+}
+.drawTrend .c3 TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.drawTrend .c4 TD {
+	BORDER-BOTTOM: #393939 1px dotted; PADDING-BOTTOM: 0px
+}
+.drawTrend .c4 .lger {
+	COLOR: #ebab00
+}
+.sectionChart {
+	BACKGROUND: url(../img/sectionbg_tm.gif) #474747 repeat-x 0px 0px
+}
+.sectionChart H3.stn {
+	POSITION: relative; LINE-HEIGHT: 35px; TEXT-INDENT: 15px; MARGIN: 0px -1px 8px; WIDTH: 980px; BACKGROUND: url(../img/bg_general.gif) no-repeat 0px -1015px; HEIGHT: 40px; COLOR: #000; FONT-SIZE: 14px
+}
+.sectionChart H3 .str {
+	POSITION: absolute; WIDTH: 6px; BACKGROUND: url(../img/bg_general.gif) no-repeat 100% -1106px; FLOAT: right; HEIGHT: 40px; TOP: 0px; RIGHT: 0px
+}
+.sectionChart .chartIn {
+	WIDTH: 420px; PADDING-RIGHT: 5px; DISPLAY: inline; BACKGROUND: url(../img/shadow_r.gif) #242424 repeat-y 100% 0px; FLOAT: left; MARGIN-LEFT: 12px; _position: relative
+}
+.chartIn .thc {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 29px; BACKGROUND: #242424; HEIGHT: 29px; COLOR: #ccc; FONT-SIZE: 14px; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-RIGHT: 0px
+}
+.chartIn .thc .l {
+	FLOAT: left; MARGIN-LEFT: 8px; FONT-SIZE: 12px
+}
+.chartIn .thc .r {
+	FLOAT: right; CURSOR: pointer; MARGIN-RIGHT: 6px
+}
+.chartIn LI {
+	MARGIN-TOP: 1px; HEIGHT: auto
+}
+.chartIn LI SPAN {
+	DISPLAY: inline-block; WORD-WRAP: break-word; VERTICAL-ALIGN: middle
+}
+.chartIn .c1 {
+	WIDTH: 105px; MARGIN-LEFT: 6px
+}
+.chartIn .c2 {
+	WIDTH: 140px
+}
+.chartIn .c3 {
+	WIDTH: 58px; MARGIN-LEFT: 6px
+}
+.chartIn .c4 {
+	WIDTH: 82px; MARGIN-LEFT: 5px
+}
+.chartIn .c5 {
+	WIDTH: 14px; CURSOR: pointer; FONT-WEIGHT: bold
+}
+.chartIn LI.empty {
+	BORDER-BOTTOM-COLOR: #b2b2b2; TEXT-ALIGN: center; BORDER-TOP-COLOR: #f6f6f6; BACKGROUND: #ddd; BORDER-RIGHT-COLOR: #b2b2b2; BORDER-LEFT-COLOR: #f6f6f6
+}
+.sectionChart .multiple {
+	WIDTH: 520px; DISPLAY: inline; FLOAT: right; MARGIN-RIGHT: 8px; _position: relative
+}
+.sectionChart .multipleC {
+	WIDTH: 515px; PADDING-RIGHT: 5px; BACKGROUND: url(../img/shadow_r.gif) #242424 no-repeat 100% 0px; FLOAT: left
+}
+.tab_multiple {
+	MARGIN: -27px 5px 0px 6.5em; DISPLAY: inline; FLOAT: left
+}
+.tab_multiple LI {
+	TEXT-ALIGN: center; WIDTH: 59px; BACKGROUND: url(../img/tab_multiple.gif) no-repeat; FLOAT: left; HEIGHT: 18px; COLOR: #000; CURSOR: pointer; MARGIN-RIGHT: 3px
+}
+.tab_multiple .active {
+	POSITION: relative; LINE-HEIGHT: 23px; MARGIN-TOP: -3px; WIDTH: 64px; BACKGROUND: url(../img/tab_multiple_on.gif) no-repeat; HEIGHT: 22px; COLOR: #ccc; FONT-WEIGHT: bold
+}
+.tab_tool_multiple {
+	MARGIN: 0px 5px 5px; FLOAT: left
+}
+.tab_multiple LI {
+	TEXT-ALIGN: left; WIDTH: 75px; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 25px; COLOR: #ccc; CURSOR: pointer; MARGIN-RIGHT: 3px
+}
+.tab_multiple .active {
+	POSITION: relative; MARGIN-TOP: 0px; WIDTH: 80px; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 25px; COLOR: #ebab00
+}
+.tab_multiple INPUT {
+	POSITION: relative; BOTTOM: -2px
+}
+.multiple DIV.thc {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 29px; BACKGROUND: #242424; HEIGHT: 29px; COLOR: #ccc; FONT-SIZE: 14px; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-RIGHT: 0px
+}
+.multiple DIV.thc .l {
+	FLOAT: left; MARGIN-LEFT: 8px; FONT-SIZE: 12px
+}
+.multiple DIV.thc .r {
+	FLOAT: right; CURSOR: pointer; MARGIN-RIGHT: 6px
+}
+.multiple DIV.thc .r A {
+	LINE-HEIGHT: 200px; MARGIN: 6px 0px 0px 6px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(../img/icons.gif) no-repeat 0px 0px; HEIGHT: 16px; OVERFLOW: hidden
+}
+.multiple DIV.thc .r .ico_import {
+	BACKGROUND-POSITION: 0px 0px
+}
+.multiple DIV.thc .r .ico_save {
+	BACKGROUND-POSITION: -23px 0px
+}
+.multiple DIV.thc .r .ico_help {
+	BACKGROUND-POSITION: 100% 0px
+}
+.multiple .condtn LI {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 4px
+}
+.multiple .condtn LI INPUT {
+	TEXT-ALIGN: center; WIDTH: 40px; HEIGHT: 1em
+}
+.multiple .itemBox {
+	WIDTH: 515px; FLOAT: right
+}
+.multiple .itemList {
+	CLEAR: left
+}
+.multiple .itemList LI {
+	BORDER-BOTTOM: #343434 1px solid; BORDER-LEFT: #636363 1px solid; LINE-HEIGHT: 22px; BACKGROUND: #474747; HEIGHT: 22px; COLOR: #ccc; OVERFLOW: hidden; BORDER-TOP: #636363 1px solid; BORDER-RIGHT: #343434 1px solid
+}
+.multiple .itemList LI SPAN {
+	TEXT-ALIGN: center; DISPLAY: inline-block; FLOAT: left
+}
+.multiple .itemList .i1 {
+	WIDTH: 5%
+}
+.multiple .itemList .i2 {
+	WIDTH: 18%
+}
+.multiple .itemList .i3 {
+	WIDTH: 12%
+}
+.multiple .itemList .i2 INPUT {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN-TOP: 1px; PADDING-LEFT: 0px; WIDTH: 45px; PADDING-RIGHT: 0px; FONT-FAMILY: Tahoma, Arial, Verdana; BACKGROUND: #fff; HEIGHT: 16px; COLOR: red; FONT-SIZE: 13px; FONT-WEIGHT: bold; PADDING-TOP: 0px; _position: relative; _margin-top: -1px
+}
+.multiple .itemList .i3 INPUT {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN-TOP: 1px; PADDING-LEFT: 0px; WIDTH: 45px; PADDING-RIGHT: 0px; FONT-FAMILY: Tahoma, Arial, Verdana; BACKGROUND: #fff; HEIGHT: 16px; COLOR: red; FONT-SIZE: 13px; FONT-WEIGHT: bold; PADDING-TOP: 0px; _position: relative; _margin-top: -1px
+}
+.multiple .itemList .i4 {
+	WIDTH: 16%
+}
+.multiple .itemList .i5 {
+	WIDTH: 16%
+}
+.multiple .itemList .i6 {
+	WIDTH: 16%
+}
+.multiple .itemList .i7 {
+	WIDTH: 16%
+}
+.multiple .itemList LI.selected {
+	BORDER-BOTTOM-COLOR: #b77e3b; BORDER-TOP-COLOR: #f5d314; BACKGROUND: #ebab00; COLOR: #000; BORDER-RIGHT-COLOR: #b77e3b; BORDER-LEFT-COLOR: #f5d314
+}
+.itemListC {
+	HEIGHT: 240px; OVERFLOW: auto
+}
+.multiple .chase {
+	MARGIN: 8px 0px; WIDTH: 99.4%; FLOAT: left; HEIGHT: 28px; CLEAR: both
+}
+.multiple .chase LI {
+	BORDER-BOTTOM-COLOR: #919191; LINE-HEIGHT: 25px; BORDER-TOP-COLOR: #f1f1f1; BACKGROUND: #dedede; HEIGHT: 25px; COLOR: #000; BORDER-RIGHT-COLOR: #919191; BORDER-LEFT-COLOR: #f1f1f1
+}
+.multiple .chase LI .l {
+	FLOAT: left
+}
+.multiple .chase LI .l EM {
+	FONT-WEIGHT: bold; MARGIN-RIGHT: 6px
+}
+.multiple .chase LI .l LABEL {
+	CURSOR: pointer
+}
+.multiple .chase LI INPUT {
+	POSITION: relative; BOTTOM: -3px; MARGIN-RIGHT: 8px; LEFT: 8px
+}
+.multiple .chase LI A {
+	TEXT-DECORATION: underline
+}
+.multiple .stp {
+	HEIGHT: auto
+}
+.multiple .stp LI {
+	LINE-HEIGHT: 25px; HEIGHT: auto; VERTICAL-ALIGN: middle
+}
+.multiple .stp LI .m {
+	FLOAT: left; MARGIN-LEFT: 10px
+}
+.multiple .stp LI P {
+
+}
+.multiple .itemList LI .csel {
+	FLOAT: left
+}
+.multiple .itemList LI .cse {
+	FLOAT: right
+}
+.multiple .itemList LI .cse A {
+	COLOR: #ebab00; MARGIN-LEFT: 5px
+}
+.multiple .itemList LI .cse A.active {
+	COLOR: #f60; FONT-WEIGHT: bold
+}
+.multiple .chase LI .r {
+	FLOAT: right
+}
+.multiple .chase LI .r .ico_help {
+	LINE-HEIGHT: 200px; MARGIN: 3px 6px 0px 0px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(../img/icons.gif) no-repeat 0px -232px; HEIGHT: 16px; OVERFLOW: hidden
+}
+.multiple .project {
+	MARGIN: 2px 0px 10px
+}
+.multiple .project LI {
+	BORDER-BOTTOM-COLOR: #2b2b2b; BORDER-TOP-COLOR: #535353; BACKGROUND: #3d3d3d; COLOR: #ccc; BORDER-RIGHT-COLOR: #2b2b2b; BORDER-LEFT-COLOR: #535353
+}
+.multiple .project LI A {
+	COLOR: #ccc
+}
+.multiple .project LI .r .ico_help {
+	BACKGROUND-POSITION: 0px -269px
+}
+DIV.chartCheck {
+	TEXT-ALIGN: center; WIDTH: 97%; FLOAT: left; HEIGHT: auto; CLEAR: both
+}
+DIV.chartCheck .btnChartConfirm {
+	LINE-HEIGHT: 300px; WIDTH: 140px; DISPLAY: inline-block; BACKGROUND: url(../img/btn_ChartConfirm.gif) no-repeat 0px 0px; HEIGHT: 62px; OVERFLOW: hidden
+}
+DIV.chartCheck .btnChartConfirmNone {
+	BACKGROUND-POSITION: -171px 0px; CURSOR: default
+}
+DIV.chartCheck .btnChartConfirmStop {
+	BACKGROUND-POSITION: right 0px; CURSOR: default
+}
+.multiple DIV.chartCheck {
+	MARGIN: 0px
+}
+.multiple DIV.chartCheck .sum {
+	MARGIN: 0px 0px 10px; PADDING-LEFT: 20px; DISPLAY: inline-block; BACKGROUND: url(../img/icons.gif) no-repeat 0px -301px; FLOAT: none
+}
+.panelTrend DIV.chartCheck {
+	MARGIN: 0px
+}
+.panelTrend DIV.chartCheck .sum {
+	MARGIN: 10px 0px 0px
+}
+.multipleCTool .itemBox {
+	WIDTH: 100%
+}
+.multipleCTool .condtn LI {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: #dedede; HEIGHT: auto; COLOR: #333; PADDING-TOP: 4px
+}
+.multipleCTool .condtn UL {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f6f6f6; HEIGHT: auto; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 5px
+}
+.multipleCTool .condtn UL LI {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: auto; COLOR: #888; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+.multipleCTool .condtn UL LI.active {
+	COLOR: #000
+}
+.multipleCTool .condtn UL LI INPUT {
+	WIDTH: auto; COLOR: #888
+}
+.multipleCTool .condtn UL LI INPUT.cdn_ipt {
+	WIDTH: 40px
+}
+.multipleCTool .condtn UL LI.active INPUT {
+	COLOR: #000
+}
+.multipleCTool .condtn .cdn_go {
+	TEXT-ALIGN: center; MARGIN: 10px auto 5px
+}
+.multipleCTool .condtn .cdn_go INPUT {
+	WIDTH: auto; HEIGHT: auto; CURSOR: pointer
+}
+.multipleCTool .itemList .i1 {
+	WIDTH: 16%
+}
+.multipleCTool .itemList .i2 {
+	WIDTH: 13%
+}
+.multipleCTool .itemList .i3 {
+	WIDTH: 14%
+}
+.multipleCTool .itemList .i4 {
+	WIDTH: 14%
+}
+.multipleCTool .itemList .i5 {
+	WIDTH: 14%
+}
+.multipleCTool .itemList .i6 {
+	WIDTH: 14%
+}
+.multipleCTool .itemList .i7 {
+	WIDTH: 14%
+}
+.multiple .zh {
+	POSITION: relative; MARGIN-BOTTOM: 5px; COLOR: #ff0; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.multiple .zh LABEL {
+	CURSOR: pointer
+}
+.multiple .zh .advice {
+	POSITION: absolute; PADDING-LEFT: 18px; BACKGROUND: url(../img/ico_advice.png) no-repeat 0px center; TOP: 0px; RIGHT: 10px
+}
+.multiple .zh .advice A {
+	COLOR: #f9f9f9; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.zhuihao0 {
+	MARGIN: 10px 0px 20px; FONT-FAMILY: Tahoma, Arial, Verdana; CLEAR: both; FONT-SIZE: 14px
+}
+.zhuihao0 .z1 {
+	MARGIN-BOTTOM: 12px
+}
+.zhuihao0 .z2 {
+	MARGIN-BOTTOM: 12px
+}
+.zhuihao0 .z3 {
+	MARGIN-BOTTOM: 12px
+}
+.zhuihao0 INPUT.bs {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN-TOP: 1px; PADDING-LEFT: 0px; WIDTH: 45px; PADDING-RIGHT: 0px; BACKGROUND: #fff; HEIGHT: 16px; COLOR: red; FONT-SIZE: 13px; FONT-WEIGHT: bold; PADDING-TOP: 0px; _position: relative; _margin-top: -1px
+}
+.zhuihao0 .z1 INPUT {
+	POSITION: relative; BOTTOM: -2px; _bottom: 0
+}
+.zhuihao0 .z1 {
+
+}
+.zhuihao0 .z2 {
+	TEXT-ALIGN: center
+}
+.zhuihao0 .z3 {
+	TEXT-ALIGN: center
+}
+.zhuihao0 .z2 SPAN {
+	MARGIN-RIGHT: 15px
+}
+.zhuihao0 .flt {
+	WIDTH: 4em; DISPLAY: inline-block; COLOR: #fc0
+}
+.zhuihao0 .vra {
+	BORDER-BOTTOM: #666 1px dashed; BORDER-LEFT: #666 1px dashed; PADDING-BOTTOM: 5px; MARGIN: 0px 85px 25px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; BACKGROUND: #555353; COLOR: #ff0; BORDER-TOP: #666 1px dashed; FONT-WEIGHT: bold; BORDER-RIGHT: #666 1px dashed; PADDING-TOP: 1px
+}
+.update {
+	MARGIN-BOTTOM: 20px
+}
+.updateElement {
+	WIDTH: 955px; DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 11px; _position: relative
+}
+.updateElement TABLE {
+	TEXT-ALIGN: center; WIDTH: 158px; BACKGROUND: #e4e4e4; FLOAT: left; MARGIN-LEFT: 1px; OVERFLOW: hidden
+}
+.updateElement TH {
+	BACKGROUND: #242424; FONT-WEIGHT: normal
+}
+.updateElement TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #333; BORDER-TOP: #eee 1px solid; PADDING-TOP: 0px
+}
+.updateElement .num {
+	FONT-FAMILY: Arial, Tahoma, Verdana; FONT-SIZE: 15px
+}
+.updateElement .y1 {
+	COLOR: #ff1200
+}
+.updateElement .y2 {
+	COLOR: #ff9600
+}
+.updateElement .y3 {
+	COLOR: #1f6f00
+}
+.updateElement .shadowBottom {
+	RIGHT: 0px
+}
+.updateElement .shadowBottom .shadowBottomL {
+	LEFT: 0px
+}
+.xj .logo A {
+	BACKGROUND-IMAGE: url(../img/logo_xj.gif)
+}
+.xj .logo_s A {
+	BACKGROUND-IMAGE: url(../img/logo_xj.gif)
+}
+.xj .btn_numlist LI SPAN.active {
+	BACKGROUND-POSITION: -45px -126px
+}
+.xj .drawTrend .c2 .num_on {
+	BACKGROUND-POSITION: -45px -126px
+}
+.xj .numCheckDS .btn_numlist LI SPAN.active {
+	BACKGROUND-POSITION: 0px -130px
+}
+.xj .panelList .pItem .active {
+	BACKGROUND-POSITION: 0px -256px
+}
+.xj .panelList .panelYilou .hlight {
+	COLOR: #b40099
+}
+.jx .logo A {
+	BACKGROUND-IMAGE: url(../img/logo_jx.gif)
+}
+.jx .logo_s A {
+	BACKGROUND-IMAGE: url(../img/logo_jx.gif)
+}
+.jx .btn_numlist LI SPAN.active {
+	BACKGROUND-POSITION: -45px -85px
+}
+.jx .drawTrend .c2 .num_on {
+	BACKGROUND-POSITION: -45px -85px
+}
+.jx .numCheckDS .btn_numlist LI SPAN.active {
+	BACKGROUND-POSITION: 0px -88px
+}
+.jx .panelList .pItem .active {
+	BACKGROUND-POSITION: 0px -232px
+}
+.jx .panelList .panelYilou .hlight {
+	COLOR: #44ab29
+}
+.jx .classCheck LI A {
+	MARGIN: 8px 16px 0px 0px
+}
+.jx .classCheck LI A.active {
+	MARGIN-LEFT: 5px
+}
+.jx .classCheck .c1 {
+	WIDTH: 165px
+}
+.jx .classCheck .c2 {
+	WIDTH: 120px
+}
+.jx .classCheck .c3 {
+	WIDTH: 90px
+}
+.jx .classCheck .c4 {
+	WIDTH: 210px
+}
+.jx .classCheck .c6 {
+	WIDTH: 90px
+}
+#footer {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 30px; MARGIN-TOP: 20px; PADDING-LEFT: 0px; WIDTH: 984px; PADDING-RIGHT: 0px; FLOAT: left; COLOR: #ccc; CLEAR: both; PADDING-TOP: 15px
+}
+#footer A {
+	COLOR: #ccc
+}
+#footer .abt A {
+	MARGIN: 0px 10px
+}
+#footer .copyright {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 5px; MARGIN: 5px 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #474747 1px solid; PADDING-TOP: 5px
+}
+#footer .cpr {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 2px
+}
+#footer IMG {
+	MARGIN: 2px 3px
+}
+.frameChart {
+	MARGIN-TOP: 15px; PADDING-RIGHT: 5px; FLOAT: left; MARGIN-LEFT: -11px
+}
+.frameChart .chartCaption {
+	BORDER-BOTTOM-COLOR: #242424; BORDER-TOP-COLOR: #242424; WIDTH: 976px; BORDER-RIGHT-COLOR: #242424; BORDER-LEFT-COLOR: #242424
+}
+.frameChart .trendCharts {
+	BORDER-BOTTOM-COLOR: #242424; BORDER-TOP-COLOR: #242424; WIDTH: 976px; BORDER-RIGHT-COLOR: #242424; BORDER-LEFT-COLOR: #242424
+}
+.frameChart .chartCaption {
+	WIDTH: 974px
+}
+.frameChart .chartActive {
+	MARGIN: 0px 0px 8px 15px
+}
+.frameChart .shadowBottom {
+	WIDTH: 99.6%
+}
+.frameChart .trendCharts .getNum TD {
+	BACKGROUND: #5f82be
+}
+.frameChart .trendCharts .getNum .td-first {
+	COLOR: #fff
+}
+.frameChart .trendCharts .getNum TD {
+	BORDER-BOTTOM: #5f82be 1px solid; BACKGROUND: #5f82be
+}
+.frameChart .trendCharts .getNum-td-last TD {
+	BORDER-BOTTOM: #5f82be 1px solid
+}
+.frameChart .trendCharts .getNum TD {
+	BORDER-RIGHT: #5f82be 1px solid
+}
+.frameChart .getNum .num {
+	LINE-HEIGHT: 20px; PADDING-RIGHT: 3px; DISPLAY: inline-block; BACKGROUND: url(../img/getNum_numbg.gif) no-repeat right top; HEIGHT: 20px; COLOR: #000; FONT-SIZE: 12px; CURSOR: pointer; -moz-user-select: none
+}
+.frameChart .getNum .num I {
+	POSITION: relative; FONT-STYLE: normal; PADDING-LEFT: 3px; BACKGROUND: url(../img/getNum_numbg.gif) no-repeat left top; FLOAT: left; HEIGHT: 20px
+}
+.frameChart .getNum .num_on {
+	BACKGROUND-POSITION: right -41px; COLOR: #fff
+}
+.frameChart .getNum .num_on I {
+	BACKGROUND-POSITION: 0px -41px
+}
+.xj .frameChart .getNum .num_on {
+	BACKGROUND-POSITION: right -121px; COLOR: #fff
+}
+.xj .frameChart .getNum .num_on I {
+	BACKGROUND-POSITION: 0px -121px
+}
+.jx .frameChart .getNum .num_on {
+	BACKGROUND-POSITION: right -80px; COLOR: #fff
+}
+.jx .frameChart .getNum .num_on I {
+	BACKGROUND-POSITION: 0px -80px
+}
+.jx .classCheck .c1 {
+	BACKGROUND-IMAGE: url(../img/jx/class_ibg01.gif); WIDTH: 90px
+}
+.jx .classCheck .c2 {
+	BACKGROUND-IMAGE: url(../img/jx/class_ibg02.gif); WIDTH: 80px
+}
+.jx .classCheck .c3 {
+	BACKGROUND-IMAGE: url(../img/jx/class_ibg03.gif); WIDTH: 70px
+}
+.jx .classCheck .c4 {
+	BACKGROUND-IMAGE: url(../img/jx/class_ibg04.gif); WIDTH: 250px
+}
+.jx .classCheck .c5 {
+	BACKGROUND-IMAGE: url(../img/jx/class_ibg05.gif); WIDTH: 80px
+}
+.jx .classCheck .c6 {
+	BACKGROUND-IMAGE: url(../img/jx/class_ibg06.gif); WIDTH: 80px
+}
+#containerLotteryChoose LI H4 {
+	MARGIN: 8px 0px 2px 1em; FONT-SIZE: 12px
+}
